@@ -1,6 +1,13 @@
 <?php
 include_once('elements/header.php');
 ?>
+
+<section class="top-banner-background" style="background-image: url('assets/images/banner-img.png');">
+    <div>
+        <h1 class="mb-0 text-center">Contact Us</h1>
+        <p class="text-black text-center mt-2">Get in touch with our team to discuss your ideas, explore innovative solutions, and discover how our technology expertise can help your business grow and succeed.</p>
+    </div>
+</section>
  
   <style> 
           /* --- Typography & Headings --- */

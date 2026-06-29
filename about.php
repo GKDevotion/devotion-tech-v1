@@ -2,6 +2,15 @@
 include_once('elements/header.php');
 ?>
 
+
+    <!-- HERO -->
+    <section class="top-banner-background" style="background-image: url('assets/images/banner-img.png');">
+        <div>
+            <h1 class="mb-0 text-center">About Us</h1>
+            <p class="text-black text-center mt-2">Empowering businesses with innovative technology solutions that drive growth, efficiency, and digital transformation.</p>
+        </div>
+    </section>
+
   <style>
   
         /* Section Styling */
@@ -87,11 +96,13 @@ include_once('elements/header.php');
                 </div>
             </div>
             <div class="col-lg-6 ps-lg-5">
-                <div class="mb-3">
-                    <span class="accent-dot bg-primary"></span>
-                    <span class="accent-dot" style="background-color: #aa8038;"></span>
-                    <small class="text-uppercase fw-bold ms-2 fs-6">Who We Are</small>
+                <div class="col-lg-3 col-12">
+                    <div class="badge-pill">
+                        <span class="dot"></span>
+                        Who We Are
+                    </div>
                 </div>
+                 
                 <h2 class="heading-main display-5 mb-4">We provide services designed to make your business operations more efficient & effective.</h2>
                 <p class="text-muted who-we-para">Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis dapibus metus hendrerit id tincidunt.</p>
             </div>
@@ -202,7 +213,10 @@ include_once('elements/header.php');
         <div class="row align-items-center">
             <!-- Left Content -->
             <div class="col-lg-6">
-                <div class="badge-mission">● Our Mission</div>
+                <div class="badge-pill">
+                        <span class="dot"></span>
+                        Our Mission
+                    </div>
                 <h1 class="heading-main display-5">Transforming technology into growth opportunities for every business</h1>
                 <p class="text-muted mb-4">Our mission is simple yet powerful: to deliver innovative, secure, and scalable IT solutions that help businesses thrive in an ever-evolving digital world.</p>
                 
@@ -295,7 +309,10 @@ include_once('elements/header.php');
 
             <!-- Right Content -->
             <div class="col-lg-6 ps-lg-5">
-                <div class="badge-vision">● Our Vision</div>
+                <div class="badge-pill">
+                        <span class="dot"></span>
+                        Our Vision
+                    </div>
                 <h2 class="heading-main display-5">Our vision building smarter safer and more connected businesses</h2>
                 <p class="text-muted mb-4">Our vision is to lead the digital future by delivering secure, scalable, and innovative IT solutions that empower businesses to grow, connect, and thrive globally.</p>
                 
@@ -373,7 +390,10 @@ include_once('elements/header.php');
   </style> 
 
   <section class="dark-section container my-5"> 
-    <span class="badge badge-custom">HOW WE DO</span>
+    <div class="badge-pill">
+                        <span class="dot"></span>
+                        How We Do
+                    </div>
     <h2 class="section-title">We Can Help You To</h2>
 
     <div class="row">
@@ -443,8 +463,11 @@ include_once('elements/header.php');
   <section class="section-bg">
     <div class="container">
         <!-- Header -->
-        <small class="text-custom fw-bold">Why Choose Us</small>
-        <h2 class="display-4 fw-bold mb-5">Why choose us ?</h2>
+        <div class="badge-pill">
+            <span class="dot"></span>
+            Why Choose Us
+        </div>
+        <h2 class="display-4 fw-bold mb-5">What Makes Us Different?</h2>
 
         <!-- Feature Cards -->
         <div class="row g-4">
@@ -528,8 +551,11 @@ include_once('elements/header.php');
     <div class="container">
         <!-- Section Header -->
         <div class="row">
-            <div class="col-12">
-                <p class="sub-heading">Ourview Comapny</p>
+            <div class="col-12"> 
+                <div class="badge-pill">
+                        <span class="dot"></span>
+                        Ourview Comapny
+                    </div>
                 <h2 class="main-heading">Stats that matter</h2>
             </div>
         </div>
@@ -634,8 +660,11 @@ include_once('elements/header.php');
   <section class="team-section">
     <div class="container">
         <!-- Header -->
-        <div class="mb-5">
-            <span class="badge-team">● Our Team</span>
+        <div class="mb-5"> 
+            <div class="badge-pill">
+                <span class="dot"></span>
+                Our Team
+            </div>
             <h2 class="heading-main display-5">Our dedicated team blends innovation and expertise<br>to deliver secure, scalable, IT solutions.</h2>
         </div>
 

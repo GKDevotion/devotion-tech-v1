@@ -2352,7 +2352,7 @@
 
     /* Right: Contact card */
     .contact-card {
-      background: #f4f6fb;
+      background: #fff;
       border-radius: 16px;
       padding: 32px 32px 28px;
       height: 100%;
@@ -2568,7 +2568,10 @@
         <!-- Right: Contact Card -->
         <div class="col-lg-4 offset-lg-1">
           <div class="contact-card">
-            <div class="contact-label-build">Contact Us</div>
+            <div class="badge-pill mb-2">
+                <span class="dot"></span>
+                Contact Us
+            </div> 
             <h3 class="contact-title">Bring Innovation Together!</h3>
             <p class="contact-desc">
               Reach out to the team of the most innovative <span>IT transformation</span> Team and bring the transformation you need.
