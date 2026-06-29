@@ -1,9 +1,11 @@
  
 <?php
   include_once('elements/header.php');
+  include_once('elements/video.php');
 ?>
 
-  <section class="hero-section">
+
+  <!-- <section class="hero-section">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6">
@@ -46,7 +48,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <style>
     .stats-bar {
@@ -245,7 +247,7 @@
       height: 10px;
       border-radius: 50%;
       background: #aa8038;
-      position: relative;
+      /* position: relative; */
       top: 5px;
       flex-shrink: 0;
     }
@@ -1470,17 +1472,7 @@
       .problems-section {
         padding: 80px 0 90px;
         background: #fff;
-      }
-    
-      .section-heading {
-        font-size: clamp(30px, 4.5vw, 52px);
-        font-weight: 800;
-        line-height: 1.1;
-        letter-spacing: -.025em;
-        color: #0f0f0f;
-        margin: 0;
-      }
-
+      } 
       .header-desc {
         font-size: 15px;
         color: #6b6b6b;
@@ -1513,7 +1505,7 @@
         transform: translateX(2px);
       }
 
-      .btn-quote .arrow-circle {
+      .btn-quote .arrow-circle-prob {
         width: 28px;
         height: 28px;
         border-radius: 50%;
@@ -1524,7 +1516,7 @@
         flex-shrink: 0;
       }
 
-      .btn-quote .arrow-circle svg {
+      .btn-quote .arrow-circle-prob svg {
         width: 14px;
         height: 14px;
         stroke: #fff;
@@ -1633,7 +1625,7 @@
           </p>
           <a href="#" class="btn-quote">
             Get a Free Quote
-            <span class="arrow-circle">
+            <span class="arrow-circle-prob">
               <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 7h10M7 2l5 5-5 5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -2026,7 +2018,7 @@
       font-size: clamp(22px, 3.5vw, 38px);
       font-weight: 800;
       color: #0f0f0f;
-      text-align: center;
+      /* text-align: center; */
       letter-spacing: -.02em;
       margin-bottom: 40px;
     }
