@@ -465,6 +465,8 @@
     </div>
   </section>
 
+ <?php include_once('elements/scrolling.php'); ?>
+
   <style>
     .services-section {
       padding: 70px 0 60px;
