@@ -1722,7 +1722,7 @@
 
     /* Step Card */
     .step-card {
-      background: #333;
+      background: #fff;
       border: 1px solid #444;
       border-radius: 14px;
       padding: 26px 24px 22px;
@@ -1769,7 +1769,7 @@
     .card-title-how {
       font-size: 1rem;
       font-weight: 700;
-      color: #fff;
+      color: #000;
       margin-bottom: 10px;
     }
 
@@ -1786,7 +1786,7 @@
       gap: 6px;
       font-size: 14px;
       font-weight: 700;
-      color: #fff;
+      color: #000;
       text-decoration: none;
       margin: 20px 0 24px;
     }
@@ -1817,7 +1817,7 @@
       border-radius: 999px;
       padding: 4px 14px;
       font-size: 0.7rem;
-      color: #ccc;
+      color: #fff;
     }
 
     /* Bottom bar */
