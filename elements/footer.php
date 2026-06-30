@@ -30,8 +30,8 @@
       letter-spacing: 0.3px;
     }
     .footer-tagline {
-      color: #adb5bd;
-      font-size: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
       line-height: 1.65;
       margin-top: 14px;
     }
@@ -46,7 +46,7 @@
     .footer-social-label {
       color: #fff;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       margin-right: 14px;
     }
     .social-btn {
@@ -57,7 +57,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      color: #adb5bd;
+      color: #fff;
       font-size: 0.95rem;
       text-decoration: none;
       transition: border-color 0.2s, color 0.2s, background 0.2s;
@@ -88,7 +88,7 @@
       padding-left: 16px;
       margin-bottom: 12px;
       font-size: 1rem;
-      color: #adb5bd;
+      color: #fff;
       transition: color 0.2s;
       cursor: default;
     }
@@ -141,7 +141,7 @@
 
     /* Newsletter */
     .newsletter-desc {
-      color: #adb5bd;
+      color: #fff;
       font-size: 1rem;
       line-height: 1.65;
       margin-bottom: 20px;
@@ -195,17 +195,17 @@
       border-top: 1px solid rgba(255,255,255,0.08);
     }
     .footer-nav-link {
-      color: #adb5bd;
+      color: #fff;
       text-decoration: none;
-      font-size: 0.85rem;
+      font-size: 1rem;
       margin-right: 20px;
       transition: color 0.2s;
     }
     .footer-nav-link:last-child { margin-right: 0; }
     .footer-nav-link:hover { color: #aa8038; }
     .footer-copy {
-      color: #adb5bd;
-      font-size: 0.82rem;
+      color: #fff;
+      font-size: 1rem;
     }
 
     /* ── RESPONSIVE TWEAKS ── */
