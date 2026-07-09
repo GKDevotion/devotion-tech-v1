@@ -355,32 +355,19 @@
               </div><!-- /row 2 -->
             </div><!-- /mega-menu -->
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
 
           <!-- Pages dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void();" role="button" data-bs-toggle="dropdown">
               Company
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Service Details</a></li>
-              <li><a class="dropdown-item" href="#">Blog Details</a></li>
-              <li><a class="dropdown-item" href="#">Project</a></li>
-              <li><a class="dropdown-item" href="#">Project Details</a></li>
-              <li><a class="dropdown-item" href="#">Our Team</a></li>
-              <li><a class="dropdown-item" href="#">Team Details</a></li>
-              <li><a class="dropdown-item" href="#">Pricing Plan</a></li>
-              <li><a class="dropdown-item" href="#">Testimonials</a></li>
-              <li><a class="dropdown-item" href="#">Image Gallery</a></li>
-              <li><a class="dropdown-item" href="#">Video Gallery</a></li>
-              <li><a class="dropdown-item" href="#">FAQs</a></li>
-              <li><a class="dropdown-item" href="#">404</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Header Layouts <span class="arrow">›</span></a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Footer Layouts <span class="arrow">›</span></a>
-              </li>
+            <ul class="dropdown-menu"> 
+              <li><a class="dropdown-item" href="javascript:void();">Project</a></li> 
+              <li><a class="dropdown-item" href="javascript:void();">Our Team</a></li> 
+              <li><a class="dropdown-item" href="javascript:void();">Testimonials</a></li>
+              <li><a class="dropdown-item" href="javascript:void();">Image Gallery</a></li> 
+              <li><a class="dropdown-item" href="javascript:void();">FAQs</a></li> 
             </ul>
           </li>
 
@@ -389,7 +376,7 @@
 
         <!-- Right: phone + CTA -->
         <div class="d-flex align-items-center gap-3">
-          <a href="#" class="btn-consult">Get A Free Consultation &nbsp;↗</a>
+          <a href="contact.php" class="btn-consult">Get A Free Consultation &nbsp;↗</a>
         </div>
       </div>
     </div>

@@ -246,10 +246,10 @@
           <!-- Social -->
           <div class="d-flex align-items-center flex-wrap gap-2">
             <span class="footer-social-label">Follow Us:</span>
-            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="social-btn" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+            <a href="javascript:void();" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="javascript:void();" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="javascript:void();" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="javascript:void();" class="social-btn" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
           </div>
         </div>
 
@@ -274,7 +274,7 @@
             </div>
             <div>
               <div class="contact-label">Phone Number</div>
-              <div class="contact-value">+ (123) 456-789</div>
+              <div class="contact-value"><a href="tel:+971999007985" class="text-white text-decoration-none">+971 99900 9909</a></div>
             </div>
           </div>
 
@@ -284,7 +284,7 @@
             </div>
             <div>
               <div class="contact-label">Email Address</div>
-              <div class="contact-value">Info@Domainname.Com</div>
+              <div class="contact-value"><a href="mailto:devotiontech@gmail.com" class="text-white text-decoration-none">devotiontech@gmail.Com</a></div>
             </div>
           </div>
         </div>
@@ -296,12 +296,7 @@
             Subscribe to our newsletter for expert insights, industry news, and practical tips delivered to inbox.
           </p>
           <div class="newsletter-form">
-            <input
-              type="email"
-              class="newsletter-input"
-              placeholder="Email Address *"
-              aria-label="Email Address"
-            />
+            <input type="email" class="newsletter-input" placeholder="Email Address *" aria-label="Email Address" />
             <button class="newsletter-btn" type="button">Subscribe</button>
           </div>
         </div>
@@ -315,11 +310,10 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-8">
-          <a href="#" class="footer-nav-link">Home</a>
-          <a href="#" class="footer-nav-link">About Us</a>
-          <a href="#" class="footer-nav-link">Services</a>
-          <a href="#" class="footer-nav-link">Blogs</a>
-          <a href="#" class="footer-nav-link">Contact</a>
+          <a href="javascript:void();" class="footer-nav-link">Carrear</a>
+          <a href="javascript:void();" class="footer-nav-link">Privacy Policy</a>
+          <a href="javascript:void();" class="footer-nav-link">Cookie Policy</a>
+          <a href="javascript:void();" class="footer-nav-link">Terms Of Condition</a> 
         </div>
         <div class="col-12 col-md-4 text-md-end footer-copy">
           Copyright &copy; 2026 All Rights Reserved.

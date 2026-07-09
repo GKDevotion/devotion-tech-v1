@@ -377,6 +377,6 @@ include_once('elements/header.php');
   </section>
  
  <?php
-include_once('elements/faqs.php');
-include_once('elements/footer.php');
+    include_once('elements/faqs.php');
+    include_once('elements/footer.php');
 ?>

@@ -465,8 +465,325 @@
     </div>
   </section>
 
- <?php include_once('elements/scrolling.php'); ?>
+  <?php include_once('elements/scrolling.php'); ?>
 
+   <style>
+    .why-section {
+      padding: 70px 0 60px;
+    }
+
+    .sub-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #aa8038;
+      display: inline-block;
+      margin-bottom: 28px;
+    }
+
+    /* Card */
+    .why-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px 26px 26px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #e8e8e8;
+      transition: box-shadow 0.2s;
+    }
+
+    .why-card:hover {
+      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 36px;
+    }
+
+    .card-icon svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      flex-grow: 1;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .feature-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .check-icon {
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .check-icon svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      text-decoration: none;
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid #eee;
+    }
+
+    .card-link:hover {
+      color: #aa8038;
+    }
+
+    .card-link svg {
+      width: 13px;
+      height: 13px;
+    }
+
+    @media(max-width:991px) {
+      .section-title {
+        font-size: 1.7rem;
+      }
+    }
+
+    @media(max-width:767px) {
+      .why-section {
+        padding: 46px 0 40px;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+
+  <section class="why-section">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <!-- Header -->
+      <div class="row align-items-start mb-4">
+        <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+          <div class="badge-pill"><span class="dot"></span>Why Choose Us</div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <h2 class="section-title">From consultation to implementation – we deliver end to end IT excellence that
+            supports</h2>
+        </div>
+      </div>
+
+
+      <!-- Cards Row -->
+      <div class="row g-3">
+
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="why-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="18" stroke="#333" stroke-width="1.5" />
+                <path d="M24 32C24 27.582 27.582 24 32 24C36.418 24 40 27.582 40 32C40 36.418 36.418 40 32 40"
+                  stroke="#333" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M32 14V18M32 46V50M14 32H18M46 32H50" stroke="#333" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <circle cx="32" cy="32" r="4" stroke="#333" stroke-width="1.5" />
+              </svg>
+            </div>
+            <div class="card-title">Expert Team with Deep Technical Knowledge</div>
+            <ul class="feature-list">
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Years of experience across IT
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Certify industry leading expert
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Up-to-date knowledge latest tech
+              </li>
+            </ul>
+            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="why-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 14C32 14 20 20 14 28C14 28 18 44 32 50C46 44 50 28 50 28C44 20 32 14 32 14Z" stroke="#333"
+                  stroke-width="1.5" stroke-linejoin="round" />
+                <path d="M24 32C27 29 29 27 32 26C35 27 37 29 40 32" stroke="#333" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <circle cx="32" cy="36" r="5" stroke="#333" stroke-width="1.5" />
+              </svg>
+            </div>
+            <div class="card-title">Proven Expertise Across Diverse IT Environments</div>
+            <ul class="feature-list">
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Skilled in adapting tech
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Successfully delivered solutions
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Experience with cloud, on-premise
+              </li>
+            </ul>
+            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="why-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 14L35.5 25H47L37.5 31.5L41 42.5L32 36L23 42.5L26.5 31.5L17 25H28.5L32 14Z" stroke="#333"
+                  stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="card-title">Trusted by Industry Leaders Across Sectors</div>
+            <ul class="feature-list">
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Recognized by top brands
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Proven results across industries
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Long-term partnerships with Fortune
+              </li>
+            </ul>
+            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="why-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 20C20 20 16 24 16 32C16 40 20 44 20 44" stroke="#333" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path d="M44 20C44 20 48 24 48 32C48 40 44 44 44 44" stroke="#333" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path d="M26 26C26 26 24 28 24 32C24 36 26 38 26 38" stroke="#333" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path d="M38 26C38 26 40 28 40 32C40 36 38 38 38 38" stroke="#333" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <circle cx="32" cy="32" r="4" stroke="#333" stroke-width="1.5" />
+              </svg>
+            </div>
+            <div class="card-title">Transparent Communicate & Dedicated Support</div>
+            <ul class="feature-list">
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Real-Time Project Updates
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Consistent Feedback Loops
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                Dedicated Project Accounts Managers
+              </li>
+            </ul>
+            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+              </svg></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ 
   <style>
     .services-section {
       padding: 70px 0 60px;
@@ -820,326 +1137,9 @@
 
         </div>
       </div>
-  </section>
+  </section> 
 
-  <style>
-    .why-section {
-      padding: 70px 0 60px;
-    }
-
-
-
-    .sub-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #aa8038;
-      display: inline-block;
-      margin-bottom: 28px;
-    }
-
-    /* Card */
-    .why-card {
-      background: #fff;
-      border-radius: 14px;
-      padding: 30px 26px 26px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid #e8e8e8;
-      transition: box-shadow 0.2s;
-    }
-
-    .why-card:hover {
-      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
-    }
-
-    .card-icon {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 36px;
-    }
-
-    .card-icon svg {
-      width: 60px;
-      height: 60px;
-    }
-
-    .card-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #111;
-      line-height: 1.4;
-      margin-bottom: 20px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid #eee;
-    }
-
-    .feature-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 24px;
-      flex-grow: 1;
-    }
-
-    .feature-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      font-size: 1rem;
-      color: #777;
-      margin-bottom: 10px;
-      line-height: 1.5;
-    }
-
-    .feature-list li:last-child {
-      margin-bottom: 0;
-    }
-
-    .check-icon {
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .check-icon svg {
-      width: 15px;
-      height: 15px;
-    }
-
-    .card-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 1rem;
-      font-weight: 700;
-      color: #111;
-      text-decoration: none;
-      margin-top: auto;
-      padding-top: 18px;
-      border-top: 1px solid #eee;
-    }
-
-    .card-link:hover {
-      color: #aa8038;
-    }
-
-    .card-link svg {
-      width: 13px;
-      height: 13px;
-    }
-
-    @media(max-width:991px) {
-      .section-title {
-        font-size: 1.7rem;
-      }
-    }
-
-    @media(max-width:767px) {
-      .why-section {
-        padding: 46px 0 40px;
-      }
-
-      .section-title {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
-
-  <section class="why-section">
-    <div class="container-fluid px-4 px-lg-5">
-
-      <!-- Header -->
-      <div class="row align-items-start mb-4">
-        <div class="col-lg-4 col-12 mb-3 mb-lg-0">
-          <div class="badge-pill"><span class="dot"></span>Why Choose Us</div>
-        </div>
-        <div class="col-lg-8 col-12">
-          <h2 class="section-title">From consultation to implementation – we deliver end to end IT excellence that
-            supports</h2>
-        </div>
-      </div>
-
-
-      <!-- Cards Row -->
-      <div class="row g-3">
-
-        <!-- Card 1 -->
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="why-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="18" stroke="#333" stroke-width="1.5" />
-                <path d="M24 32C24 27.582 27.582 24 32 24C36.418 24 40 27.582 40 32C40 36.418 36.418 40 32 40"
-                  stroke="#333" stroke-width="1.5" stroke-linecap="round" />
-                <path d="M32 14V18M32 46V50M14 32H18M46 32H50" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <circle cx="32" cy="32" r="4" stroke="#333" stroke-width="1.5" />
-              </svg>
-            </div>
-            <div class="card-title">Expert Team with Deep Technical Knowledge</div>
-            <ul class="feature-list">
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Years of experience across IT
-              </li>
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Certify industry leading expert
-              </li>
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Up-to-date knowledge latest tech
-              </li>
-            </ul>
-            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
-              </svg></a>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="why-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 14C32 14 20 20 14 28C14 28 18 44 32 50C46 44 50 28 50 28C44 20 32 14 32 14Z" stroke="#333"
-                  stroke-width="1.5" stroke-linejoin="round" />
-                <path d="M24 32C27 29 29 27 32 26C35 27 37 29 40 32" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <circle cx="32" cy="36" r="5" stroke="#333" stroke-width="1.5" />
-              </svg>
-            </div>
-            <div class="card-title">Proven Expertise Across Diverse IT Environments</div>
-            <ul class="feature-list">
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Skilled in adapting tech
-              </li>
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Successfully delivered solutions
-              </li>
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Experience with cloud, on-premise
-              </li>
-            </ul>
-            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
-              </svg></a>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="why-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 14L35.5 25H47L37.5 31.5L41 42.5L32 36L23 42.5L26.5 31.5L17 25H28.5L32 14Z" stroke="#333"
-                  stroke-width="1.5" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div class="card-title">Trusted by Industry Leaders Across Sectors</div>
-            <ul class="feature-list">
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Recognized by top brands
-              </li>
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Proven results across industries
-              </li>
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Long-term partnerships with Fortune
-              </li>
-            </ul>
-            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
-              </svg></a>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="why-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 20C20 20 16 24 16 32C16 40 20 44 20 44" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <path d="M44 20C44 20 48 24 48 32C48 40 44 44 44 44" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <path d="M26 26C26 26 24 28 24 32C24 36 26 38 26 38" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <path d="M38 26C38 26 40 28 40 32C40 36 38 38 38 38" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <circle cx="32" cy="32" r="4" stroke="#333" stroke-width="1.5" />
-              </svg>
-            </div>
-            <div class="card-title">Transparent Communicate & Dedicated Support</div>
-            <ul class="feature-list">
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Real-Time Project Updates
-              </li>
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Consistent Feedback Loops
-              </li>
-              <li>
-                <span class="check-icon"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8L6.5 11.5L13 5" stroke="#aa8038" stroke-width="1.6" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></span>
-                Dedicated Project Accounts Managers
-              </li>
-            </ul>
-            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
-              </svg></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  <?php include_once('elements/workflow.php'); ?> 
 
    <style>
   
