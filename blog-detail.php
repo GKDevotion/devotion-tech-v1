@@ -1,5 +1,11 @@
 <?php
-include_once('elements/header.php');
+    $seo = [
+        'title' => 'Latest Technology Insights & Blogs | Devotion Technologies',
+        'description' => 'Explore Devotion Technologies blogs covering the latest trends in software development, web technologies, digital solutions, IT innovations, and business technology insights.',
+        'keywords' => 'Devotion Technologies blog, technology blog, software development trends, web development insights, IT solutions, digital technology news',
+        'author' => 'Devotion Technologies'
+    ];
+    include_once('elements/header.php');
 ?>
 
 <style>

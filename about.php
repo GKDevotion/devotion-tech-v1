@@ -1,15 +1,21 @@
- <?php
-include_once('elements/header.php');
+<?php 
+    $seo = [
+        'title' => 'About Us | Devotion Technologies - Leading Technology Solutions Provider',
+        'description' => 'Discover Devotion Technologies, a trusted technology partner delivering innovative IT solutions, software development, web applications, and digital services to help businesses achieve their goals.',
+        'keywords' => 'About Devotion Technologies, IT company, technology solutions provider, software development company, web development services, digital transformation company',
+        'author' => 'Devotion Technologies'
+    ];
+    include_once('elements/header.php');
 ?>
 
 
-    <!-- HERO -->
-    <section class="top-banner-background" style="background-image: url('assets/images/banner-img.png');">
-        <div>
-            <h1 class="mb-0 text-center">About Us</h1>
-            <p class="text-black text-center mt-2">Empowering businesses with innovative technology solutions that drive growth, efficiency, and digital transformation.</p>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="top-banner-background" style="background-image: url('assets/images/banner-img.png');">
+    <div>
+        <h1 class="mb-0 text-center">About Us</h1>
+        <p class="text-black text-center mt-2">Empowering businesses with innovative technology solutions that drive growth, efficiency, and digital transformation.</p>
+    </div>
+</section>
 
   <style>
   

@@ -355,6 +355,7 @@
               </div><!-- /row 2 -->
             </div><!-- /mega-menu -->
           </li>
+          
           <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
 
           <!-- Pages dropdown -->
@@ -363,11 +364,11 @@
               Company
             </a>
             <ul class="dropdown-menu"> 
-              <li><a class="dropdown-item" href="javascript:void();">Project</a></li> 
-              <li><a class="dropdown-item" href="javascript:void();">Our Team</a></li> 
-              <li><a class="dropdown-item" href="javascript:void();">Testimonials</a></li>
-              <li><a class="dropdown-item" href="javascript:void();">Image Gallery</a></li> 
-              <li><a class="dropdown-item" href="javascript:void();">FAQs</a></li> 
+              <li><a class="dropdown-item" href="project.php">Project</a></li> 
+              <li><a class="dropdown-item" href="our-team.php">Our Team</a></li> 
+              <li><a class="dropdown-item" href="testimonial.php">Testimonials</a></li>
+              <li><a class="dropdown-item" href="image-gallery.php">Image Gallery</a></li> 
+              <li><a class="dropdown-item" href="general-faq.php">FAQs</a></li> 
             </ul>
           </li>
 

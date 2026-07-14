@@ -310,10 +310,10 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-8">
-          <a href="javascript:void();" class="footer-nav-link">Carrear</a>
-          <a href="javascript:void();" class="footer-nav-link">Privacy Policy</a>
-          <a href="javascript:void();" class="footer-nav-link">Cookie Policy</a>
-          <a href="javascript:void();" class="footer-nav-link">Terms Of Condition</a> 
+          <a href="careear.php" class="footer-nav-link">Carrear</a>
+          <a href="privacy-policy.php" class="footer-nav-link">Privacy Policy</a>
+          <a href="cookie-policy.php" class="footer-nav-link">Cookie Policy</a>
+          <a href="terms-condition.php" class="footer-nav-link">Terms Of Condition</a> 
         </div>
         <div class="col-12 col-md-4 text-md-end footer-copy">
           Copyright &copy; 2026 All Rights Reserved.
@@ -323,59 +323,27 @@
   </div>
 
 </footer>
-
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
-<script>
-  const tabs   = document.querySelectorAll('.tech-tab');
-  const panels = document.querySelectorAll('.tab-panel');
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const target = tab.dataset.tab;
-
-      tabs.forEach(t => t.classList.remove('active'));
-      panels.forEach(p => p.classList.remove('active'));
-
-      tab.classList.add('active');
-      document.getElementById('panel-' + target).classList.add('active');
-    });
-  });
-</script>
   <script>
-    function getSlidesPerView() {
-      const w = window.innerWidth;
-      if (w >= 992) return 3;
-      if (w >= 768) return 2;
-      if (w >= 576) return 1.3;
-      return 1;
-    }
+    const tabs   = document.querySelectorAll('.tech-tab');
+    const panels = document.querySelectorAll('.tab-panel');
 
-    function updateProgress(sw) {
-      const total = sw.slides.length;
-      const perView = getSlidesPerView();
-      const scrollable = total - perView;
-      const pct = scrollable <= 0 ? 100 : Math.min(100, (sw.activeIndex / scrollable) * 100);
-      document.getElementById('progressFill').style.width = Math.max(8, pct) + '%';
-    }
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.dataset.tab;
 
-    const swiper = new Swiper('.servicesSwiper', {
-      slidesPerView: 1,
-      spaceBetween: 16,
-      breakpoints: {
-        576: { slidesPerView: 1.3 },
-        768: { slidesPerView: 2, spaceBetween: 20 },
-        992: { slidesPerView: 3, spaceBetween: 20 },
-      },
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
 
-      on: {
-        init(sw) { updateProgress(sw); },
-        slideChange(sw) { updateProgress(sw); }
-      }
+        tab.classList.add('active');
+        document.getElementById('panel-' + target).classList.add('active');
+      });
     });
-
-    window.addEventListener('resize', () => updateProgress(swiper));
-  </script>
+  </script> 
 
   <script>
     const toggle = document.getElementById('servicesToggle');
@@ -393,6 +361,143 @@
       }
     });
   </script>
+
+  <script>
+     // Featured slider
+      new Swiper('#featuredSwiper', {
+          loop: true,
+          autoplay: {
+              delay: 4000,
+              disableOnInteraction: false
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true
+          },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+          },
+      });
+
+      // Filtering
+      const pills = document.querySelectorAll('.pill');
+      const items = document.querySelectorAll('.gitem');
+      pills.forEach(pill => {
+          pill.addEventListener('click', () => {
+              pills.forEach(p => p.classList.remove('active'));
+              pill.classList.add('active');
+              const filter = pill.getAttribute('data-filter');
+              items.forEach(item => {
+                  if (filter === 'all' || item.getAttribute('data-cat') === filter) {
+                      item.style.display = '';
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+          });
+      });
+
+      // Lightbox
+      const galleryItems = Array.from(document.querySelectorAll('.gitem'));
+      let currentIndex = 0;
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+
+      function openLightbox(index) {
+          currentIndex = index;
+          updateLightbox();
+          lightbox.classList.add('open');
+      }
+
+      function closeLightbox() {
+          lightbox.classList.remove('open');
+      }
+
+      function navLightbox(dir) {
+          currentIndex = (currentIndex + dir + galleryItems.length) % galleryItems.length;
+          updateLightbox();
+      }
+
+      function updateLightbox() {
+          const item = galleryItems[currentIndex];
+          const img = item.querySelector('img');
+          const title = item.querySelector('.gitem-title').textContent;
+          lightboxImg.src = img.src.replace('w=500', 'w=1200');
+          lightboxCaption.textContent = title;
+      }
+      lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+          if (!lightbox.classList.contains('open')) return;
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowRight') navLightbox(1);
+          if (e.key === 'ArrowLeft') navLightbox(-1);
+      });
+  </script>
+ 
+  <script>
+     function getSlidesPerView() {
+        const w = window.innerWidth;
+        if (w >= 992) return 3;
+        if (w >= 768) return 2;
+        if (w >= 576) return 1.3;
+        return 1;
+      }
+
+      function updateProgress(sw) {
+        const total = sw.slides.length;
+        const perView = getSlidesPerView();
+        const scrollable = total - perView;
+        const pct = scrollable <= 0 ? 100 : Math.min(100, (sw.activeIndex / scrollable) * 100);
+        document.getElementById('progressFill').style.width = Math.max(8, pct) + '%';
+      }
+
+      const swiper = new Swiper('.servicesSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        breakpoints: {
+          576: { slidesPerView: 1.3 },
+          768: { slidesPerView: 2, spaceBetween: 20 },
+          992: { slidesPerView: 3, spaceBetween: 20 },
+        },
+
+        on: {
+          init(sw) { updateProgress(sw); },
+          slideChange(sw) { updateProgress(sw); }
+        }
+      });
+
+      window.addEventListener('resize', () => updateProgress(swiper));
+
+  </script>
+  
+  <script>
+     function toggleAccordion(item) {
+        const isOpen = item.classList.contains('open');
+        // close siblings within the same accordion group only
+        const parent = item.parentElement;
+        parent.querySelectorAll('.accordion-item').forEach(el => el.classList.remove('open'));
+        if (!isOpen) {
+            item.classList.add('open');
+        }
+    }
+
+    // Category tabs
+    const cattabs = document.querySelectorAll('.cat-tab');
+    const groups = document.querySelectorAll('.faq-group');
+    cattabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            cattabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            const target = tab.getAttribute('data-group');
+            groups.forEach(g => g.classList.toggle('active', g.id === target));
+        });
+    });
+  </script>
+ 
 </body>
 
 </html>

@@ -1,5 +1,11 @@
 <?php
-include_once('elements/header.php');
+    $seo = [
+        'title' => 'Contact Devotion Technologies | Start Your Digital Journey With Us',
+        'description' => 'Reach out to Devotion Technologies for reliable technology solutions, custom software development, web applications, and digital services tailored to your business needs.',
+        'keywords' => 'Devotion Technologies contact, technology partner, custom software development, IT solutions provider, web development services, digital transformation',
+        'author' => 'Devotion Technologies'
+    ];
+    include_once('elements/header.php');
 ?>
 
 <section class="top-banner-background" style="background-image: url('assets/images/banner-img.png');">
@@ -376,7 +382,7 @@ include_once('elements/header.php');
         </div>
   </section>
  
- <?php
+<?php
     include_once('elements/faqs.php');
     include_once('elements/footer.php');
 ?>
