@@ -405,7 +405,7 @@
                         <span>Life at Concept</span>
                     </a>
 
-                    <a href="javascript:void(0);">
+                    <a href="testimonial.php">
                         <i class="bi bi-chevron-right"></i>
                         <span>Testimonials</span>
                     </a>
@@ -420,7 +420,7 @@
                         <span>News</span>
                     </a>
 
-                    <a href="imag-gallery.php">
+                    <a href="image-gallery.php">
                         <i class="bi bi-chevron-right"></i>
                         <span>Image Gallery</span>
                     </a>
@@ -440,6 +440,7 @@
                         <span>Business Presence</span>
                     </a>
                 </div>
+
                   <style>
   
                     .mega-row-company{ display:flex; min-height:420px; }

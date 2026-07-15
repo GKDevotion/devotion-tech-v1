@@ -634,8 +634,8 @@
         <h2>Ready to become our next success story?</h2>
         <p>Tell us about your project and we'll show you exactly how we'd approach it — no pressure, just a clear plan.</p>
         <div class="cta-buttons">
-            <a href="#" class="cta-primary">Get A Free Consultation</a>
-            <a href="#" class="cta-secondary">View Our Projects</a>
+            <a href="javascript:void();" class="cta-primary">Get A Free Consultation</a>
+            <a href="javascript:void();" class="cta-secondary">View Our Projects</a> 
         </div>
     </div>
 
