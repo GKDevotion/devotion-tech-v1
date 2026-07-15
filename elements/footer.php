@@ -328,21 +328,33 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
 
+  <audio id="tabClickSound" preload="auto">
+      <source src="assets/audio/universfield-mouse.mp3" type="audio/mpeg">
+  </audio>
+
   <script>
-    const tabs   = document.querySelectorAll('.tech-tab');
-    const panels = document.querySelectorAll('.tab-panel');
+    const tabs = document.querySelectorAll(".tech-tab");
+const panels = document.querySelectorAll(".tab-panel");
+const clickSound = document.getElementById("tabClickSound");
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const target = tab.dataset.tab;
+tabs.forEach(tab => {
+    tab.addEventListener("click", function () {
 
-        tabs.forEach(t => t.classList.remove('active'));
-        panels.forEach(p => p.classList.remove('active'));
+        // Play sound
+        clickSound.currentTime = 0;
+        clickSound.play().catch(() => {});
 
-        tab.classList.add('active');
-        document.getElementById('panel-' + target).classList.add('active');
-      });
+        // Remove active classes
+        tabs.forEach(t => t.classList.remove("active"));
+        panels.forEach(p => p.classList.remove("active"));
+
+        // Activate clicked tab
+        this.classList.add("active");
+        document
+            .getElementById("panel-" + this.dataset.tab)
+            .classList.add("active");
     });
+});
   </script> 
 
   <script>
