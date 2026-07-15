@@ -449,6 +449,7 @@
                       flex:0 0 34%;
                       background:linear-gradient(160deg,#aa8038 0%, #c9a05f 100%);
                       color:#fff;
+                      border-radius: 15px;
                       padding:40px 34px;
                       display:flex;
                       flex-direction:column;
@@ -505,12 +506,12 @@
                     }
                     .btn-team:hover{ color:#fff; filter:brightness(1.05); }
 
-                    .team-grid{
+                    .team-grid-header{
                       display:flex;
                       flex-wrap:wrap;
                       gap:14px;
                     }
-                    .team-grid img{
+                    .team-grid-header img{
                       width:56px;height:56px;
                       border-radius:50%;
                       object-fit:cover;
@@ -545,7 +546,7 @@
                   <p>Concept Infoway has been in business since 2000, and today, it is one of the most successful offshore development companies in India, thanks to the leaders of the company. These visionaries of Concept Infoway ensure that company stays flourished and the clients satisfied for many years to come.</p>
                   <button class="btn btn-team"><a href="our-team.php" class="text-decoration-none text-white">Read more about our team</a></button>
 
-                  <div class="team-grid">
+                  <div class="team-grid-header">
                     <img src="https://i.pravatar.cc/100?img=12" alt="team member">
                     <img src="https://i.pravatar.cc/100?img=13" alt="team member">
                     <img src="https://i.pravatar.cc/100?img=45" alt="team member">
