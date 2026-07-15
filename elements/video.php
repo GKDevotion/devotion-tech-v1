@@ -8,7 +8,7 @@
 
                 <div class="banner-content">
                     <h1>Empowering Businesses Through Technology</h1>
-                    <p>Devotion Technology delivers innovative digital solutions, enterprise software, cloud services, and IT consulting that help organizations accelerate growth, improve efficiency, and stay ahead in a rapidly evolving digital world.</p>
+                    <p>Devotion Technology delivers innovative digital solutions, enterprise software, cloud services and IT consulting that help organizations accelerate growth, improve efficiency, and stay ahead in a rapidly evolving digital world.</p>
                 </div>
             </div>
         </div>
