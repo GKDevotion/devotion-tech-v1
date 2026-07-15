@@ -497,7 +497,7 @@
       <div class="contact-box">
         <h4>Questions about this policy?</h4>
         <p>Email us at hello@devotiontech.com or use our contact form and we'll get back to you promptly.</p>
-        <a href="#">Contact Us</a>
+        <a href="contact.php">Contact Us</a>
       </div>
 
     </div>

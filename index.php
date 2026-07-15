@@ -10,7 +10,6 @@
   include_once('elements/video.php');
 ?>
 
-
   <!-- <section class="hero-section">
     <div class="container">
       <div class="row align-items-center g-5">
@@ -253,8 +252,8 @@
       height: 10px;
       border-radius: 50%;
       background: #aa8038;
-      /* position: relative; */
-      top: 5px;
+      position: relative;
+      top: 8px;
       flex-shrink: 0;
     }
 

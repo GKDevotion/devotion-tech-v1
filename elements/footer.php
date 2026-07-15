@@ -348,6 +348,7 @@
   <script>
     const toggle = document.getElementById('servicesToggle');
     const mega = document.getElementById('servicesMega');
+    
 
     toggle.addEventListener('click', e => {
       e.preventDefault();
@@ -358,6 +359,22 @@
     document.addEventListener('click', e => {
       if (!toggle.contains(e.target) && !mega.contains(e.target)) {
         mega.classList.remove('show');
+      }
+    });
+
+    const companytoggle = document.getElementById('companyToggle');
+    const companymega = document.getElementById('companyMega');
+    
+
+    companytoggle.addEventListener('click', e => {
+      e.preventDefault();
+      companymega.classList.toggle('show');
+    });
+
+    // close when clicking outside
+    document.addEventListener('click', e => {
+      if (!companytoggle.contains(e.target) && !companymega.contains(e.target)) {
+        companymega.classList.remove('show');
       }
     });
   </script>

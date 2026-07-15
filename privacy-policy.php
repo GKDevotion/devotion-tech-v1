@@ -461,7 +461,7 @@
             <div class="contact-box">
                 <h4>Questions about your data?</h4>
                 <p>Email us at hello@devotiontech.com or use our contact form and we'll respond promptly.</p>
-                <a href="#">Contact Us</a>
+                <a href="contact.php">Contact Us</a>
             </div>
 
         </div>

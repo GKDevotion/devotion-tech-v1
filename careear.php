@@ -92,7 +92,7 @@
     /* SECTIONS */
     section.block {
         margin: 0 auto;
-        padding: 70px 60px;
+        padding: 70px 0px 60px 0px;
     }
 
     section.block.alt {
@@ -241,8 +241,8 @@
         width: 46px;
         height: 46px;
         border-radius: 50%;
-        background: #12172e;
-        color: #c8935a;
+        background: #aa8038;
+        color: #fff;
         font-weight: 800;
         font-size: 16px;
         display: flex;
@@ -403,7 +403,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: #c8935a;
+        background: #aa8038;
         color: #fff;
         display: flex;
         align-items: center;
@@ -448,7 +448,7 @@
     }
 
     .contact-cta a.btn {
-        background: #c8935a;
+        background: #aa8038;
         color: #fff;
         padding: 12px 26px;
         border-radius: 6px;
@@ -560,56 +560,56 @@
         </div>
         <div class="benefit-grid">
             <div class="benefit-item">
-                <i class="bi bi-check-circle-fill" style="font-size:20px;"></i>
+                <i class="bi bi-check-circle-fill" style="font-size:20px; color: #aa8038;"></i>
                 <div>
                     <h4>Competitive Salary</h4>
                     <p>Market-benchmarked pay with regular performance reviews and raises.</p>
                 </div>
             </div>
             <div class="benefit-item">
-                <i class="bi bi-check-circle-fill" style="font-size:20px;"></i>
+                <i class="bi bi-check-circle-fill" style="font-size:20px; color: #aa8038;"></i>
                 <div>
                     <h4>Health Coverage</h4>
                     <p>Comprehensive medical, dental, and vision coverage for you and your dependents.</p>
                 </div>
             </div>
             <div class="benefit-item">
-                <i class="bi bi-check-circle-fill" style="font-size:20px;"></i>
+                <i class="bi bi-check-circle-fill" style="font-size:20px; color: #aa8038;"></i>
                 <div>
                     <h4>Paid Time Off</h4>
                     <p>Generous annual leave, plus public holidays and paid sick leave.</p>
                 </div>
             </div>
             <div class="benefit-item">
-                <i class="bi bi-check-circle-fill" style="font-size:20px;"></i>
+                <i class="bi bi-check-circle-fill" style="font-size:20px; color: #aa8038;"></i>
                 <div>
                     <h4>Learning Budget</h4>
                     <p>Annual allowance for courses, certifications, and industry conferences.</p>
                 </div>
             </div>
             <div class="benefit-item">
-                <i class="bi bi-check-circle-fill" style="font-size:20px;"></i>
+                <i class="bi bi-check-circle-fill" style="font-size:20px; color: #aa8038"></i>
                 <div>
                     <h4>Remote &amp; Hybrid Options</h4>
                     <p>Work from home, our office, or a mix — whatever suits your role and life.</p>
                 </div>
             </div>
             <div class="benefit-item">
-                <i class="bi bi-check-circle-fill" style="font-size:20px;"></i>
+                <i class="bi bi-check-circle-fill" style="font-size:20px; color: #aa8038;"></i>
                 <div>
                     <h4>Latest Equipment</h4>
                     <p>A laptop and setup of your choice, refreshed on a regular cycle.</p>
                 </div>
             </div>
             <div class="benefit-item">
-                <i class="bi bi-check-circle-fill" style="font-size:20px;"></i>
+                <i class="bi bi-check-circle-fill" style="font-size:20px; color: #aa8038;"></i>
                 <div>
                     <h4>Team Retreats</h4>
                     <p>Company-wide offsites and team events to celebrate wins and unwind.</p>
                 </div>
             </div>
             <div class="benefit-item">
-                <i class="bi bi-check-circle-fill" style="font-size:20px;"></i>
+                <i class="bi bi-check-circle-fill" style="font-size:20px; color: #aa8038;"></i>
                 <div>
                     <h4>Career Growth Plans</h4>
                     <p>Clear progression frameworks and mentorship at every level.</p>
@@ -804,6 +804,285 @@
             </div>
         </div>
     </div>
+</section>
+
+<style>
+    
+    /* RESUME SUBMISSION FORM */
+  .apply-section{  
+    padding:70px 60px;
+  }
+  .apply-grid{ 
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:60px;
+    align-items:flex-start;
+  }
+  .apply-copy .eyebrow{ margin-bottom:16px; }
+  .apply-copy h2{
+    font-size:30px;
+    color:#000;
+    font-weight:800;
+    letter-spacing:-0.5px;
+    margin-bottom:14px;
+  }
+  .apply-copy p{
+    color:#7b8199;
+    font-size:1rem;
+    margin-bottom:22px;
+  }
+    .apply-points{ 
+        display:flex; 
+        flex-direction:column; 
+        gap:14px; 
+        margin-bottom:26px; 
+    }
+    .apply-point{ 
+        display:flex; 
+        gap:12px; 
+        align-items:flex-start; 
+    }
+  .apply-point .tick{
+    width:24px;height:24px;min-width:24px;
+    border-radius:50%;
+    background:#12172e;
+    color:#c8935a;
+    display:flex;align-items:center;justify-content:center;
+    font-size:12px;font-weight:800;
+  }
+  
+  .apply-note{ 
+    border:1px solid #aa8038;
+    border-radius:10px;
+    padding:16px 18px;
+    font-size:1rem;
+    color:#1b2036;
+  }
+    .apply-note strong{ 
+        color:#aa8038; 
+    }
+
+  .apply-form-card{
+    background:#fff;
+    border:1px solid #e7e3da;
+    border-radius:14px;
+    padding:34px 36px;
+  }
+  .apply-form-card h3{
+    color:#12172e;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:22px;
+  }
+  .form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-bottom:18px;
+  }
+  .form-field{ display:flex; flex-direction:column; gap:6px; }
+  .form-field.full{ grid-column:1 / -1; }
+  .form-field label{
+    font-size:1rem;
+    font-weight:700;
+    color:#1b2036;
+  }
+    .form-field label .req{ 
+        color:#aa8038; 
+    }
+  .form-field input[type="text"],
+  .form-field input[type="email"],
+  .form-field input[type="tel"],
+  .form-field select,
+  .form-field textarea{
+    border:1px solid #e7e3da;
+    border-radius:8px;
+    padding:11px 14px;
+    font-size:0.8rem;
+    font-family:inherit;
+    color:#1b2036; 
+    outline:none;
+    width:100%;
+  }
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus{
+    border-color:#c8935a;
+    background:#fff;
+  }
+  .form-field textarea{ resize:vertical; min-height:100px; }
+
+  .upload-box{
+    border:1.5px dashed #e7e3da;
+    border-radius:10px;
+    padding:26px 20px;
+    text-align:center; 
+    cursor:pointer;
+  }
+  .upload-box .upload-icon{
+    width:42px;height:42px;
+    border-radius:50%; 
+    border: 1px solid #aa8038;
+    color:#aa8038;
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 12px;
+    font-size:18px;
+    font-weight:700;
+  }
+  .upload-box .upload-title{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#1b2036;
+    margin-bottom:4px;
+  }
+  .upload-box .upload-sub{
+    font-size:0.8rem;
+    color:#7b8199;
+  }
+  .upload-box input[type="file"]{ display:none; }
+
+  .consent-row{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin:18px 0 22px;
+  }
+    .consent-row input{ 
+        margin-top:6px; 
+    }
+  .consent-row label{
+    font-size:1rem;
+    color:#7b8199;
+  }
+
+  .submit-btn{
+    background:#aa8038;
+    color:#fff;
+    border:none;
+    padding:14px 0;
+    width:100%;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+  }
+    .submit-btn:hover{ 
+        background:#aa8038; 
+    }
+</style>
+
+<!-- RESUME SUBMISSION FORM -->
+<section class="apply-section" id="submit-resume">
+  <div class="container apply-grid">
+    <div class="apply-copy">
+        <div class="badge-pill mb-4">
+            <span class="dot"></span>
+            General Application
+        </div> 
+
+      <h2>Don't see the right role? Submit your resume anyway.</h2>
+      <p>We're growing fast and always keen to meet good people, even when a matching role isn't open yet. Tell us a bit about yourself, and we'll reach out as soon as something fits.</p>
+
+      <div class="apply-points">
+        <div class="apply-point">
+          <i class="bi bi-check-circle-fill" style="font-size:18px;"></i>
+          <p>Your resume goes straight to our talent team, not a black hole.</p>
+        </div>
+        <div class="apply-point">
+          <i class="bi bi-check-circle-fill" style="font-size:18px;"></i>
+          <p>We keep applications on file for 12 months and reach out when a fit opens up.</p>
+        </div>
+        <div class="apply-point">
+          <i class="bi bi-check-circle-fill" style="font-size:18px;"></i>
+          <p>Most applicants hear back — even just a status update — within a week.</p>
+        </div>
+      </div>
+
+      <div class="apply-note">
+        <strong>Accepted formats:</strong> PDF, DOC, or DOCX, up to 5MB. Your information is handled in line with our <a href="privacy-policy.php" style="text-decoration:underline; color:#aa8038;">Privacy Policy</a>.
+      </div>
+    </div>
+
+    <div class="apply-form-card">
+      <h3>Submit Your Resume</h3>
+      <form>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="full_name">Full Name <span class="req">*</span></label>
+            <input type="text" id="full_name" placeholder="Your full name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="phone" placeholder="+971 00 000 0000" required>
+          </div>
+          <div class="form-field">
+            <label for="position">Position of Interest</label>
+            <select>
+              <option value="">General Application</option>
+              <option value="">Senior Network Engineer</option>
+              <option value="">Full-Stack Developer (React / Node)</option>
+              <option value="">IT Support Specialist (L2)</option>
+              <option value="">Cloud Solutions Architect</option>
+              <option value="">Business Development Executive</option>
+              <option value="">Cybersecurity Analyst</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="experience">Years of Experience</label>
+            <select>
+              <option value="">Select an option</option>
+              <option value="">Less than 1 year</option>
+              <option value="">1–3 years</option>
+              <option value="">3–5 years</option>
+              <option value="">5–10 years</option>
+              <option value="">10+ years</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="linkedin">LinkedIn / Portfolio URL</label>
+            <input type="text" id="linkedin" placeholder="https://">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="resume-upload">Resume / CV <span class="req">*</span></label>
+            <label class="upload-box" for="resume-upload">
+              <div class="upload-icon">⬆</div>
+              <div class="upload-title">Click to upload or drag and drop</div>
+              <div class="upload-sub">PDF, DOC, or DOCX — up to 5MB</div>
+              <input type="file" id="resume-upload" accept=".pdf,.doc,.docx">
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="description">A Short Note (optional)</label>
+            <textarea id="description" placeholder="Tell us a little about yourself and why you'd like to join Devotion Technology."></textarea>
+          </div>
+        </div>
+
+        <div class="consent-row">
+          <input type="checkbox" id="consent" required>
+          <label for="consent">I agree to let Devotion Technology store and process my information for recruitment purposes, in line with the Privacy Policy.</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Application →</button>
+      </form>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT CTA -->

@@ -14,7 +14,8 @@
         <!-- Nav links -->
         <ul class="navbar-nav mx-auto gap-1">
           <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li> 
+
           <!-- Services MEGA dropdown -->
           <li class="nav-item mega-dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" id="servicesToggle">
@@ -359,7 +360,7 @@
           <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
 
           <!-- Pages dropdown -->
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown d-none">
             <a class="nav-link dropdown-toggle" href="javascript:void();" role="button" data-bs-toggle="dropdown">
               Company
             </a>
@@ -370,6 +371,195 @@
               <li><a class="dropdown-item" href="image-gallery.php">Image Gallery</a></li> 
               <li><a class="dropdown-item" href="general-faq.php">FAQs</a></li> 
             </ul>
+          </li>
+
+          <!-- COMPANY MEGA MENU -->
+          <li class="nav-item mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void();" role="button" id="companyToggle">
+                Company
+              </a>
+            <div class="mega-menu" id="companyMega">
+              <div class="mega-row-company">
+                <!-- Left colored panel -->
+                <div class="mega-side-company">
+                  <h3>Our Story</h3>
+                  <p>Concept Infoway is a leading Microsoft Certified Offshore Development Company. With a solid team of 140+ IT professionals, specializing in different domains, we provide premium quality solutions that actually bring value to our clients' business.</p>
+                  <p>Established and started operation in 2000, Concept Infoway today has a thriving presence in the United States, United Kingdom, and Australia.</p>
+                  <button class="btn btn-explore-company"><a href="about.php" class="text-decoration-none" style="color: #aa8038;">Explore More</a></button>
+                </div>
+
+                <!-- Middle links --> 
+                <div class="mega-links-company">
+                    <a href="our-team.php">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>Meet Our Team</span>
+                    </a>
+
+                    <a href="javascript:void(0);">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>Infrastructure</span>
+                    </a>
+
+                    <a href="javascript:void(0);">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>Life at Concept</span>
+                    </a>
+
+                    <a href="javascript:void(0);">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>Testimonials</span>
+                    </a>
+
+                    <a href="project.php">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>Portfolio</span>
+                    </a>
+
+                    <a href="javascript:void(0);">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>News</span>
+                    </a>
+
+                    <a href="imag-gallery.php">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>Image Gallery</span>
+                    </a>
+
+                    <a href="general-faq.php">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>FAQ</span>
+                    </a>
+
+                    <a href="javascript:void(0);">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>Why Concept Infoway?</span>
+                    </a>
+
+                    <a href="javascript:void(0);">
+                        <i class="bi bi-chevron-right"></i>
+                        <span>Business Presence</span>
+                    </a>
+                </div>
+                  <style>
+  
+                    .mega-row-company{ display:flex; min-height:420px; }
+
+                    .mega-side-company{
+                      flex:0 0 34%;
+                      background:linear-gradient(160deg,#aa8038 0%, #c9a05f 100%);
+                      color:#fff;
+                      padding:40px 34px;
+                      display:flex;
+                      flex-direction:column;
+                      justify-content:center;
+                    }
+                    .mega-side-company h3{ font-weight:800; margin-bottom:16px; }
+                    .mega-side-company p{ 
+                      font-size:1rem; 
+                      opacity:.95; 
+                      line-height:1.6; 
+                      margin-bottom:22px;
+                    }
+                    .btn-explore-company{
+                      background:#fff;
+                      color:#8a6529;
+                      border:none;
+                      font-weight:700;
+                      padding:10px 22px;
+                      border-radius:6px;
+                      width:fit-content;
+                    }
+                    .btn-explore-company:hover{ background:#f2ede2; color:#8a6529; }
+
+                    .mega-links-company{
+                      flex:0 0 27%;
+                      padding:40px 28px;
+                      border-right:1px solid #f0ece2;
+                    }
+                    .mega-links-company a{
+                      display:block;
+                      color:#1f2733;
+                      font-weight:600;
+                      text-decoration:none;
+                      padding:9px 0;
+                      font-size:.95rem;
+                      transition:.2s;
+                    }
+                    .mega-links-company a:hover{ color:#aa8038; padding-left:6px; }
+
+                    .mega-content-company{
+                      flex:1;
+                      padding:40px 38px;
+                    }
+                    .mega-content-company h4{ font-weight:800; color:#1f2733; margin-bottom:14px;}
+                    .mega-content-company p{ color:#5b6472; font-size:.94rem; line-height:1.7; margin-bottom:22px;}
+                    .btn-team{
+                      background:linear-gradient(90deg,#aa8038,#c9a05f);
+                      border:none;
+                      color:#fff;
+                      font-weight:700;
+                      padding:12px 26px;
+                      border-radius:8px;
+                      margin-bottom:26px;
+                    }
+                    .btn-team:hover{ color:#fff; filter:brightness(1.05); }
+
+                    .team-grid{
+                      display:flex;
+                      flex-wrap:wrap;
+                      gap:14px;
+                    }
+                    .team-grid img{
+                      width:56px;height:56px;
+                      border-radius:50%;
+                      object-fit:cover;
+                      border:2px solid #f0ece2;
+                    }
+
+                    /* simple dropdown (non-mega) */
+                    .dropdown-menu.simple{
+                      border:none;
+                      border-radius:10px;
+                      box-shadow:0 15px 35px rgba(0,0,0,.12);
+                      padding:10px 0;
+                      min-width:220px;
+                    }
+                    .dropdown-menu.simple a{
+                      padding:9px 22px;
+                      font-weight:600;
+                      color:#1f2733;
+                      font-size:.93rem;
+                    }
+                    .dropdown-menu.simple a:hover{
+                      background:#faf3e6;
+                      color:#aa8038;
+                    }
+
+                  </style>
+
+                <!-- Right content -->
+                <div class="mega-content-company">
+
+                  <h4>Meet Our Team</h4>
+                  <p>Concept Infoway has been in business since 2000, and today, it is one of the most successful offshore development companies in India, thanks to the leaders of the company. These visionaries of Concept Infoway ensure that company stays flourished and the clients satisfied for many years to come.</p>
+                  <button class="btn btn-team"><a href="our-team.php" class="text-decoration-none text-white">Read more about our team</a></button>
+
+                  <div class="team-grid">
+                    <img src="https://i.pravatar.cc/100?img=12" alt="team member">
+                    <img src="https://i.pravatar.cc/100?img=13" alt="team member">
+                    <img src="https://i.pravatar.cc/100?img=45" alt="team member">
+                    <img src="https://i.pravatar.cc/100?img=14" alt="team member">
+                    <img src="https://i.pravatar.cc/100?img=47" alt="team member">
+                    <img src="https://i.pravatar.cc/100?img=15" alt="team member">
+                    <img src="https://i.pravatar.cc/100?img=16" alt="team member">
+                    <img src="https://i.pravatar.cc/100?img=17" alt="team member">
+                    <img src="https://i.pravatar.cc/100?img=18" alt="team member">
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
           </li>
 
           <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>

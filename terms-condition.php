@@ -504,7 +504,7 @@
       <div class="contact-cta">
         <h3>Questions about these Terms?</h3>
         <p>Email us at <a href="mailto:hello@devotiontech.com" class="text-white">hello@devotiontech.com</a> or use our contact form and we'll respond promptly.</p>
-        <a href="#" class="btn">Contact Us</a>
+        <a href="contact.php" class="btn">Contact Us</a>
       </div>
     </section>
 
