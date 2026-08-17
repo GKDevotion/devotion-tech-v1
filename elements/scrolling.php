@@ -28,7 +28,7 @@
  
 /* Different Backgrounds */
 .card-one{
-    background:#DDF3FF;
+    background: rgb(251, 242, 222);;
 }
 
 .card-two{

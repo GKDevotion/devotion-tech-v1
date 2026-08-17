@@ -198,7 +198,7 @@
           </div>
         </div>
 
-        <a href="#" class="btn-faq">
+        <a href="general-faq.php" class="btn-faq">
           View All Faqs
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 12L12 2M12 2H5M12 2V9" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>

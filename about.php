@@ -163,7 +163,11 @@
   </section>
 
   <style>
-        .mission-section { padding: 80px 0; }
+        .mission-section {
+            margin:20px 0px 20px 0px;
+            background-color: rgb(251, 242, 222); 
+            padding: 80px 0; 
+        }
         
         .badge-mission {
             background: #f0f0f0;
@@ -228,12 +232,16 @@
                 
                 <div class="row mb-4">
                     <div class="col-sm-6">
-                        <div class="feature-icon">🌀</div>
+                        <div class="feature-icon">
+                            <img src="assets/images/outdated-legacy-icon.png" alt="Outdated Legacy System" width="120px;" height="100px;">
+                        </div>
                         <h5 class="fw-bold">Outdated Legacy System</h5>
                         <p class="text-muted small">Relying on legacy system slow productivity increase risks & prevents your business from keeping pace.</p>
                     </div>
                     <div class="col-sm-6">
-                        <div class="feature-icon">★</div>
+                        <div class="feature-icon">
+                            <img src="assets/images/cybersecurity-threats-icon.png" alt="Cybersecurity Threats" width="100px;" height="100px;">
+                        </div>
                         <h5 class="fw-bold">Cybersecurity Threats</h5>
                         <p class="text-muted small">Rising cyberattacks and data breaches put sensitive information at risk, threatening business continuity.</p>
                     </div>
@@ -337,15 +345,15 @@
  
   <style>
       .dark-section {
-          background-color: #000;
-          color: #fff;
+          background-color: rgb(251, 242, 222);
+          color: #000;
           padding: 80px 20px;
           border-radius: 20px;
       }
 
       .badge-custom {
           background-color: #aa8038; /* Keeping original blue per image */
-          color: #fff;
+          color: #000;
           padding: 10px 15px;
           font-size: 1rem;
           text-transform: uppercase;
@@ -382,7 +390,7 @@
       }
 
       .feature-text {
-          color: #aaa;
+          color: #000;
           line-height: 1.6;
       }
 
@@ -405,21 +413,27 @@
     <div class="row">
         <!-- Feature 1 -->
         <div class="col-lg-4 feature-box">
-            <div class="feature-icon">💡</div>
+            <div class="feature-icon">
+                <img src="assets/images/bulb.png" alt="Expertise & Innovation" width="100px;" height="100px;">
+            </div>
             <h4 class="feature-title">Expertise & innovation</h4>
             <p class="feature-text">We pride ourselves staying at the front innovation, constantly pushing boundaries and redefining what is possible.</p>
         </div>
 
         <!-- Feature 2 -->
         <div class="col-lg-4 feature-box">
-            <div class="feature-icon">📊</div>
+            <div class="feature-icon">
+                <img src="assets/images/transparent-process-icon.png" alt="Transparent Process" width="100px;" height="100px;">
+            </div>
             <h4 class="feature-title">Transparent process</h4>
             <p class="feature-text">Our transparent process is designed to demystify the journey from concept to delivery.</p>
         </div>
 
         <!-- Feature 3 -->
         <div class="col-lg-4 feature-box">
-            <div class="feature-icon">👥</div>
+            <div class="feature-icon">
+                <img src="assets/images/client-approach.png" alt="Client Approach" width="120px;" height="100px;">
+            </div>
             <h4 class="feature-title">Client approach</h4>
             <p class="feature-text">Our dedicated team takes the time to listen and collaborate, ensuring every interaction is a step toward success.</p>
         </div>
@@ -479,21 +493,27 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="custom-card">
-                    <div class="icon-box">💡</div>
+                    <div class="icon-box">
+                        <img src="assets/images/innovation.png" alt="Innovation" width="60px;" height="60px;">
+                    </div>
                     <h4>Innovation</h4>
                     <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="custom-card">
-                    <div class="icon-box">🎖️</div>
+                    <div class="icon-box">
+                        <img src="assets/images/quality-focused.png" alt="Quality Focused" width="60px;" height="60px;">
+                    </div>
                     <h4>Quality-Focused</h4>
                     <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="custom-card">
-                    <div class="icon-box">💰</div>
+                    <div class="icon-box">
+                        <img src="assets/images/value-for-money.png" alt="Value For Money" width="60px;" height="60px;">
+                    </div>
                     <h4>Value For Money</h4>
                     <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
                 </div>
@@ -513,7 +533,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4 text-end d-none d-lg-block">
-                    <span style="font-size: 8rem; color: #555;">🌐</span>
+                    <span style="font-size: 8rem; color: #555;">
+                        <img src="assets/images/world.png" alt="World Icon" width="150px;" height="150px;">
+                    </span>
                 </div>
             </div>
         </div>

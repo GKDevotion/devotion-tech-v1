@@ -57,7 +57,7 @@
 
   <style>
     .stats-bar {
-      background: #f5f5f5;
+      background: #fbf2de;
       border-top: 1px solid #e0e0e0;
       border-bottom: 1px solid #e0e0e0;
       padding: 28px 0;
@@ -613,17 +613,9 @@
 
         <!-- Card 1 -->
         <div class="col-lg-3 col-md-6 col-12">
-          <div class="why-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="18" stroke="#333" stroke-width="1.5" />
-                <path d="M24 32C24 27.582 27.582 24 32 24C36.418 24 40 27.582 40 32C40 36.418 36.418 40 32 40"
-                  stroke="#333" stroke-width="1.5" stroke-linecap="round" />
-                <path d="M32 14V18M32 46V50M14 32H18M46 32H50" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <circle cx="32" cy="32" r="4" stroke="#333" stroke-width="1.5" />
-              </svg>
-            </div>
+          <div class="why-card"> 
+            
+            <img src="assets/images/why-choose-us-icon-1.png" alt="" width="100px;" height="100px;"> 
             <div class="card-title">Expert Team with Deep Technical Knowledge</div>
             <ul class="feature-list">
               <li>
@@ -648,7 +640,7 @@
                 Up-to-date knowledge latest tech
               </li>
             </ul>
-            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            <a href="javascript:void();" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
               </svg></a>
@@ -658,15 +650,7 @@
         <!-- Card 2 -->
         <div class="col-lg-3 col-md-6 col-12">
           <div class="why-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 14C32 14 20 20 14 28C14 28 18 44 32 50C46 44 50 28 50 28C44 20 32 14 32 14Z" stroke="#333"
-                  stroke-width="1.5" stroke-linejoin="round" />
-                <path d="M24 32C27 29 29 27 32 26C35 27 37 29 40 32" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <circle cx="32" cy="36" r="5" stroke="#333" stroke-width="1.5" />
-              </svg>
-            </div>
+            <img src="assets/images/why-choose-us-icon-2.png" alt="" width="100px;" height="100px;"> 
             <div class="card-title">Proven Expertise Across Diverse IT Environments</div>
             <ul class="feature-list">
               <li>
@@ -691,7 +675,7 @@
                 Experience with cloud, on-premise
               </li>
             </ul>
-            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            <a href="javascript:void();" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
               </svg></a>
@@ -701,12 +685,7 @@
         <!-- Card 3 -->
         <div class="col-lg-3 col-md-6 col-12">
           <div class="why-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 14L35.5 25H47L37.5 31.5L41 42.5L32 36L23 42.5L26.5 31.5L17 25H28.5L32 14Z" stroke="#333"
-                  stroke-width="1.5" stroke-linejoin="round" />
-              </svg>
-            </div>
+            <img src="assets/images/why-choose-us-icon-3.png" alt="" width="100px;" height="100px;"> 
             <div class="card-title">Trusted by Industry Leaders Across Sectors</div>
             <ul class="feature-list">
               <li>
@@ -731,7 +710,7 @@
                 Long-term partnerships with Fortune
               </li>
             </ul>
-            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            <a href="javascript:void();" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
               </svg></a>
@@ -741,19 +720,7 @@
         <!-- Card 4 -->
         <div class="col-lg-3 col-md-6 col-12">
           <div class="why-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 20C20 20 16 24 16 32C16 40 20 44 20 44" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <path d="M44 20C44 20 48 24 48 32C48 40 44 44 44 44" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <path d="M26 26C26 26 24 28 24 32C24 36 26 38 26 38" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <path d="M38 26C38 26 40 28 40 32C40 36 38 38 38 38" stroke="#333" stroke-width="1.5"
-                  stroke-linecap="round" />
-                <circle cx="32" cy="32" r="4" stroke="#333" stroke-width="1.5" />
-              </svg>
-            </div>
+            <img src="assets/images/why-choose-us-icon-4.png" alt="" width="100px;" height="100px;"> 
             <div class="card-title">Transparent Communicate & Dedicated Support</div>
             <ul class="feature-list">
               <li>
@@ -778,7 +745,7 @@
                 Dedicated Project Accounts Managers
               </li>
             </ul>
-            <a href="#" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            <a href="javascript:void();" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
               </svg></a>
@@ -792,7 +759,7 @@
   <style>
     .services-section {
       padding: 70px 0 60px;
-      background: #f0f2f5;
+      background: #fbf2de;
     }
 
     .section-title-stp {
@@ -814,10 +781,6 @@
       justify-content: space-between;
       border: 1px solid #e8e8e8;
       transition: box-shadow 0.2s;
-    }
-
-    .service-card:hover {
-      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
     }
 
     .card-icon {
@@ -1173,6 +1136,7 @@
     .service-card {
       background: #ffffff;
       border-radius: 18px;
+      margin-top: 20px;
       padding: 28px 28px 24px;
       display: flex;
       flex-direction: column;
@@ -1183,7 +1147,6 @@
 
     .service-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 16px 48px rgba(0,0,0,0.18);
     }
 
     /* Icon box */
@@ -1191,7 +1154,7 @@
       width: 48px;
       height: 48px;
       border-radius: 10px;
-      background: #f2f2f2;
+      background: rgb(251, 242, 222);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1554,7 +1517,7 @@
       .card-number-prob {
         font-size: 48px;
         font-weight: 800;
-        color: #e0e0e0;
+        color: #aa8038;
         line-height: 1;
         margin-bottom: 36px;
         letter-spacing: -.03em;
@@ -1631,7 +1594,7 @@
           <p class="header-desc">
             When your systems are slow, insecure, or poorly managed, your team loses time and focus. Nexorit helps businesses prevent IT problems before they affect daily operations.
           </p>
-          <a href="#" class="btn-quote">
+          <a href="javascript:void();" class="btn-quote">
             Get a Free Quote
             <span class="arrow-circle-prob">
               <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
@@ -1714,7 +1677,7 @@
 
   <style>
     .how-section {
-      background: #2a2a2a;
+      background: #fbf2de;
       padding: 70px 0 60px;
     }
 
@@ -1722,7 +1685,7 @@
     .section-title-how {
       font-size: 2.2rem;
       font-weight: 700;
-      color: #fff;
+      color: #000;
       line-height: 1.22;
     }
 
@@ -1818,12 +1781,12 @@
 
     .tag {
       display: inline-block;
-      background: #2a2a2a;
+      background: #fbf2de;
       border: 1px solid #555;
       border-radius: 999px;
       padding: 4px 14px;
       font-size: 0.7rem;
-      color: #fff;
+      color: #000;
     }
 
     /* Bottom bar */
@@ -1837,7 +1800,7 @@
       align-items: center;
       gap: 10px;
       font-size: 1rem;
-      color: #bbb;
+      color: #000;
     }
 
     .free-tag {
@@ -1850,7 +1813,7 @@
     }
 
     .free-bar-text a {
-      color: #fff;
+      color: #000;
       font-weight: 600;
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -2104,6 +2067,7 @@
       transform: translateY(-4px);
       box-shadow: 0 10px 36px rgba(0,0,0,0.09);
       border-color: #aa8038;
+      background-color: rgb(251, 242, 222);
     }
 
     .tech-card img,
@@ -2292,7 +2256,7 @@
     /* ── Section ── */
     .biz-section {
       padding: 80px 0 90px;
-      background: #f0f2f5;
+      background: #fbf2de;
       position: relative;
       overflow: hidden;
     }
@@ -2576,7 +2540,7 @@
             <p class="contact-desc">
               Reach out to the team of the most innovative <span>IT transformation</span> Team and bring the transformation you need.
             </p>
-            <a href="#" class="btn-query">
+            <a href="javascript:void();" class="btn-query">
               <span class="query-arrow-wrap">
                 <!-- Arrow visible at rest -->
                 <svg class="arrow-default" viewBox="0 0 32 32">

@@ -3,7 +3,7 @@
  
       /* ── FOOTER MAIN ── */
     .footer-main {
-      background-color: #2d2d2d;
+      background-color: #fbf2de;
       padding: 60px 0 40px;
     }
 
@@ -21,16 +21,16 @@
     .footer-logo-icon svg {
       width: 22px;
       height: 22px;
-      fill: #fff;
+      fill: #000;
     }
     .footer-brand-name {
       font-size: 1.35rem;
       font-weight: 700;
-      color: #fff;
+      color: #000;
       letter-spacing: 0.3px;
     }
     .footer-tagline {
-      color: #fff;
+      color: #000;
       font-size: 1.2rem;
       line-height: 1.65;
       margin-top: 14px;
@@ -44,7 +44,7 @@
 
     /* Social icons */
     .footer-social-label {
-      color: #fff;
+      color: #000;
       font-weight: 600;
       font-size: 1.2rem;
       margin-right: 14px;
@@ -53,11 +53,11 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      border: 1.5px solid rgba(255,255,255,0.2);
+      border: 1.5px solid #000;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: #000;
       font-size: 0.95rem;
       text-decoration: none;
       transition: border-color 0.2s, color 0.2s, background 0.2s;
@@ -70,7 +70,7 @@
 
     /* Section headings */
     .footer-heading {
-      color: #fff;
+      color: #000;
       font-size: 1rem;
       font-weight: 700;
       margin-bottom: 22px;
@@ -88,7 +88,7 @@
       padding-left: 16px;
       margin-bottom: 12px;
       font-size: 1rem;
-      color: #fff;
+      color: #000;
       transition: color 0.2s;
       cursor: default;
     }
@@ -104,7 +104,7 @@
       background-color: #aa8038;
     }
     .footer-services li:hover {
-      color: #fff;
+      color: #000;
     }
 
     /* Contact items */
@@ -129,19 +129,19 @@
       font-size: 1rem;
     }
     .contact-label {
-      color: #adb5bd;
+      color: #000;
       font-size: 0.78rem;
       margin-bottom: 2px;
     }
     .contact-value {
-      color: #fff;
+      color: #000;
       font-size: 0.9rem;
       font-weight: 600;
     }
 
     /* Newsletter */
     .newsletter-desc {
-      color: #fff;
+      color: #000;
       font-size: 1rem;
       line-height: 1.65;
       margin-bottom: 20px;
@@ -154,11 +154,11 @@
     }
     .newsletter-input {
       flex: 1;
-      background: rgba(255,255,255,0.07);
-      border: 1.5px solid rgba(255,255,255,0.15);
+      background: #000;
+      border: 1.5px solid #000;
       border-right: none;
       border-radius: 4px 0 0 4px;
-      color: #fff;
+      color: #000;
       padding: 10px 14px;
       font-size: 0.85rem;
       outline: none;
@@ -168,7 +168,7 @@
       color: rgba(255,255,255,0.4);
     }
     .newsletter-input:focus {
-      border-color: #aa8038;
+      border-color: #000;
       background: rgba(255,255,255,0.1);
     }
     .newsletter-btn {
@@ -274,7 +274,7 @@
             </div>
             <div>
               <div class="contact-label">Phone Number</div>
-              <div class="contact-value"><a href="tel:+971999007985" class="text-white text-decoration-none">+971 99900 9909</a></div>
+              <div class="contact-value"><a href="tel:+971999007985" class="text-dark text-decoration-none">+971 99900 9909</a></div>
             </div>
           </div>
 
@@ -284,7 +284,7 @@
             </div>
             <div>
               <div class="contact-label">Email Address</div>
-              <div class="contact-value"><a href="mailto:devotiontech@gmail.com" class="text-white text-decoration-none">devotiontech@gmail.Com</a></div>
+              <div class="contact-value"><a href="mailto:devotiontech@gmail.com" class="text-dark text-decoration-none">devotiontech@gmail.Com</a></div>
             </div>
           </div>
         </div>

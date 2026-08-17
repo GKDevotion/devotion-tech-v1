@@ -288,7 +288,7 @@
 
     /* RELATED ROLES */
     .related-section {
-        background: #f7f5f0;
+        background: rgb(251, 242, 222);
         padding: 70px 60px;
     }
 
@@ -592,7 +592,7 @@
                         <span class="job-tag type">Full-time</span>
                     </div>
                 </div>
-                <a href="#" class="job-apply">View Role →</a>
+                <a href="javascript:void();" class="job-apply">View Role →</a>
             </div>
             <div class="job-card">
                 <div class="job-info">
@@ -603,7 +603,7 @@
                         <span class="job-tag type">Contract</span>
                     </div>
                 </div>
-                <a href="#" class="job-apply">View Role →</a>
+                <a href="javascript:void();" class="job-apply">View Role →</a>
             </div>
             <div class="job-card">
                 <div class="job-info">
@@ -614,7 +614,7 @@
                         <span class="job-tag type">Full-time</span>
                     </div>
                 </div>
-                <a href="#" class="job-apply">View Role →</a>
+                <a href="javascript:void();" class="job-apply">View Role →</a>
             </div>
         </div>
     </div>

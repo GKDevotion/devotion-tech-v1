@@ -96,7 +96,7 @@
     }
 
     section.block.alt {
-        background: #f7f5f0;
+        background: rgb(251, 242, 222);
         max-width: none;
         padding: 70px 60px;
     }
@@ -328,7 +328,7 @@
     }
 
     .job-tag.dept {
-        background: #faf3e8;
+        background: rgb(251, 242, 222);
         color: #b57a3f;
     }
 
