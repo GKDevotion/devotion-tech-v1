@@ -19,9 +19,9 @@
         padding-left: 20px;
     }
 
-    li {
+    /* li {
         margin-bottom: 8px;
-    }
+    } */
 
     img {
         max-width: 100%;

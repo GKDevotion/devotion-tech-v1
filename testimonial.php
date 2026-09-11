@@ -19,13 +19,7 @@
         max-width: 100%;
         display: block;
         object-fit: cover;
-    }
-
-    .container {
-        max-width: 1180px;
-        margin: 0 auto;
-        padding: 0 24px;
-    }
+    } 
 
     /* HERO */
     .hero {
