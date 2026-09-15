@@ -68,8 +68,7 @@ include_once('elements/header.php');
 
     .section-head p {
         color: #6c7280;
-        font-size: 1rem;
-        max-width: 640px;
+        font-size: 1.2rem;
     }
 
     /* ---------- KB HERO WITH SEARCH ---------- */
@@ -82,6 +81,7 @@ include_once('elements/header.php');
 
     .kb-hero .eyebrow {
         color: #c9a25f;
+        font-size: 1.2rem;
         justify-content: center;
     }
 
@@ -94,9 +94,8 @@ include_once('elements/header.php');
 
     .kb-hero p.lead {
         color: rgba(255, 255, 255, .7);
-        max-width: 560px;
         margin: 0 auto 34px;
-        font-size: 1.02rem;
+        font-size: 1.2rem;
     }
 
     .kb-search {
@@ -155,7 +154,7 @@ include_once('elements/header.php');
         justify-content: center;
         gap: 10px;
         flex-wrap: wrap;
-        font-size: .84rem;
+        font-size: 1rem;
     }
 
     .kb-trending span.lbl {
@@ -218,14 +217,14 @@ include_once('elements/header.php');
     }
 
     .topic-tile h4 {
-        font-size: .92rem;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #070d24;
         margin-bottom: 4px;
     }
 
     .topic-tile span {
-        font-size: .78rem;
+        font-size: 1rem;
         color: #6c7280;
     }
 
@@ -239,7 +238,7 @@ include_once('elements/header.php');
 
     .kb-sidebar {
         position: sticky;
-        top: 24px;
+        top: 103px;
         background: #fff;
         border: 1px solid #e8e3d6;
         border-radius: 16px;
@@ -253,7 +252,7 @@ include_once('elements/header.php');
         gap: 10px;
         padding: 13px 16px;
         border-radius: 10px;
-        font-size: .9rem;
+        font-size: 1rem;
         font-weight: 500;
         color: #1a1f30;
         transition: background .2s ease, color .2s ease;
@@ -323,7 +322,7 @@ include_once('elements/header.php');
     }
 
     .kb-category-head p {
-        font-size: .86rem;
+        font-size: 1rem;
         color: #6c7280;
     }
 
@@ -350,7 +349,7 @@ include_once('elements/header.php');
     }
 
     .article-row .a-title {
-        font-size: .95rem;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #070d24;
         margin-bottom: 3px;
@@ -358,7 +357,7 @@ include_once('elements/header.php');
     }
 
     .article-row .a-meta {
-        font-size: .8rem;
+        font-size: 1rem;
         color: #6c7280;
     }
 
@@ -428,7 +427,7 @@ include_once('elements/header.php');
     }
 
     .support-strip p {
-        font-size: .92rem;
+        font-size: 1.2rem;
         color: #6c7280;
     }
 

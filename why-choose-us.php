@@ -108,7 +108,7 @@
 
     .wcu-hero p.lead {
         color: rgba(255, 255, 255, .7);
-        font-size: 1.05rem;
+        font-size: 1.2rem;
         max-width: 500px;
         margin-bottom: 30px !important;
     }
@@ -138,7 +138,7 @@
 
     .hero-stat-card span {
         color: rgba(255, 255, 255, .75);
-        font-size: .9rem;
+        font-size: 1.2rem;
         line-height: 1.5;
     }
 
@@ -157,8 +157,7 @@
 
     .section-head p {
         color: var(--muted);
-        font-size: 1rem;
-        max-width: 640px;
+        font-size: 1.2rem;
     }
 
     /* ---------- ZIGZAG FEATURE ROWS ---------- */
@@ -235,12 +234,12 @@
     }
 
     .zz-badge span {
-        font-size: .76rem;
+        font-size: 1rem;
         color: var(--muted);
     }
 
     .zz-copy .zz-step {
-        font-size: .82rem;
+        font-size: 1.2rem;
         font-weight: 700;
         color: var(--gold-dark);
         letter-spacing: .04em;
@@ -258,7 +257,7 @@
 
     .zz-copy p {
         color: var(--muted);
-        font-size: .98rem;
+        font-size: 1.2rem;
         line-height: 1.75;
         margin-bottom: 18px !important;
     }
@@ -272,16 +271,16 @@
         display: flex;
         align-items: flex-start;
         gap: 10px;
-        font-size: .93rem;
+        font-size: 1.2rem;
         color: #2c303c;
     }
 
     .zz-copy ul svg {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         color: var(--gold-dark);
         flex: none;
-        margin-top: 1px;
+        margin-top: 4px;
     }
 
     /* ---------- BY THE NUMBERS BAND ---------- */
@@ -314,7 +313,7 @@
     }
 
     .numbers-band .num span {
-        font-size: .85rem;
+        font-size: 1.1rem;
         color: rgba(255, 255, 255, .6);
     }
 
@@ -343,7 +342,7 @@
         gap: 16px;
         padding: 20px 24px;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 600;
         color: var(--navy);
     }
@@ -381,43 +380,9 @@
     .objection-a p {
         padding: 0 24px 22px;
         color: var(--muted);
-        font-size: .94rem;
+        font-size: 1.1rem;
         line-height: 1.75;
-        max-width: 680px;
-    }
-
-    /* ---------- TRUST STRIP ---------- */
-    .trust-strip {
-        text-align: center;
-    }
-
-    .trust-strip .lbl {
-        font-size: .82rem;
-        color: var(--muted);
-        margin-bottom: 30px !important;
-        display: block;
-    }
-
-    .trust-logos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 46px;
-    }
-
-    .trust-logos span {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 1.2rem;
-        color: #c3c8d1;
-        letter-spacing: .02em;
-        transition: color .2s ease;
-    }
-
-    .trust-logos span:hover {
-        color: var(--navy);
-    }
+    } 
 
     /* ---------- CTA ---------- */
     .careers {
@@ -734,23 +699,9 @@
         </div>
     </div>
 </section>
-
-<!-- TRUST STRIP -->
-<section class="trust-strip">
-    <div class="container">
-        <span class="lbl">Trusted by teams at</span>
-        <div class="trust-logos">
-            <span>RemoteCo</span>
-            <span>GetLit</span>
-            <span>EinGolfer</span>
-            <span>Northbridge</span>
-            <span>Fieldwise</span>
-        </div>
-    </div>
-</section>
-
+ 
 <!-- CTA -->
-<section class="container" style="padding-top:0;">
+<section class="container" style="padding-top:100px;">
     <div class="careers">
         <div class="careers-copy">
             <span class="eyebrow" style="color:var(--gold);">Ready When You Are</span>

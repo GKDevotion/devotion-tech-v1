@@ -75,7 +75,7 @@
 
     .hero p {
         color: #6b7280;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .stars-row {
@@ -88,7 +88,7 @@
     }
 
     .rating-line {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #6b7280;
     }
 
@@ -158,7 +158,7 @@
     }
 
     .ft-author span {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #a9adc4;
     }
 
@@ -222,7 +222,7 @@
     }
 
     .tcard p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #33384a;
         margin-bottom: 20px;
     }
@@ -253,7 +253,7 @@
     }
 
     .tcard-footer span {
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: #6b7280;
     }
 
@@ -341,13 +341,13 @@
     }
 
     .video-card h5 {
-        font-size: 14.5px;
-        font-weight: 800;
+        font-size: 1rem;
+        font-weight: 600;
         margin-bottom: 4px;
     }
 
     .video-card span {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #d6d8e6;
     }
 
@@ -368,10 +368,9 @@
     }
 
     .cta-band p {
-        font-size: 15px;
+        font-size: 1.2rem;
         color: #6b7280;
         margin-bottom: 26px;
-        max-width: 520px;
         margin-left: auto;
         margin-right: auto;
     }

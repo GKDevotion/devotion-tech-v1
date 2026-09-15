@@ -70,7 +70,7 @@
         flex-wrap: wrap;
         align-items: center;
         gap: 8px;
-        font-size: .84rem;
+        font-size: 1.2rem;
         color: #6c7280;
     }
 
@@ -99,7 +99,7 @@
         gap: 7px;
         background: #f2e8d3;
         color: #8f7040;
-        font-size: .78rem;
+        font-size: 1rem;
         font-weight: 700;
         letter-spacing: .02em;
         padding: 7px 14px;
@@ -143,7 +143,7 @@
     }
 
     .meta-person span {
-        font-size: .78rem;
+        font-size: 1rem;
         color: #6c7280;
     }
 
@@ -151,7 +151,7 @@
         display: flex;
         align-items: center;
         gap: 7px;
-        font-size: .84rem;
+        font-size: 1rem;
         color: #6c7280;
     }
 
@@ -170,13 +170,10 @@
     }
 
     /* ---------- ARTICLE CONTENT ---------- */
-    .article-content {
-        max-width: 720px;
-    }
 
     .article-content p {
         color: #3a3f4d;
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.85;
         margin-bottom: 20px !important;
     }
@@ -209,7 +206,7 @@
         position: relative;
         padding-left: 24px;
         color: #3a3f4d;
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.75;
         margin-bottom: 10px;
     }
@@ -238,7 +235,7 @@
         background: #fbfaf7;
         border: 1px solid #e8e3d6;
         border-radius: 12px;
-        font-size: .96rem;
+        font-size: 1.2rem;
         color: #2c303c;
         line-height: 1.65;
     }
@@ -251,7 +248,7 @@
         content: counter(step);
         position: absolute;
         left: 18px;
-        top: 16px;
+        top: 20px;
         width: 26px;
         height: 26px;
         border-radius: 50%;
@@ -281,7 +278,7 @@
 
     .callout p {
         margin-bottom: 0 !important;
-        font-size: .93rem;
+        font-size: 1.2rem;
         line-height: 1.65;
     }
 
@@ -326,7 +323,7 @@
 
     .article-figure figcaption {
         padding: 12px 18px;
-        font-size: .82rem;
+        font-size: 1rem;
         color: #6c7280;
         background: #fbfaf7;
         border-top: 1px solid #e8e3d6;
@@ -343,7 +340,7 @@
         border: 1px solid #e8e3d6;
         border-radius: 999px;
         padding: 6px 14px;
-        font-size: .8rem;
+        font-size: 1.1rem;
         color: #6c7280;
     }
 
@@ -375,7 +372,7 @@
         background: #fff;
         border-radius: 999px;
         padding: 10px 20px;
-        font-size: .88rem;
+        font-size: 1.1rem;
         font-weight: 600;
         color: #070d24;
         cursor: pointer;
@@ -408,7 +405,7 @@
     /* ---------- SIDEBAR ---------- */
     .article-sidebar {
         position: sticky;
-        top: 24px;
+        top: 105px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -422,7 +419,7 @@
     }
 
     .toc-box .toc-label {
-        font-size: .76rem;
+        font-size: 1rem;
         font-weight: 700;
         letter-spacing: .06em;
         text-transform: uppercase;
@@ -437,7 +434,7 @@
 
     .toc-list a {
         display: block;
-        font-size: .88rem;
+        font-size: 1rem;
         color: #6c7280;
         padding: 8px 12px;
         border-radius: 8px;
@@ -471,7 +468,7 @@
     }
 
     .contact-box p {
-        font-size: .84rem;
+        font-size: 1rem;
         color: rgba(255, 255, 255, .65);
         margin-bottom: 16px !important;
         line-height: 1.6;
@@ -507,7 +504,7 @@
     }
 
     .related-card span.tag {
-        font-size: .74rem;
+        font-size: 1rem;
         font-weight: 700;
         color: #8f7040;
         letter-spacing: .02em;
@@ -515,7 +512,7 @@
     }
 
     .related-card h4 {
-        font-size: .98rem;
+        font-size: 1rem;
         font-weight: 700;
         color: #070d24;
         margin: 10px 0 8px;
@@ -523,7 +520,7 @@
     }
 
     .related-card p {
-        font-size: .85rem;
+        font-size: 1rem;
         color: #6c7280;
         margin-bottom: 0;
     }

@@ -124,8 +124,7 @@
 
     .section-head p {
         color: #6c7280;
-        font-size: 1rem;
-        max-width: 640px;
+        font-size: 1.2rem;
     }
 
     /* ---------- TOP BANNER ---------- */
@@ -305,7 +304,7 @@
     }
 
     .mv-card h4 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: #070d24;
         margin-bottom: 10px;
@@ -313,7 +312,7 @@
 
     .mv-card p {
         color: #6c7280;
-        font-size: .98rem;
+        font-size: 1.2rem;
         line-height: 1.7;
     }
 
@@ -354,7 +353,7 @@
         border-radius: 50%;
         background: #fff;
         border: 2px solid #b38f51;
-        color: #8f7040;
+        color: #b38f51;
         font-weight: 800;
         font-size: 1rem;
         display: flex;
@@ -373,14 +372,14 @@
     }
 
     .timeline-body .yr {
-        color: #8f7040;
+        color: #b38f51;
         font-weight: 700;
-        font-size: .85rem;
+        font-size: 1.2rem;
         letter-spacing: .03em;
     }
 
     .timeline-body h4 {
-        font-size: 1.05rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: #070d24;
         margin: 4px 0 6px;
@@ -388,7 +387,7 @@
 
     .timeline-body p {
         color: #6c7280;
-        font-size: .95rem;
+        font-size: 1.2rem;
         line-height: 1.65;
     }
 
@@ -430,7 +429,7 @@
     }
 
     .value-card h4 {
-        font-size: 1.02rem;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #070d24;
         margin-bottom: 8px;
@@ -438,7 +437,7 @@
 
     .value-card p {
         color: #6c7280;
-        font-size: .95rem;
+        font-size: 1rem;
         line-height: 1.6;
     }
 
@@ -464,8 +463,7 @@
 
     .presence-head {
         position: relative;
-        z-index: 2;
-        max-width: 560px;
+        z-index: 2; 
         margin-bottom: 36px;
     }
 
@@ -478,7 +476,7 @@
 
     .presence-head p {
         color: rgba(255, 255, 255, .68);
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .presence-chips {
@@ -494,7 +492,7 @@
         color: #fff;
         border-radius: 999px;
         padding: 9px 18px;
-        font-size: .85rem;
+        font-size: 1rem;
         font-weight: 500;
     }
 
@@ -693,7 +691,7 @@
 <!-- MISSION & VISION -->
 <section style="padding-top:0;">
     <div class="container">
-        <div class="section-head text-center mx-auto" style="max-width:640px;">
+        <div class="section-head text-center mx-auto">
             <div class="badge-pill mb-3">
                 <span class="dot"></span>
                 What Drives Us
@@ -776,6 +774,28 @@
     </div>
 </section>
 
+
+<!-- GLOBAL PRESENCE -->
+<section class="container" style="padding-top:100px;">
+    <div class="presence">
+        <div class="presence-head">
+            <span class="eyebrow" style="color:#b38f51;">Global Presence</span>
+            <h2>One team, working across 12 countries</h2>
+            <p>Distributed talent means we can staff the right specialists for a project, and support clients across time zones without handoff delays.</p>
+        </div>
+        <div class="presence-chips">
+            <span>United States</span>
+            <span>United Kingdom</span>
+            <span>India</span>
+            <span>Canada</span>
+            <span>Germany</span>
+            <span>UAE</span>
+            <span>Australia</span>
+            <span>Singapore</span>
+        </div>
+    </div>
+</section>
+
 <!-- VALUES / WHY -->
 <section>
     <div class="container">
@@ -812,26 +832,6 @@
     </div>
 </section>
 
-<!-- GLOBAL PRESENCE -->
-<section class="container" style="padding-top:0;">
-    <div class="presence">
-        <div class="presence-head">
-            <span class="eyebrow" style="color:#b38f51;">Global Presence</span>
-            <h2>One team, working across 12 countries</h2>
-            <p>Distributed talent means we can staff the right specialists for a project, and support clients across time zones without handoff delays.</p>
-        </div>
-        <div class="presence-chips">
-            <span>United States</span>
-            <span>United Kingdom</span>
-            <span>India</span>
-            <span>Canada</span>
-            <span>Germany</span>
-            <span>UAE</span>
-            <span>Australia</span>
-            <span>Singapore</span>
-        </div>
-    </div>
-</section>
 
 <!-- CAREERS / MEET THE TEAM CTA -->
 <section class="container" style="padding-top:0;">

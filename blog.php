@@ -90,7 +90,7 @@
     }
 
     .article-row p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: #6b7280;
         margin-bottom: 14px;
     }
