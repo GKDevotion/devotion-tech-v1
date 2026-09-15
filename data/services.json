@@ -1,0 +1,308 @@
+[
+  {
+    "slug": "web-development",
+    "category": "development",
+    "category_label": "Development",
+    "icon": "globe",
+    "title": "Web Development",
+    "tagline": "Fast, scalable websites built to convert, not just to look good in a demo.",
+    "cover_stat": { "value": "120+", "label": "Websites shipped" },
+    "overview": "We design and build websites and web platforms that hold up under real traffic — from marketing sites to client portals and internal tools. Every build is planned around page speed, SEO fundamentals and a content structure your own team can maintain after launch.",
+    "features": [
+      "Custom design system, not a recycled template",
+      "Built on Laravel, WordPress or a headless CMS depending on your needs",
+      "Core Web Vitals and SEO structure handled from day one",
+      "Editable by your team without touching code"
+    ],
+    "process": [
+      { "title": "Discovery & Sitemap", "desc": "We map your content, user journeys and technical requirements before any design starts." },
+      { "title": "Design", "desc": "Wireframes and visual design reviewed with you at each stage, not delivered as a surprise." },
+      { "title": "Build & QA", "desc": "Development in two-week sprints with a staging link you can test throughout." },
+      { "title": "Launch & Handover", "desc": "Go-live support plus documentation so your team can manage content independently." }
+    ],
+    "tools": ["Laravel", "WordPress", "React", "Node.js", "MySQL"],
+    "pricing": [
+      { "tier": "Starter", "price": "$2,500+", "desc": "A focused marketing site for small businesses.", "features": ["Up to 6 pages", "Mobile-responsive design", "Basic SEO setup"] },
+      { "tier": "Growth", "price": "$7,500+", "desc": "For businesses that need a content-managed platform.", "features": ["Up to 15 pages", "Custom CMS integration", "On-page SEO & analytics"] },
+      { "tier": "Enterprise", "price": "Custom", "desc": "Multi-team platforms with complex integrations.", "features": ["Unlimited pages", "Custom integrations & APIs", "Dedicated support plan"] }
+    ],
+    "faqs": [
+      { "q": "How long does a typical website project take?", "a": "A marketing site usually takes 4-6 weeks; larger platforms with custom features run 8-14 weeks depending on scope." },
+      { "q": "Can you work with our existing brand guidelines?", "a": "Yes — we design within existing brand systems as often as we create new ones from scratch." },
+      { "q": "Will we be able to update content ourselves after launch?", "a": "Yes, every site is delivered with an editable CMS and a short training session for your team." }
+    ],
+    "testimonial": { "quote": "Our new site loads in under a second and our own marketing team updates it weekly without calling us for help.", "author": "Client Name", "role": "Marketing Director, Partner Company" }
+  },
+  {
+    "slug": "app-development",
+    "category": "development",
+    "category_label": "Development",
+    "icon": "device",
+    "title": "App Development",
+    "tagline": "Native and cross-platform apps that feel instant on every device.",
+    "cover_stat": { "value": "40+", "label": "Apps launched" },
+    "overview": "We build iOS, Android and cross-platform mobile apps for startups and growing businesses — from the first prototype through app-store launch and post-launch iteration. Every build is planned around real device performance, not just simulator demos.",
+    "features": [
+      "Native iOS/Android or cross-platform builds with Flutter or React Native",
+      "Offline-first architecture where connectivity can't be guaranteed",
+      "App Store and Play Store submission handled end to end",
+      "Analytics and crash reporting wired in from launch"
+    ],
+    "process": [
+      { "title": "Product Definition", "desc": "We define core user flows and platform priorities before writing a line of code." },
+      { "title": "Prototype", "desc": "A clickable prototype validates the experience before full development begins." },
+      { "title": "Build & Test", "desc": "Development on real devices throughout, not just emulators, to catch real-world issues early." },
+      { "title": "Launch & Iterate", "desc": "Store submission handled for you, with a post-launch plan for the first update cycle." }
+    ],
+    "tools": ["Flutter", "React Native", "Swift", "Kotlin", "Firebase"],
+    "pricing": [
+      { "tier": "MVP", "price": "$8,000+", "desc": "A lean version to validate your idea with real users.", "features": ["Core feature set only", "Single platform (iOS or Android)", "Basic analytics"] },
+      { "tier": "Full Product", "price": "$20,000+", "desc": "A complete cross-platform app ready to scale.", "features": ["iOS & Android", "Push notifications & offline mode", "Store submission included"] },
+      { "tier": "Enterprise", "price": "Custom", "desc": "Complex apps with backend systems and integrations.", "features": ["Custom backend & APIs", "Advanced security review", "Ongoing release management"] }
+    ],
+    "faqs": [
+      { "q": "Should we build native or cross-platform?", "a": "For most MVPs, cross-platform (Flutter/React Native) is faster and cheaper. We recommend native only when performance or platform-specific features demand it." },
+      { "q": "Do you handle App Store and Play Store submission?", "a": "Yes, submission, screenshots, listing copy and review responses are handled as part of every app engagement." },
+      { "q": "What happens after launch?", "a": "We typically move clients onto a maintenance plan covering OS updates, bug fixes and small feature iterations." }
+    ],
+    "testimonial": { "quote": "They shipped our MVP in eight weeks and it held up through our first 10,000 downloads without a single crash report.", "author": "Client Name", "role": "Founder, Partner Startup" }
+  },
+  {
+    "slug": "graphics-design",
+    "category": "design",
+    "category_label": "Design",
+    "icon": "palette",
+    "title": "Graphics Design",
+    "tagline": "Visual identity that actually gets remembered after the meeting ends.",
+    "cover_stat": { "value": "300+", "label": "Designs delivered" },
+    "overview": "From brand identity to marketing collateral and social creative, our design team builds visual systems that stay consistent across every touchpoint — not a one-off logo with no guidance on how to use it.",
+    "features": [
+      "Full brand identity systems including logo, color and typography",
+      "Marketing collateral: brochures, decks, ads and social templates",
+      "Style guides so consistency holds after we hand off",
+      "Print-ready and web-ready file delivery"
+    ],
+    "process": [
+      { "title": "Brand Discovery", "desc": "We learn your audience, competitors and the feeling the brand needs to land." },
+      { "title": "Concept Directions", "desc": "Two to three distinct visual directions presented before we commit to one." },
+      { "title": "Refinement", "desc": "The chosen direction is refined across your key applications and formats." },
+      { "title": "Delivery & Guide", "desc": "Final files plus a usage guide so your team stays consistent going forward." }
+    ],
+    "tools": ["Figma", "Adobe Illustrator", "Photoshop", "Adobe XD", "Canva"],
+    "pricing": [
+      { "tier": "Refresh", "price": "$1,200+", "desc": "A focused update to existing brand assets.", "features": ["Logo refinement", "Color & type system", "Basic brand sheet"] },
+      { "tier": "Full Identity", "price": "$4,500+", "desc": "A complete brand identity built from scratch.", "features": ["Full logo suite", "Brand guideline document", "Core collateral templates"] },
+      { "tier": "Ongoing Design", "price": "Custom", "desc": "A retainer for continuous marketing design needs.", "features": ["Monthly design capacity", "Priority turnaround", "Dedicated designer"] }
+    ],
+    "faqs": [
+      { "q": "Do you design logos as a standalone service?", "a": "Yes, though we recommend pairing it with a brand guideline so the logo is used consistently across your materials." },
+      { "q": "What files do we receive at the end?", "a": "Editable source files, print-ready exports, and web-optimized formats — plus a style guide covering usage." },
+      { "q": "Can you work from an existing logo we want to keep?", "a": "Yes, we can build a full identity system around an existing mark without changing it." }
+    ],
+    "testimonial": { "quote": "The brand guide alone saved our internal team hours every month — everyone finally uses the same colors and fonts.", "author": "Client Name", "role": "Brand Manager, Partner Company" }
+  },
+  {
+    "slug": "content-writer",
+    "category": "marketing",
+    "category_label": "Marketing",
+    "icon": "edit",
+    "title": "Content Writer",
+    "tagline": "Copy that reads like a person wrote it — because one did.",
+    "cover_stat": { "value": "1.2K+", "label": "Pieces published" },
+    "overview": "Website copy, blog articles, product descriptions and email sequences written by people who research your industry first. Every piece is built around search intent and your actual voice, not generic filler.",
+    "features": [
+      "SEO-researched blog and article writing",
+      "Website and landing page copywriting",
+      "Product descriptions at scale for e-commerce catalogs",
+      "Editorial calendar planning and publishing support"
+    ],
+    "process": [
+      { "title": "Voice & Keyword Research", "desc": "We study your existing content and target keywords before writing anything." },
+      { "title": "Outline Approval", "desc": "You review and approve outlines before full drafts are written, saving revision cycles." },
+      { "title": "Draft & Edit", "desc": "Every piece passes through a second editor before it reaches you." },
+      { "title": "Publish & Track", "desc": "We can publish directly to your CMS and track performance against your goals." }
+    ],
+    "tools": ["SEO research", "Grammarly", "SurferSEO", "CMS publishing", "Style guides"],
+    "pricing": [
+      { "tier": "Starter", "price": "$400+/mo", "desc": "A steady stream of blog content.", "features": ["4 articles per month", "Keyword research included", "One revision round"] },
+      { "tier": "Growth", "price": "$1,200+/mo", "desc": "Full content coverage across channels.", "features": ["12+ articles per month", "Website & landing page copy", "Editorial calendar management"] },
+      { "tier": "Enterprise", "price": "Custom", "desc": "Large-scale content operations.", "features": ["Dedicated writing team", "Multi-brand voice guidelines", "Direct CMS publishing"] }
+    ],
+    "faqs": [
+      { "q": "How do you make sure the writing sounds like our brand?", "a": "We build a voice guide from your existing content before writing anything new, and review it with you before scaling up." },
+      { "q": "Do you handle SEO keyword research?", "a": "Yes, every article starts with keyword and competitor research to target realistic, high-intent search terms." },
+      { "q": "Can you publish directly to our website?", "a": "Yes, if we have CMS access we can publish, format and schedule content for you directly." }
+    ],
+    "testimonial": { "quote": "Our organic traffic doubled in five months once we stopped writing blog posts ourselves and handed it to their team.", "author": "Client Name", "role": "Head of Growth, Partner Company" }
+  },
+  {
+    "slug": "custom-software-development",
+    "category": "development",
+    "category_label": "Development",
+    "icon": "code",
+    "title": "Custom Software",
+    "tagline": "Bespoke systems built around how your business actually runs.",
+    "cover_stat": { "value": "85+", "label": "Custom systems built" },
+    "overview": "When off-the-shelf software forces your team to work around its limitations, we build something purpose-built instead — internal tools, workflow automation, or full platforms designed around your actual process.",
+    "features": [
+      "Requirements mapped to your real workflows, not generic templates",
+      "Scalable architecture designed for growth from day one",
+      "Integrations with your existing tools and data sources",
+      "Documentation and training so your team can operate it confidently"
+    ],
+    "process": [
+      { "title": "Process Mapping", "desc": "We shadow your current workflow to understand what the software actually needs to solve." },
+      { "title": "Architecture Design", "desc": "A technical plan reviewed with your team before development starts." },
+      { "title": "Iterative Build", "desc": "Features delivered in usable increments so you can test as we go, not just at the end." },
+      { "title": "Deployment & Training", "desc": "Rollout support and hands-on training for the team who'll use it daily." }
+    ],
+    "tools": ["Node.js", "Python", "PostgreSQL", "Docker", "AWS"],
+    "pricing": [
+      { "tier": "Focused Tool", "price": "$10,000+", "desc": "A single-purpose internal tool or automation.", "features": ["One core workflow", "Basic user roles", "Standard hosting setup"] },
+      { "tier": "Platform Build", "price": "$35,000+", "desc": "A multi-feature internal or client-facing platform.", "features": ["Multiple modules & roles", "Third-party integrations", "Scalable cloud architecture"] },
+      { "tier": "Enterprise", "price": "Custom", "desc": "Mission-critical systems with complex compliance needs.", "features": ["Custom compliance requirements", "Dedicated engineering pod", "Ongoing SLA-backed support"] }
+    ],
+    "faqs": [
+      { "q": "How is this different from buying off-the-shelf software?", "a": "Off-the-shelf tools solve the average case; custom software is built around your specific workflow, so your team stops working around the tool's limitations." },
+      { "q": "Who owns the code once it's built?", "a": "You do, entirely — source code, documentation and infrastructure configuration all transfer at handover." },
+      { "q": "Can this integrate with the tools we already use?", "a": "Yes, integration with your existing stack is scoped as part of the architecture phase." }
+    ],
+    "testimonial": { "quote": "We replaced four spreadsheets and a dozen manual steps with one internal tool. It paid for itself within the first quarter.", "author": "Client Name", "role": "Operations Lead, Partner Company" }
+  },
+  {
+    "slug": "technical-support-maintenance",
+    "category": "support",
+    "category_label": "Support",
+    "icon": "wrench",
+    "title": "Technical Support & Maintenance",
+    "tagline": "Round-the-clock monitoring so small issues stay small.",
+    "cover_stat": { "value": "99.9%", "label": "Average uptime" },
+    "overview": "Ongoing monitoring, patching and support for websites, applications and infrastructure — whether we built the system originally or you're bringing us in to take over an existing one.",
+    "features": [
+      "24/7 uptime and performance monitoring",
+      "Security patching and dependency updates",
+      "Scheduled backups with tested recovery points",
+      "Direct access to engineers, not a generic ticket queue"
+    ],
+    "process": [
+      { "title": "System Audit", "desc": "We review your current stack, risks and existing monitoring before onboarding." },
+      { "title": "Monitoring Setup", "desc": "Alerts and dashboards configured around your actual failure points." },
+      { "title": "Ongoing Maintenance", "desc": "Regular patching, backups and health checks run on a set schedule." },
+      { "title": "Incident Response", "desc": "A documented SLA for how quickly issues are acknowledged and resolved." }
+    ],
+    "tools": ["Datadog", "PagerDuty", "Zendesk", "AWS CloudWatch", "Jira"],
+    "pricing": [
+      { "tier": "Essential", "price": "$300+/mo", "desc": "Monitoring and patching for a single application.", "features": ["Uptime monitoring", "Monthly security patching", "Business-hours support"] },
+      { "tier": "Managed", "price": "$900+/mo", "desc": "Full managed support with faster response times.", "features": ["24/7 monitoring & alerts", "Weekly backups & testing", "4-hour response SLA"] },
+      { "tier": "Enterprise", "price": "Custom", "desc": "Mission-critical infrastructure with dedicated coverage.", "features": ["Dedicated support engineer", "1-hour critical response SLA", "Quarterly infrastructure review"] }
+    ],
+    "faqs": [
+      { "q": "Do you support systems you didn't originally build?", "a": "Yes, we regularly take over maintenance for existing systems after an initial audit to understand the codebase and infrastructure." },
+      { "q": "What counts as a critical incident?", "a": "Anything causing downtime or data loss risk. Response times for critical issues are defined in your SLA before onboarding." },
+      { "q": "How often are backups tested?", "a": "Backup restores are tested on a monthly basis as part of the Managed and Enterprise plans." }
+    ],
+    "testimonial": { "quote": "We haven't had an unplanned outage since moving our monitoring over to their team eighteen months ago.", "author": "Client Name", "role": "IT Manager, Partner Company" }
+  },
+  {
+    "slug": "uiux-graphics-design",
+    "category": "design",
+    "category_label": "Design",
+    "icon": "pen-ruler",
+    "title": "UI/UX & Graphics Design",
+    "tagline": "Interfaces people navigate without thinking twice.",
+    "cover_stat": { "value": "150+", "label": "Products designed" },
+    "overview": "User research, wireframing and interface design for web and mobile products. We design for the decisions users actually need to make, validated with real usability testing rather than assumptions.",
+    "features": [
+      "User research and journey mapping before any screens are drawn",
+      "Wireframes and interactive prototypes for early validation",
+      "Full UI design systems built for consistency at scale",
+      "Usability testing to catch friction before development starts"
+    ],
+    "process": [
+      { "title": "Research", "desc": "User interviews and journey mapping to understand real behavior, not assumptions." },
+      { "title": "Wireframes", "desc": "Low-fidelity structure agreed on before visual design begins." },
+      { "title": "UI Design", "desc": "A full design system applied consistently across every screen." },
+      { "title": "Usability Testing", "desc": "Real users test the prototype before it goes to development." }
+    ],
+    "tools": ["Figma", "Adobe XD", "Maze", "Framer", "Zeplin"],
+    "pricing": [
+      { "tier": "Design Sprint", "price": "$3,000+", "desc": "A focused 2-week sprint to validate one core flow.", "features": ["User research session", "Clickable prototype", "One round of testing"] },
+      { "tier": "Full Product Design", "price": "$12,000+", "desc": "End-to-end design for a full product.", "features": ["Complete design system", "All core user flows", "Usability testing included"] },
+      { "tier": "Ongoing Design Partner", "price": "Custom", "desc": "Continuous design support as your product grows.", "features": ["Dedicated product designer", "Monthly design reviews", "Design system maintenance"] }
+    ],
+    "faqs": [
+      { "q": "Do you do user research or just visual design?", "a": "Both — we start with research and journey mapping before any screens are designed, so decisions are based on real user behavior." },
+      { "q": "Can you work alongside our in-house developers?", "a": "Yes, we regularly hand off design systems and specs to in-house or third-party development teams." },
+      { "q": "How is UI/UX different from your Graphics Design service?", "a": "Graphics Design covers brand and marketing visuals; UI/UX focuses specifically on product interfaces and user flows." }
+    ],
+    "testimonial": { "quote": "Usability testing caught three major friction points before we ever wrote a line of code. That alone saved months.", "author": "Client Name", "role": "Product Lead, Partner Company" }
+  },
+  {
+    "slug": "ecommerce-development",
+    "category": "development",
+    "category_label": "Development",
+    "icon": "cart",
+    "title": "E-Commerce Development",
+    "tagline": "Storefronts engineered to turn browsers into buyers.",
+    "cover_stat": { "value": "60+", "label": "Stores launched" },
+    "overview": "Custom and platform-based online stores built for conversion, not just checkout functionality — including catalog structure, payment integration, and performance tuning for high-traffic sale periods.",
+    "features": [
+      "Store builds on Shopify, WooCommerce or Magento",
+      "Custom checkout and payment gateway integration",
+      "Catalog and inventory structuring for scale",
+      "Performance tuning for high-traffic sales events"
+    ],
+    "process": [
+      { "title": "Catalog & Platform Planning", "desc": "We assess your catalog size and complexity to recommend the right platform." },
+      { "title": "Store Design", "desc": "A conversion-focused storefront design built around your product photography and brand." },
+      { "title": "Build & Integrate", "desc": "Payments, shipping and inventory systems integrated and tested end to end." },
+      { "title": "Launch & Optimize", "desc": "Post-launch monitoring and conversion-rate optimization based on real customer data." }
+    ],
+    "tools": ["Shopify", "WooCommerce", "Magento", "Stripe", "BigCommerce"],
+    "pricing": [
+      { "tier": "Launch", "price": "$4,000+", "desc": "A platform-based store for smaller catalogs.", "features": ["Up to 100 products", "Standard payment integration", "Mobile-optimized design"] },
+      { "tier": "Growth", "price": "$12,000+", "desc": "Custom storefront with advanced features.", "features": ["Custom theme development", "Advanced inventory management", "Multi-channel integration"] },
+      { "tier": "Enterprise", "price": "Custom", "desc": "High-volume stores with complex requirements.", "features": ["Headless commerce architecture", "Custom ERP integration", "Dedicated performance monitoring"] }
+    ],
+    "faqs": [
+      { "q": "Which platform should we use — Shopify, WooCommerce or Magento?", "a": "It depends on catalog size and customization needs. We recommend the right fit after reviewing your product range and growth plans." },
+      { "q": "Can you migrate our existing store without losing SEO rankings?", "a": "Yes, migrations include a redirect and SEO preservation plan as standard." },
+      { "q": "How do you handle high-traffic events like sales or launches?", "a": "We load-test storefronts ahead of major sales events and configure caching and scaling to handle traffic spikes." }
+    ],
+    "testimonial": { "quote": "Our site stayed up through Black Friday without a single slowdown, which had crashed our old platform two years running.", "author": "Client Name", "role": "E-Commerce Manager, Partner Company" }
+  },
+  {
+    "slug": "digital-marketing",
+    "category": "marketing",
+    "category_label": "Marketing",
+    "icon": "megaphone",
+    "title": "Digital Marketing",
+    "tagline": "Growth channels that are measured, not guessed at.",
+    "cover_stat": { "value": "2.5K+", "label": "Businesses empowered" },
+    "overview": "Paid search, paid social, SEO and marketing analytics run as one connected strategy — not siloed channels reporting different numbers. Every campaign ties back to a business outcome you actually care about.",
+    "features": [
+      "Paid search and paid social campaign management",
+      "Technical and content SEO",
+      "Marketing analytics and attribution reporting",
+      "Conversion rate optimization for landing pages"
+    ],
+    "process": [
+      { "title": "Audit & Strategy", "desc": "A full audit of existing channels and performance before recommending a plan." },
+      { "title": "Campaign Setup", "desc": "Campaigns built with clear goals and tracking in place from day one." },
+      { "title": "Optimize", "desc": "Ongoing testing and budget reallocation based on real performance data." },
+      { "title": "Report & Review", "desc": "Monthly reporting tied to the business outcomes that matter to you, not vanity metrics." }
+    ],
+    "tools": ["Google Ads", "Meta Ads", "SEMrush", "GA4", "HubSpot"],
+    "pricing": [
+      { "tier": "Starter", "price": "$800+/mo", "desc": "A single-channel campaign to start generating leads.", "features": ["One ad platform managed", "Monthly performance report", "Basic conversion tracking"] },
+      { "tier": "Growth", "price": "$2,500+/mo", "desc": "Multi-channel strategy across paid and organic.", "features": ["Paid + SEO combined strategy", "Landing page optimization", "Bi-weekly reporting"] },
+      { "tier": "Enterprise", "price": "Custom", "desc": "Full-funnel marketing operations at scale.", "features": ["Dedicated marketing strategist", "Custom attribution modeling", "Quarterly strategy reviews"] }
+    ],
+    "faqs": [
+      { "q": "How long before we see results from SEO?", "a": "Meaningful organic movement typically takes 3-6 months, depending on your site's current authority and competition." },
+      { "q": "Do you require a long-term contract?", "a": "Most clients start with a 3-month initial commitment to allow campaigns time to optimize, then move month-to-month." },
+      { "q": "What do your reports actually include?", "a": "Reports are tied to business outcomes — leads, revenue or signups — not just impressions or clicks." }
+    ],
+    "testimonial": { "quote": "We finally have one report that ties ad spend directly to revenue instead of three different dashboards that never agreed.", "author": "Client Name", "role": "CMO, Partner Company" }
+  }
+]

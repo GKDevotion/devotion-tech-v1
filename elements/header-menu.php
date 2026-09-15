@@ -41,27 +41,57 @@
             </div>
           </li>
 
+          <?php
+              // Reads the same data file used by services.php / service-detail.php.
+              // Adjust the path if elements/header.php sits somewhere other than one level under your site root.
+              $navServicesPath = dirname(__DIR__) . '/data/services.json';
+              $navServices = [];
+              if (file_exists($navServicesPath)) {
+                  $navDecoded = json_decode(file_get_contents($navServicesPath), true);
+                  if (is_array($navDecoded)) {
+                      $navServices = $navDecoded;
+                  }
+              }
+
+              // Maps each service's "icon" key (from services.json) to a Bootstrap Icons class
+              $navIconMap = [
+                  'globe'     => 'bi-globe2',
+                  'device'    => 'bi-phone',
+                  'palette'   => 'bi-palette2',
+                  'edit'      => 'bi-pencil-square',
+                  'code'      => 'bi-code-slash',
+                  'wrench'    => 'bi-tools',
+                  'pen-ruler' => 'bi-vector-pen',
+                  'cart'      => 'bi-cart4',
+                  'megaphone' => 'bi-megaphone-fill',
+              ];
+          ?>
+
           <!-- Services -->
           <li class="nav-item dropdown mega-dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void();" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-gear-fill nav-icon"></i> Services
-            </a>
-            <div class="dropdown-menu mega-panel mega-panel-sm p-0">
-              <div class="mega-panel-header">
-                <i class="bi bi-gear-fill"></i> Services
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-gear-fill nav-icon"></i> Services
+              </a>
+              <div class="dropdown-menu mega-panel mega-panel-sm p-0">
+                  <div class="mega-panel-header">
+                      <i class="bi bi-gear-fill"></i> Services
+                  </div>
+                  <ul class="mega-list">
+                      <?php foreach ($navServices as $navService): ?>
+                          <?php $navIcon = $navIconMap[$navService['icon']] ?? 'bi-gear'; ?>
+                          <li>
+                              <a href="service-detail.php?slug=<?php echo urlencode($navService['slug']); ?>">
+                                  <i class="bi <?php echo $navIcon; ?>"></i>
+                                  <?php echo htmlspecialchars($navService['title']); ?>
+                                  <i class="bi bi-chevron-right ms-auto"></i>
+                              </a>
+                          </li>
+                      <?php endforeach; ?>
+                      <li class="mega-list-footer">
+                          <a href="services.php">View All Services <i class="bi bi-arrow-right ms-1"></i></a>
+                      </li>
+                  </ul>
               </div>
-              <ul class="mega-list">
-                <li><a href="javascript:void();"><i class="bi bi-globe2"></i> Web Development <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-phone"></i> App Development <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-palette2"></i> Graphics Design <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-pencil-square"></i> Content Writer <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-code-slash"></i> Custom Software Development <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-tools"></i> Technical Support &amp; Maintenance <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-vector-pen"></i> UI/UX &amp; Graphics Design <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-cart4"></i> E-Commerce Development <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-megaphone-fill"></i> Digital Marketing <i class="bi bi-chevron-right ms-auto"></i></a></li>
-              </ul>
-            </div>
           </li>
 
           <!-- E-SHOP -->
