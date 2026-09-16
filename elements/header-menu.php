@@ -94,7 +94,7 @@
               </div>
           </li>
 
-          <!-- E-SHOP -->
+<!-- E-SHOP -->
           <li class="nav-item dropdown mega-dropdown mega-dropdown-wide">
             <!-- <a class="nav-link dropdown-toggle" href="javascript:void();" data-bs-toggle="dropdown" data-bs-display="static"> -->
             <a class="nav-link dropdown-toggle" href="javascript:void();" data-bs-toggle="dropdown">
@@ -120,11 +120,12 @@
                       <i class="bi bi-truck"></i> Operations &amp; Logistics
                     </div>
                     <ul class="mega-list">
-                      <li><a href="javascript:void();"><i class="bi bi-box-seam"></i><span><b>WMS</b><small>Warehouse Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-clipboard-data"></i><span><b>IMS</b><small>Inventory Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-receipt"></i><span><b>OMS</b><small>Order Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-diagram-3"></i><span><b>SCM</b><small>Supply Chain Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-truck-flatbed"></i><span><b>TMS</b><small>Transportation Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="operations-logistics-detail.php?slug=wms"><i class="bi bi-box-seam"></i><span><b>WMS</b><small>Warehouse Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="operations-logistics-detail.php?slug=ims"><i class="bi bi-clipboard-data"></i><span><b>IMS</b><small>Inventory Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="operations-logistics-detail.php?slug=oms"><i class="bi bi-receipt"></i><span><b>OMS</b><small>Order Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="operations-logistics-detail.php?slug=scm"><i class="bi bi-diagram-3"></i><span><b>SCM</b><small>Supply Chain Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="operations-logistics-detail.php?slug=tms"><i class="bi bi-truck-flatbed"></i><span><b>TMS</b><small>Transportation Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="operations-logistics.php"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Operations &amp; Logistics Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -141,15 +142,15 @@
                       <i class="bi bi-megaphone"></i> Sales &amp; Marketing
                     </div>
                     <ul class="mega-list">
-                      <li><a href="javascript:void();"><i class="bi bi-shop"></i><span><b>POS</b><small>Point of Sale Systems</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-tag"></i><span><b>PIM</b><small>Product Information Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-layout-text-window"></i><span><b>CMS</b><small>Content Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-person-lines-fill"></i><span><b>CDP</b><small>Customer Data Platform</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-envelope-paper"></i><span><b>ESP</b><small>Email Service Provider Automation</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-person-badge"></i><span><b>CRM</b><small>Customer Relation Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-person-workspace"></i><span><b>HRMS</b><small>Human Resource Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-currency-exchange"></i><span><b>Forex CRM</b><small>Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-cloud-check"></i><span><b>SAAS</b><small>Software as a Service Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=pos"><i class="bi bi-shop"></i><span><b>POS</b><small>Point of Sale Systems</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=pim"><i class="bi bi-tag"></i><span><b>PIM</b><small>Product Information Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=cms"><i class="bi bi-layout-text-window"></i><span><b>CMS</b><small>Content Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=cdp"><i class="bi bi-person-lines-fill"></i><span><b>CDP</b><small>Customer Data Platform</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=esp"><i class="bi bi-envelope-paper"></i><span><b>ESP</b><small>Email Service Provider Automation</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=crm"><i class="bi bi-person-badge"></i><span><b>CRM</b><small>Customer Relation Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=hrms"><i class="bi bi-person-workspace"></i><span><b>HRMS</b><small>Human Resource Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=forex-crm"><i class="bi bi-currency-exchange"></i><span><b>Forex CRM</b><small>Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="sales-marketing-detail.php?slug=saas"><i class="bi bi-cloud-check"></i><span><b>SAAS</b><small>Software as a Service Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -166,10 +167,11 @@
                       <i class="bi bi-graph-up-arrow"></i> Finance &amp; Analytics
                     </div>
                     <ul class="mega-list">
-                      <li><a href="javascript:void();"><i class="bi bi-bank"></i><span><b>ERP</b><small>Enterprise Resource Planning</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-bar-chart-line"></i><span><b>BI</b><small>Business Intelligence &amp; Analytics</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-receipt-cutoff"></i><span><b>Billing</b><small>Subscription &amp; Invoicing Engines</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-credit-card"></i><span><b>PayGate</b><small>Payment Gateway Integrations</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="finance-analytics-detail.php?slug=erp"><i class="bi bi-bank"></i><span><b>ERP</b><small>Enterprise Resource Planning</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="finance-analytics-detail.php?slug=bi"><i class="bi bi-bar-chart-line"></i><span><b>BI</b><small>Business Intelligence &amp; Analytics</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="finance-analytics-detail.php?slug=billing"><i class="bi bi-receipt-cutoff"></i><span><b>Billing</b><small>Subscription &amp; Invoicing Engines</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="finance-analytics-detail.php?slug=paygate"><i class="bi bi-credit-card"></i><span><b>PayGate</b><small>Payment Gateway Integrations</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="finance-analytics.php"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Finance &amp; Analytics Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -186,15 +188,17 @@
                       <i class="bi bi-headset"></i> Customer Support
                     </div>
                     <ul class="mega-list">
-                      <li><a href="javascript:void();"><i class="bi bi-life-preserver"></i><span><b>Helpdesk</b><small>Ticketing &amp; Support Systems</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="javascript:void();"><i class="bi bi-chat-dots"></i><span><b>LiveChat</b><small>AI Bots &amp; Live Chat Tools</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="customer-support-detail.php?slug=helpdesk"><i class="bi bi-life-preserver"></i><span><b>Helpdesk</b><small>Ticketing &amp; Support Systems</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="customer-support-detail.php?slug=livechat"><i class="bi bi-chat-dots"></i><span><b>LiveChat</b><small>AI Bots &amp; Live Chat Tools</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="customer-support.php"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Customer Support Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                   </div>
                 </div>
 
               </div>
             </div>
-          </li> 
+          </li>
+          
           <!-- Technology -->
           <li class="nav-item dropdown mega-dropdown">
             <a class="nav-link dropdown-toggle" href="javascript:void();" data-bs-toggle="dropdown" aria-expanded="false">

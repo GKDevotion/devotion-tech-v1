@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "helpdesk",
+    "abbr": "Helpdesk",
+    "icon": "headset",
+    "title": "Helpdesk & Ticketing System",
+    "tagline": "Every support request tracked, assigned and resolved — nothing left buried in an inbox.",
+    "cover_stat": { "value": "-46%", "label": "First response time" },
+    "overview": "A helpdesk turns support emails, chats and calls into tracked tickets with a clear owner, a status and a deadline — replacing the shared inbox where requests quietly go unanswered because nobody was technically responsible for them.",
+    "features": [
+      "Omnichannel ticket intake — email, chat, phone and social in one queue",
+      "Automated ticket routing and priority assignment",
+      "SLA tracking with escalation alerts before deadlines slip",
+      "Knowledge base and customer self-service portal",
+      "Canned responses and macros for common requests",
+      "Agent performance and ticket volume reporting"
+    ],
+    "integrations": ["LiveChat", "CRM Platforms", "OMS", "Knowledge Base Tools", "Telephony Systems"],
+    "process": [
+      { "title": "Support Workflow Audit", "desc": "We map how requests currently arrive, who handles them and where things tend to stall." },
+      { "title": "Queue & Routing Setup", "desc": "Ticket queues, priority rules and auto-assignment are configured around your actual team structure." },
+      { "title": "Knowledge Base Migration", "desc": "Existing help docs and FAQs are migrated and organized into a searchable self-service portal." },
+      { "title": "Go-Live & Agent Training", "desc": "We train your support team on the new workflow and tune SLA rules based on real ticket patterns." }
+    ],
+    "benefits": [
+      { "title": "Faster first response", "desc": "Automated routing gets tickets to the right agent immediately instead of sitting unclaimed in a shared inbox." },
+      { "title": "Nothing falls through the cracks", "desc": "Every request becomes a tracked ticket with an owner and a status, so none quietly go unanswered." },
+      { "title": "Clear accountability per ticket", "desc": "SLA tracking and escalation alerts mean a stalled ticket gets flagged before the customer has to chase it." }
+    ],
+    "faqs": [
+      { "q": "Can it handle support requests from multiple channels?", "a": "Yes — email, live chat, phone and social messages all land in one unified queue rather than separate inboxes." },
+      { "q": "Can customers find answers without contacting an agent?", "a": "Yes, the self-service knowledge base is searchable and can resolve common questions before a ticket is ever created." },
+      { "q": "How are SLA breaches handled?", "a": "Escalation alerts notify the relevant manager before a deadline is missed, not after, so there's time to react." }
+    ],
+    "testimonial": { "quote": "Tickets used to disappear into a shared inbox and nobody owned them. Now every request has a name attached and a clock running.", "author": "Client Name", "role": "Support Operations Manager, Partner Company" }
+  },
+  {
+    "slug": "livechat",
+    "abbr": "LiveChat",
+    "icon": "chat",
+    "title": "Live Chat & Messaging",
+    "tagline": "Answer the question a customer has right now, not an hour after they've already left.",
+    "cover_stat": { "value": "+31%", "label": "Conversion on chatted sessions" },
+    "overview": "Live chat puts a real-time conversation directly on your storefront and app, so a customer with a question before checkout gets an answer in the moment instead of abandoning the cart to go email support and wait.",
+    "features": [
+      "Real-time website and in-app chat widget",
+      "Proactive chat triggers based on visitor behavior",
+      "Chatbot deflection for common, repetitive questions",
+      "Seamless handoff from bot to human agent mid-conversation",
+      "Multi-agent queue with skill-based chat routing",
+      "Chat transcripts synced automatically to the helpdesk"
+    ],
+    "integrations": ["Helpdesk", "CRM Platforms", "OMS", "Chatbot & AI Platforms", "Marketing Tools"],
+    "process": [
+      { "title": "Chat Flow Audit", "desc": "We review your current support channels and where customers tend to abandon before reaching a human." },
+      { "title": "Widget & Trigger Setup", "desc": "The chat widget and proactive triggers are configured for the pages and moments that matter most to conversion." },
+      { "title": "Bot & Routing Configuration", "desc": "Chatbot deflection handles repetitive questions, with clear handoff rules for when a human agent should step in." },
+      { "title": "Go-Live & Agent Training", "desc": "We train agents on the queue and tune bot responses based on real conversations in the first weeks." }
+    ],
+    "benefits": [
+      { "title": "Fewer abandoned carts", "desc": "A question answered in real time at checkout is a sale kept, instead of a cart abandoned while waiting on email." },
+      { "title": "Faster resolution for simple questions", "desc": "Chatbot deflection closes out common questions instantly, freeing agents for the conversations that actually need a person." },
+      { "title": "Better conversion from live engagement", "desc": "Proactive triggers reach hesitant visitors at the right moment instead of waiting for them to seek out a contact form." }
+    ],
+    "faqs": [
+      { "q": "Does the chatbot replace human agents entirely?", "a": "No — the bot deflects common, repetitive questions and hands off to a human agent the moment a conversation needs one." },
+      { "q": "Can chat transcripts be reviewed later?", "a": "Yes, every conversation syncs to the helpdesk automatically, so there's a full record tied to that customer's ticket history." },
+      { "q": "Can we control when the chat widget appears?", "a": "Yes, proactive triggers are configurable by page, time on site or visitor behavior, so chat shows up when it's actually useful." }
+    ],
+    "testimonial": { "quote": "We used to lose people at checkout over questions that took thirty seconds to answer. Now someone's there before they even think about leaving.", "author": "Client Name", "role": "Customer Experience Lead, Partner Company" }
+  }
+]

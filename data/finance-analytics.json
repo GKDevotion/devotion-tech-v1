@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "erp",
+    "abbr": "ERP",
+    "icon": "bank",
+    "title": "Enterprise Resource Planning",
+    "tagline": "One system of record for finance, operations and everything in between.",
+    "cover_stat": { "value": "-41%", "label": "Month-end close time" },
+    "overview": "An ERP replaces the patchwork of spreadsheets and disconnected tools with a single system of record — general ledger, procurement, inventory and reporting all pulling from the same data, so finance and operations are never working off different numbers.",
+    "features": [
+      "General ledger and chart of accounts management",
+      "Multi-entity and multi-currency consolidation",
+      "Accounts payable and receivable automation",
+      "Budgeting, forecasting and financial planning tools",
+      "Role-based approval and audit workflows",
+      "Real-time financial dashboards across departments"
+    ],
+    "integrations": ["BI", "Billing", "PayGate", "Banking APIs", "Payroll Systems"],
+    "process": [
+      { "title": "Financial Systems Assessment", "desc": "We map your current chart of accounts, entities and approval chains before recommending a configuration." },
+      { "title": "System Configuration", "desc": "Modules, workflows and permission levels are configured to match how your finance team actually operates." },
+      { "title": "Data Migration & Validation", "desc": "Historical financial data is migrated and reconciled against source records before go-live." },
+      { "title": "Go-Live & Close Support", "desc": "We support your team through the first full month-end close and tune workflows based on what surfaces." }
+    ],
+    "benefits": [
+      { "title": "One source of financial truth", "desc": "Finance, operations and leadership all report from the same live numbers instead of reconciling spreadsheets." },
+      { "title": "Faster financial close", "desc": "Automated postings and approval routing remove the manual chasing that stretches month-end into weeks." },
+      { "title": "Fewer reconciliation errors", "desc": "Multi-entity and multi-currency consolidation happens automatically instead of in a shared workbook." }
+    ],
+    "faqs": [
+      { "q": "Can an ERP integrate with our existing accounting software?", "a": "In most cases yes — we assess your current stack during the assessment phase and plan either a migration or an integration, whichever fits your data better." },
+      { "q": "Does it support multiple entities and currencies?", "a": "Yes, multi-entity and multi-currency consolidation is a core capability, not a paid add-on." },
+      { "q": "Is our historical financial data safe during migration?", "a": "Yes — data is migrated to a staging environment and reconciled against your source records before anything goes live." }
+    ],
+    "testimonial": { "quote": "Month-end used to take three weeks and a spreadsheet nobody fully trusted. Now finance closes in days, off numbers everyone agrees on.", "author": "Client Name", "role": "Finance Director, Partner Company" }
+  },
+  {
+    "slug": "bi",
+    "abbr": "BI",
+    "icon": "chart",
+    "title": "Business Intelligence & Analytics",
+    "tagline": "Turn scattered data into decisions you can actually act on.",
+    "cover_stat": { "value": "3.2x", "label": "Faster reporting turnaround" },
+    "overview": "A BI platform pulls data out of every system you run — ERP, billing, sales, operations — and turns it into dashboards people actually check, replacing the monthly export-and-pivot-table ritual with numbers that update themselves.",
+    "features": [
+      "Custom dashboards and KPI tracking by department",
+      "Drag-and-drop report builder for non-technical users",
+      "Automated data refresh from every connected system",
+      "Predictive analytics and trend forecasting",
+      "Role-based data access and permissioning",
+      "Scheduled report distribution by email or Slack"
+    ],
+    "integrations": ["ERP", "Billing", "PayGate", "Data Warehouses", "CRM Platforms"],
+    "process": [
+      { "title": "Data Source Audit", "desc": "We catalog every system holding data worth reporting on, and assess how clean and consistent that data actually is." },
+      { "title": "Dashboard Design", "desc": "Dashboards are built around the specific decisions each team needs to make, not a generic template." },
+      { "title": "Integration & Automation", "desc": "Every data source is connected and refresh schedules are set so dashboards stay current without manual exports." },
+      { "title": "Go-Live & Training", "desc": "We train each team on their dashboards and tune what's shown based on what they actually use in the first weeks." }
+    ],
+    "benefits": [
+      { "title": "Faster, better decisions", "desc": "Leadership sees current numbers instead of a report that was accurate two weeks ago when it was pulled." },
+      { "title": "Hours back from manual reporting", "desc": "Dashboards that update themselves remove the recurring task of exporting and rebuilding the same spreadsheet." },
+      { "title": "One version of the truth", "desc": "Every department pulls from the same underlying data, so sales and finance stop arguing about whose number is right." }
+    ],
+    "faqs": [
+      { "q": "Can BI dashboards pull from systems you didn't build?", "a": "Yes — we regularly connect BI to third-party CRMs, marketplaces and legacy databases alongside the systems we build ourselves." },
+      { "q": "Do non-technical staff need help building reports?", "a": "The drag-and-drop builder is designed for business users, though we're happy to build the first set of dashboards for you directly." },
+      { "q": "How current is the data on the dashboards?", "a": "Refresh frequency is configurable per source, from real-time to scheduled intervals, depending on how time-sensitive that data actually is." }
+    ],
+    "testimonial": { "quote": "We used to spend the first two days of every month building the board deck. Now the numbers are already sitting there, current, when we open the dashboard.", "author": "Client Name", "role": "Head of Analytics, Partner Company" }
+  },
+  {
+    "slug": "billing",
+    "abbr": "Billing",
+    "icon": "invoice",
+    "title": "Subscription & Invoicing Engines",
+    "tagline": "Every invoice, subscription and renewal, handled automatically.",
+    "cover_stat": { "value": "-52%", "label": "Billing errors and disputes" },
+    "overview": "A billing engine automates recurring invoicing, subscription lifecycle changes and revenue recognition — so a customer upgrading, downgrading or cancelling mid-cycle is handled by the system correctly, instead of by someone manually prorating an invoice.",
+    "features": [
+      "Recurring, usage-based and hybrid billing models",
+      "Automated invoice generation and delivery",
+      "Subscription lifecycle management — upgrades, downgrades, cancellations",
+      "Dunning management for failed and late payments",
+      "Automated tax calculation and compliance",
+      "Revenue recognition reporting for accrual accounting"
+    ],
+    "integrations": ["ERP", "PayGate", "BI", "CRM Platforms", "Tax Compliance Services"],
+    "process": [
+      { "title": "Billing Model Audit", "desc": "We document your current plans, pricing tiers and proration rules before configuring anything." },
+      { "title": "Plan & Pricing Setup", "desc": "Subscription plans, usage tiers and proration logic are configured to match your actual pricing structure." },
+      { "title": "Payment & Tax Integration", "desc": "Billing is connected to your payment gateway and tax engine so invoices calculate and collect correctly the first time." },
+      { "title": "Go-Live & Reconciliation", "desc": "We monitor the first billing cycles closely and reconcile collected revenue against what was invoiced." }
+    ],
+    "benefits": [
+      { "title": "Fewer billing errors and disputes", "desc": "Automated proration and invoice generation remove the manual math that causes most billing complaints." },
+      { "title": "Less involuntary churn", "desc": "Dunning workflows retry and follow up on failed payments automatically, before a customer is lost to a card that just expired." },
+      { "title": "Clean, audit-ready revenue reporting", "desc": "Revenue recognition follows accounting standards automatically instead of being reconstructed at year-end." }
+    ],
+    "faqs": [
+      { "q": "Can it handle usage-based and tiered pricing, not just flat subscriptions?", "a": "Yes — usage-based, tiered and hybrid billing models are all core capabilities, not custom work." },
+      { "q": "What happens when a customer's payment fails?", "a": "A configurable dunning sequence retries the payment and notifies the customer automatically, with manual follow-up only for accounts that need it." },
+      { "q": "Does it calculate tax automatically?", "a": "Yes, tax calculation is integrated per region and updates automatically as tax rules change." }
+    ],
+    "testimonial": { "quote": "Failed payments used to just quietly turn into lost customers. Now the system chases them down before we even notice, and we keep the revenue.", "author": "Client Name", "role": "Revenue Operations Lead, Partner Company" }
+  },
+  {
+    "slug": "paygate",
+    "abbr": "PayGate",
+    "icon": "card",
+    "title": "Payment Gateway Integrations",
+    "tagline": "Accept payments anywhere, reconcile everywhere.",
+    "cover_stat": { "value": "-24%", "label": "Payment failure rate" },
+    "overview": "A payment gateway integration connects your storefront and billing system to the processors, banks and wallets your customers actually want to pay with — handling tokenization, fraud checks and settlement so a failed or fraudulent transaction is caught before it becomes a chargeback.",
+    "features": [
+      "Multi-gateway support (Stripe, PayPal, Razorpay and others)",
+      "PCI-DSS compliant card tokenization",
+      "Multi-currency and cross-border payment acceptance",
+      "Real-time fraud detection and risk scoring",
+      "Automated settlement reconciliation against your ledger",
+      "Smart retry logic for declined transactions"
+    ],
+    "integrations": ["Billing", "ERP", "OMS", "Fraud Detection Services", "Banking Networks"],
+    "process": [
+      { "title": "Payment Flow Audit", "desc": "We review your current checkout flow, gateways and decline rates before recommending changes." },
+      { "title": "Gateway Integration", "desc": "Your chosen gateways are integrated with tokenization and routing rules configured around cost and approval rates." },
+      { "title": "Security & Compliance Review", "desc": "PCI-DSS compliance and fraud rules are reviewed and tested before any live traffic runs through the integration." },
+      { "title": "Go-Live & Monitoring", "desc": "We monitor approval rates and settlement accuracy closely in the first weeks and tune fraud thresholds as needed." }
+    ],
+    "benefits": [
+      { "title": "Higher payment success rates", "desc": "Smart retry logic and multi-gateway routing recover transactions that would otherwise fail outright." },
+      { "title": "Reduced fraud exposure", "desc": "Real-time risk scoring flags suspicious transactions before they settle, instead of after a chargeback arrives." },
+      { "title": "Faster settlement reconciliation", "desc": "Payments reconcile automatically against your ledger instead of someone matching bank statements by hand." }
+    ],
+    "faqs": [
+      { "q": "Can we use more than one payment gateway at once?", "a": "Yes — multi-gateway routing is built in, so you can route by region, cost or approval rate rather than committing to a single processor." },
+      { "q": "Is card data stored on our servers?", "a": "No — card data is tokenized through PCI-DSS compliant vaulting, so sensitive payment data never touches your own infrastructure." },
+      { "q": "Does it support international customers?", "a": "Yes, including multi-currency acceptance and settlement, with routing configured around the gateways that perform best in each region." }
+    ],
+    "testimonial": { "quote": "Our decline rate dropped the moment retry logic and gateway routing went live. That's revenue we were simply losing before, for no good reason.", "author": "Client Name", "role": "Payments Manager, Partner Company" }
+  }
+]

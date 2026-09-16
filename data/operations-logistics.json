@@ -1,0 +1,177 @@
+[
+  {
+    "slug": "wms",
+    "abbr": "WMS",
+    "icon": "warehouse",
+    "title": "Warehouse Management System",
+    "tagline": "Know exactly what's on every shelf, in real time.",
+    "cover_stat": { "value": "99.7%", "label": "Inventory accuracy achieved" },
+    "overview": "A WMS replaces guesswork on the warehouse floor with a real-time system of record — every receipt, put-away, pick and pack tracked as it happens, not reconciled at the end of the day from a clipboard.",
+    "features": [
+      "Barcode and RFID-based receiving",
+      "Optimized put-away and slotting logic",
+      "Guided pick, pack and ship workflows",
+      "Cycle counting without halting operations",
+      "Multi-warehouse and multi-zone support",
+      "Real-time stock visibility on the floor and in the office"
+    ],
+    "integrations": ["IMS", "OMS", "TMS", "ERP Systems", "Barcode & RFID Scanners"],
+    "process": [
+      { "title": "Warehouse Audit", "desc": "We map your current layout, workflows and pain points before recommending any configuration." },
+      { "title": "System Configuration", "desc": "Zones, bin locations and workflows are configured to match how your warehouse actually operates." },
+      { "title": "Staff Training & Pilot", "desc": "A pilot run on one zone or shift lets staff adjust before the full switch." },
+      { "title": "Full Rollout & Support", "desc": "Full warehouse rollout with monitoring and adjustment support in the first weeks." }
+    ],
+    "benefits": [
+      { "title": "Fewer picking errors", "desc": "Guided, barcode-verified picking removes the most common source of shipping the wrong item." },
+      { "title": "Faster order turnaround", "desc": "Optimized pick paths and put-away logic cut the time between an order arriving and it leaving the dock." },
+      { "title": "Real-time stock accuracy", "desc": "What the system says is on the shelf is what's actually on the shelf, checked continuously rather than once a quarter." }
+    ],
+    "faqs": [
+      { "q": "Can a WMS work with our existing barcode scanners?", "a": "In most cases yes — we integrate with standard barcode and RFID hardware, and will flag upfront if your specific hardware needs a different approach." },
+      { "q": "Do we need to pause operations during rollout?", "a": "No — we run a pilot on one zone or shift first, so the rest of the warehouse keeps operating normally during the transition." },
+      { "q": "Can it handle multiple warehouse locations?", "a": "Yes, multi-warehouse support with per-location stock visibility is a core capability, not an add-on." }
+    ],
+    "testimonial": { "quote": "We went from a quarterly stock count nightmare to knowing our accuracy is above 99% every single day.", "author": "Client Name", "role": "Warehouse Operations Manager, Partner Company" }
+  },
+  {
+    "slug": "ims",
+    "abbr": "IMS",
+    "icon": "boxes",
+    "title": "Inventory Management System",
+    "tagline": "One accurate stock number, everywhere it's needed.",
+    "cover_stat": { "value": "-64%", "label": "Stockout incidents" },
+    "overview": "An IMS keeps stock levels synchronized across every warehouse, storefront and marketplace you sell on, so \"in stock\" means the same thing everywhere — instead of three different numbers depending on which system someone checks.",
+    "features": [
+      "Real-time stock sync across all sales channels",
+      "Low-stock alerts and automatic reorder points",
+      "Multi-location and multi-warehouse tracking",
+      "Batch, lot and expiry date tracking",
+      "Demand forecasting based on historical sales",
+      "SKU-level reporting and stock valuation"
+    ],
+    "integrations": ["WMS", "OMS", "POS Systems", "Marketplaces (Amazon, Shopify, eBay)", "ERP Systems"],
+    "process": [
+      { "title": "Stock Data Audit", "desc": "We reconcile your current stock records across every system before anything goes live." },
+      { "title": "Sync Rules Setup", "desc": "Reorder points, safety stock and sync frequency are configured around your actual sales velocity." },
+      { "title": "Multi-Channel Integration", "desc": "Every storefront and marketplace is connected so stock updates propagate in real time." },
+      { "title": "Go-Live & Monitoring", "desc": "We monitor sync accuracy closely in the first weeks and tune thresholds as needed." }
+    ],
+    "benefits": [
+      { "title": "Fewer stockouts and overselling", "desc": "Real-time sync across channels means you stop selling inventory you don't actually have." },
+      { "title": "Smarter reordering", "desc": "Automatic reorder points based on real velocity replace someone's gut feeling about when to reorder." },
+      { "title": "One number everyone trusts", "desc": "Warehouse staff, customer service and finance all look at the same stock figure." }
+    ],
+    "faqs": [
+      { "q": "How many sales channels can it sync with?", "a": "There's no hard limit — we've connected systems across a dozen simultaneous channels, from marketplaces to physical POS." },
+      { "q": "How fast does stock sync across channels?", "a": "Near real-time in most integrations, with sync frequency configurable per channel based on how each platform's API behaves." },
+      { "q": "Can it forecast demand or just track current stock?", "a": "Both — it tracks current stock in real time and uses historical sales data to suggest reorder timing and quantities." }
+    ],
+    "testimonial": { "quote": "Overselling on marketplaces was a constant headache before this. It's now something that just doesn't happen anymore.", "author": "Client Name", "role": "E-Commerce Manager, Partner Company" }
+  },
+  {
+    "slug": "oms",
+    "abbr": "OMS",
+    "icon": "clipboard",
+    "title": "Order Management System",
+    "tagline": "Every order tracked from click to delivery, on one screen.",
+    "cover_stat": { "value": "2.4x", "label": "Faster order processing" },
+    "overview": "An OMS pulls every order — regardless of which channel it came from — into a single dashboard, and automates the routing, splitting and status updates that used to require someone manually checking three different systems.",
+    "features": [
+      "Centralized order dashboard across all channels",
+      "Automated order routing to the right warehouse",
+      "Split and partial shipment handling",
+      "Returns and exchange workflow management",
+      "Multi-channel order consolidation",
+      "Real-time order status sync back to customers"
+    ],
+    "integrations": ["WMS", "IMS", "TMS", "Payment Gateways", "Marketplaces"],
+    "process": [
+      { "title": "Order Flow Mapping", "desc": "We document how orders currently move from checkout to delivery across every channel." },
+      { "title": "Routing Rules Design", "desc": "Rules for warehouse selection, splitting and prioritization are defined around your fulfillment network." },
+      { "title": "Channel Integration", "desc": "Every storefront, marketplace and payment gateway is connected into one order pipeline." },
+      { "title": "Go-Live & Optimization", "desc": "We monitor processing times post-launch and tune routing rules based on real order patterns." }
+    ],
+    "benefits": [
+      { "title": "Faster processing", "desc": "Automated routing means orders reach the right warehouse without a person manually assigning them." },
+      { "title": "Fewer fulfillment errors", "desc": "One source of truth for order status removes the mismatches that come from checking multiple systems." },
+      { "title": "Better customer communication", "desc": "Real-time status sync means customers get accurate delivery updates instead of a static \"processing\" screen." }
+    ],
+    "faqs": [
+      { "q": "Can it handle orders split across multiple warehouses?", "a": "Yes, split and partial shipment handling is a core feature, including separate tracking for each portion of the order." },
+      { "q": "Does it work with our existing payment gateway?", "a": "In most cases yes — we integrate with major payment gateways and will confirm compatibility with yours before starting." },
+      { "q": "How are returns handled?", "a": "Returns and exchanges run through a defined workflow that updates inventory and order status automatically once processed." }
+    ],
+    "testimonial": { "quote": "Our team used to check three tabs to answer 'where's this order.' Now it's one screen with the real answer.", "author": "Client Name", "role": "Fulfillment Lead, Partner Company" }
+  },
+  {
+    "slug": "scm",
+    "abbr": "SCM",
+    "icon": "network",
+    "title": "Supply Chain Management",
+    "tagline": "Visibility from supplier to shelf, without the guesswork.",
+    "cover_stat": { "value": "-28%", "label": "Supply chain costs" },
+    "overview": "A supply chain management system gives you visibility into every tier of your supply network — supplier performance, procurement timing, and disruption risk — so decisions get made on current data instead of last quarter's spreadsheet.",
+    "features": [
+      "Supplier performance tracking and scorecards",
+      "Demand and supply planning tools",
+      "Procurement workflow automation",
+      "Multi-tier supply chain visibility",
+      "Risk and disruption alerting",
+      "Cost and lead-time analytics by supplier"
+    ],
+    "integrations": ["WMS", "IMS", "ERP Systems", "Procurement Platforms", "Supplier Portals"],
+    "process": [
+      { "title": "Supply Chain Mapping", "desc": "We document your current suppliers, tiers and procurement processes before proposing changes." },
+      { "title": "Planning Model Setup", "desc": "Demand and supply planning models are configured around your actual lead times and seasonality." },
+      { "title": "Supplier Integration", "desc": "Key suppliers and procurement platforms are connected for real-time status and performance data." },
+      { "title": "Monitor & Optimize", "desc": "Ongoing monitoring of supplier performance and cost trends, with planning adjustments as needed." }
+    ],
+    "benefits": [
+      { "title": "Lower supply chain costs", "desc": "Better demand planning and supplier performance data reduce rush orders and excess safety stock." },
+      { "title": "Fewer disruption surprises", "desc": "Risk alerts flag supplier issues before they become a stockout, giving time to react." },
+      { "title": "Data-backed supplier decisions", "desc": "Supplier scorecards replace anecdotal reputation with actual delivery and quality performance." }
+    ],
+    "faqs": [
+      { "q": "Can it integrate with our current suppliers' systems?", "a": "Most modern supplier and procurement platforms support standard integration methods — we'll assess your specific suppliers during the mapping phase." },
+      { "q": "Does this replace our ERP?", "a": "No, it typically works alongside your ERP, adding supply chain-specific visibility and planning that most ERPs don't cover in depth." },
+      { "q": "How does risk alerting work?", "a": "The system flags anomalies in supplier lead times, order confirmations and known disruption sources, so issues surface before they impact stock." }
+    ],
+    "testimonial": { "quote": "We stopped finding out about supplier delays the same week a shipment was due. Now we see it coming weeks out.", "author": "Client Name", "role": "Supply Chain Director, Partner Company" }
+  },
+  {
+    "slug": "tms",
+    "abbr": "TMS",
+    "icon": "truck",
+    "title": "Transportation Management System",
+    "tagline": "The right carrier, the right route, every shipment.",
+    "cover_stat": { "value": "-19%", "label": "Freight costs" },
+    "overview": "A TMS automates the decisions that used to eat up a shipping coordinator's whole day — which carrier to use, which route to take, and how to prove delivery — while giving customers real-time tracking instead of a static tracking number.",
+    "features": [
+      "Multi-carrier rate shopping at checkout",
+      "Route optimization for delivery efficiency",
+      "Real-time shipment tracking for customers",
+      "Freight audit and payment reconciliation",
+      "Proof-of-delivery capture",
+      "Multi-carrier label printing from one screen"
+    ],
+    "integrations": ["OMS", "WMS", "Carrier APIs (FedEx, UPS, DHL)", "ERP Systems"],
+    "process": [
+      { "title": "Shipping Profile Audit", "desc": "We review your current carriers, rates and shipping volume before recommending a configuration." },
+      { "title": "Carrier Integration", "desc": "Your existing carrier accounts are connected for live rate shopping and label generation." },
+      { "title": "Route & Rate Rules", "desc": "Rules for carrier selection and routing are configured around cost, speed and service-level needs." },
+      { "title": "Go-Live & Freight Audit", "desc": "We monitor freight spend post-launch and reconcile invoices against contracted rates." }
+    ],
+    "benefits": [
+      { "title": "Lower freight costs", "desc": "Automated rate shopping picks the most cost-effective carrier for each shipment instead of defaulting to one." },
+      { "title": "Fewer delivery disputes", "desc": "Proof-of-delivery capture and real-time tracking reduce \"where's my package\" disputes." },
+      { "title": "Faster label generation", "desc": "Multi-carrier labels print from one screen instead of switching between separate carrier portals." }
+    ],
+    "faqs": [
+      { "q": "Can we keep our existing carrier contracts?", "a": "Yes, the system connects to your existing carrier accounts and contracted rates rather than requiring new agreements." },
+      { "q": "Does it support international shipping?", "a": "Yes, including customs documentation handling for the major international carriers we integrate with." },
+      { "q": "How is freight audit handled?", "a": "Invoices are reconciled automatically against contracted rates, flagging discrepancies for review rather than assuming every invoice is correct." }
+    ],
+    "testimonial": { "quote": "Freight costs dropped noticeably in the first quarter just from the system picking the cheaper carrier automatically.", "author": "Client Name", "role": "Logistics Manager, Partner Company" }
+  }
+]

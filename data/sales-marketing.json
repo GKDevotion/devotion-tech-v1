@@ -1,0 +1,317 @@
+[
+  {
+    "slug": "cdp",
+    "abbr": "CDP",
+    "icon": "hub",
+    "title": "Customer Data Platform",
+    "tagline": "One customer profile, built from every touchpoint.",
+    "cover_stat": { "value": "360°", "label": "Unified customer view" },
+    "overview": "A CDP pulls behavioral, transactional and demographic data from every system you run — POS, CMS, ESP, CRM — into one real customer profile, instead of eight partial ones that disagree with each other.",
+    "features": [
+      "Cross-channel identity resolution",
+      "Real-time customer profile updates",
+      "Behavioral and transactional data unification",
+      "Audience segmentation builder",
+      "Consent and privacy management",
+      "API access for downstream marketing tools"
+    ],
+    "integrations": ["CRM", "ESP", "POS", "CMS", "Analytics Tools"],
+    "process": [
+      { "title": "Data Source Audit", "desc": "We map every system holding customer data before designing how they'll unify." },
+      { "title": "Identity Resolution Setup", "desc": "Matching rules are configured so the same customer is recognized across every channel." },
+      { "title": "Segment & Consent Configuration", "desc": "Audience segments and consent rules are set up in line with your compliance requirements." },
+      { "title": "Activation & Monitoring", "desc": "Unified profiles are activated into your marketing tools, with ongoing accuracy monitoring." }
+    ],
+    "benefits": [
+      { "title": "Personalization that actually works", "desc": "Campaigns run on a complete customer picture instead of a fragment of their activity." },
+      { "title": "No more conflicting customer records", "desc": "One profile per customer replaces the slightly-different version each tool used to hold." },
+      { "title": "Faster audience segmentation", "desc": "Marketing builds segments in minutes instead of requesting a data pull from engineering." }
+    ],
+    "faqs": [
+      { "q": "Does a CDP replace our CRM?", "a": "No — it feeds your CRM (and other tools) a unified profile; the CRM still owns sales relationship management." },
+      { "q": "How is customer consent handled?", "a": "Consent status is tracked per customer and per channel, and downstream tools respect it automatically rather than relying on manual list management." },
+      { "q": "Can it unify data from systems we already use?", "a": "Yes, that's the core function — connecting your existing POS, CMS, ESP and CRM data into one profile." }
+    ],
+    "testimonial": { "quote": "We stopped arguing about whose customer count was 'right' — there's just one number now, and everyone trusts it.", "author": "Client Name", "role": "Head of Marketing, Partner Company" }
+  },
+  {
+    "slug": "pos",
+    "abbr": "POS",
+    "icon": "pos",
+    "title": "Point of Sale Systems",
+    "tagline": "Every sale captured accurately, in-store or online.",
+    "cover_stat": { "value": "99.8%", "label": "Transaction accuracy" },
+    "overview": "A modern POS unifies in-store and online checkout, deducts inventory the moment a sale happens, and gives staff one system to work in instead of a till that doesn't talk to the website.",
+    "features": [
+      "Unified in-store and online checkout",
+      "Real-time inventory deduction at point of sale",
+      "Multiple payment method support",
+      "Receipt and invoice generation",
+      "Staff and cashier permission controls",
+      "Offline mode with automatic sync on reconnect"
+    ],
+    "integrations": ["IMS", "CRM", "Payment Gateways", "Accounting Software", "Barcode Scanners"],
+    "process": [
+      { "title": "Store Workflow Audit", "desc": "We review how checkout, returns and staff permissions currently work before configuring anything." },
+      { "title": "Hardware & Software Setup", "desc": "Terminals, scanners and payment devices are configured alongside the software." },
+      { "title": "Staff Training", "desc": "Front-line staff are trained on the new checkout flow before go-live." },
+      { "title": "Go-Live & Support", "desc": "We stay close during the first days of live transactions to catch anything unexpected." }
+    ],
+    "benefits": [
+      { "title": "Faster checkout times", "desc": "A streamlined checkout flow moves customers through the line faster during peak hours." },
+      { "title": "Fewer transaction errors", "desc": "Automated tax, discount and inventory deduction removes manual entry mistakes." },
+      { "title": "Unified sales reporting", "desc": "In-store and online sales appear in one report instead of two systems you reconcile by hand." }
+    ],
+    "faqs": [
+      { "q": "Does it work offline if our internet drops?", "a": "Yes, offline mode continues processing sales locally and syncs automatically once the connection returns." },
+      { "q": "Can it handle both retail and restaurant-style checkout?", "a": "Yes, checkout flows are configurable to match retail, hospitality or service-based transaction types." },
+      { "q": "Will it sync with our online store's inventory?", "a": "Yes, inventory deducts in real time across both channels through the IMS integration." }
+    ],
+    "testimonial": { "quote": "Checkout lines move faster now and our online and in-store stock finally match.", "author": "Client Name", "role": "Retail Operations Manager, Partner Company" }
+  },
+  {
+    "slug": "pim",
+    "abbr": "PIM",
+    "icon": "tag",
+    "title": "Product Information Management",
+    "tagline": "One accurate product record, pushed everywhere you sell.",
+    "cover_stat": { "value": "-73%", "label": "Product listing errors" },
+    "overview": "A PIM gives you one source of truth for every product's title, description, images and attributes, then pushes it out correctly formatted to every marketplace and storefront you sell on.",
+    "features": [
+      "Centralized product catalog",
+      "Bulk product data import and export",
+      "Channel-specific attribute mapping",
+      "Digital asset management for product media",
+      "Product variant and bundle support",
+      "Automated syndication to marketplaces"
+    ],
+    "integrations": ["IMS", "CMS", "Marketplaces", "ERP Systems", "E-Commerce Platforms"],
+    "process": [
+      { "title": "Catalog Audit", "desc": "We review your current product data quality and structure before designing the new model." },
+      { "title": "Data Model Design", "desc": "Attributes, categories and variant structures are designed around how you actually sell." },
+      { "title": "Channel Mapping Setup", "desc": "Each sales channel's specific data requirements are mapped so listings publish correctly the first time." },
+      { "title": "Sync & Launch", "desc": "Product data syndicates live to every connected channel, with monitoring for sync errors." }
+    ],
+    "benefits": [
+      { "title": "Consistent listings everywhere", "desc": "The same accurate product information appears on every channel instead of six separate versions." },
+      { "title": "Faster time-to-market for new products", "desc": "New products publish to every channel from one entry instead of manual re-entry per platform." },
+      { "title": "Fewer returns from bad data", "desc": "Accurate specs and images reduce returns caused by customers receiving something different than described." }
+    ],
+    "faqs": [
+      { "q": "Can it push products to marketplaces like Amazon automatically?", "a": "Yes, automated syndication handles marketplace-specific formatting and attribute requirements." },
+      { "q": "How do you handle products with many variants?", "a": "Variant and bundle support is built in, so size, color and bundle combinations stay linked to one parent product." },
+      { "q": "Can we migrate our existing product catalog into it?", "a": "Yes, bulk import handles migrating existing catalogs, with a data cleanup pass during the audit phase." }
+    ],
+    "testimonial": { "quote": "Listing errors that used to generate weekly customer complaints just stopped happening.", "author": "Client Name", "role": "E-Commerce Director, Partner Company" }
+  },
+  {
+    "slug": "cms",
+    "abbr": "CMS",
+    "icon": "layout",
+    "title": "Content Management System",
+    "tagline": "Publish and update content without waiting on a developer.",
+    "cover_stat": { "value": "4.2x", "label": "Faster content publishing" },
+    "overview": "A CMS gives your marketing team control over pages, campaigns and content updates directly, so a headline change or a new landing page doesn't sit in a developer's queue for a week.",
+    "features": [
+      "Drag-and-drop page building",
+      "Role-based content permissions",
+      "SEO metadata controls",
+      "Content scheduling and version history",
+      "Multi-language support",
+      "Reusable content blocks and templates"
+    ],
+    "integrations": ["PIM", "CDP", "Analytics Tools", "E-Commerce Platforms", "Marketing Automation"],
+    "process": [
+      { "title": "Content Audit", "desc": "We review existing content structure and identify what needs to migrate versus rebuild." },
+      { "title": "Template & Structure Design", "desc": "Reusable templates and content blocks are designed around your actual page types." },
+      { "title": "Migration", "desc": "Existing content is migrated into the new structure with URLs preserved for SEO." },
+      { "title": "Training & Launch", "desc": "Your team is trained on publishing before the new CMS goes live." }
+    ],
+    "benefits": [
+      { "title": "Marketing team independence", "desc": "Content updates ship without a developer ticket for every headline or image swap." },
+      { "title": "Faster campaign launches", "desc": "Landing pages and campaign content go live in hours instead of days." },
+      { "title": "Consistent brand presentation", "desc": "Reusable templates keep every page on-brand without a designer reviewing each one." }
+    ],
+    "faqs": [
+      { "q": "Will our current URLs and SEO rankings be preserved?", "a": "Yes, URL structure and redirects are handled deliberately during migration to protect existing SEO." },
+      { "q": "Can non-technical staff really manage this themselves?", "a": "Yes, that's the core design goal — the drag-and-drop builder is built for marketing and content teams, not developers." },
+      { "q": "Does it support multiple languages?", "a": "Yes, multi-language content management is a core feature, not a plugin bolted on afterward." }
+    ],
+    "testimonial": { "quote": "Our marketing team can now launch a campaign page the same day they think of it.", "author": "Client Name", "role": "Marketing Director, Partner Company" }
+  },
+  {
+    "slug": "esp",
+    "abbr": "ESP",
+    "icon": "mail",
+    "title": "Email Service Provider Automation",
+    "tagline": "The right email, to the right person, without a manual send.",
+    "cover_stat": { "value": "+34%", "label": "Email-driven revenue" },
+    "overview": "An ESP automation platform sends behavior-triggered emails — abandoned cart, post-purchase, re-engagement — based on real customer activity, instead of one newsletter blasted to everyone on the same day.",
+    "features": [
+      "Behavior-triggered automation flows",
+      "Drag-and-drop email builder",
+      "Audience segmentation and personalization",
+      "A/B testing tools",
+      "Deliverability monitoring",
+      "Transactional email support"
+    ],
+    "integrations": ["CDP", "CRM", "E-Commerce Platforms", "CMS"],
+    "process": [
+      { "title": "List & Deliverability Audit", "desc": "We review your current list health and sending reputation before building new flows." },
+      { "title": "Automation Flow Design", "desc": "Trigger-based flows are designed around actual customer behavior, not a generic template." },
+      { "title": "Template Build", "desc": "On-brand, responsive email templates are built for each flow and campaign type." },
+      { "title": "Launch & Optimize", "desc": "Flows go live with A/B testing and ongoing performance monitoring." }
+    ],
+    "benefits": [
+      { "title": "More revenue per send", "desc": "Behavior-triggered emails convert at meaningfully higher rates than generic blasts." },
+      { "title": "Less manual campaign work", "desc": "Automation flows run continuously once built, instead of requiring a manual send each time." },
+      { "title": "Better deliverability", "desc": "List hygiene and sending practices are monitored so emails land in inboxes, not spam folders." }
+    ],
+    "faqs": [
+      { "q": "Can it personalize based on real purchase behavior?", "a": "Yes, integration with your CDP and e-commerce platform lets flows trigger on actual browsing and purchase behavior." },
+      { "q": "How do you improve poor deliverability?", "a": "We audit sending reputation, list hygiene and authentication setup (SPF/DKIM/DMARC) as part of the initial audit." },
+      { "q": "Can we still send one-off campaigns alongside automated flows?", "a": "Yes, manual campaigns and automated flows run side by side without conflicting." }
+    ],
+    "testimonial": { "quote": "Our abandoned cart flow alone now generates more revenue than our old monthly newsletter ever did.", "author": "Client Name", "role": "Growth Marketing Lead, Partner Company" }
+  },
+  {
+    "slug": "crm",
+    "abbr": "CRM",
+    "icon": "users",
+    "title": "Customer Relationship Management",
+    "tagline": "Every customer interaction in one place, not six inboxes.",
+    "cover_stat": { "value": "+41%", "label": "Sales team productivity" },
+    "overview": "A CRM gives your sales team one place to track every deal, conversation and follow-up, replacing the mix of spreadsheets, inboxes and sticky notes most teams end up managing a pipeline through.",
+    "features": [
+      "Contact and deal pipeline management",
+      "Activity and interaction tracking",
+      "Sales forecasting tools",
+      "Task and follow-up automation",
+      "Custom reporting dashboards",
+      "Email and calendar integration"
+    ],
+    "integrations": ["CDP", "ESP", "POS", "HRMS", "Accounting Software"],
+    "process": [
+      { "title": "Sales Process Mapping", "desc": "We document your actual sales stages before configuring pipeline fields." },
+      { "title": "Pipeline & Field Configuration", "desc": "Deal stages, fields and automation rules are set up to match your real sales process." },
+      { "title": "Data Migration", "desc": "Existing contacts and deal history are migrated in without losing historical context." },
+      { "title": "Team Onboarding", "desc": "Sales team training focused on daily use, not just feature tours." }
+    ],
+    "benefits": [
+      { "title": "Nothing falls through the cracks", "desc": "Automated follow-up reminders replace relying on memory or a sticky note." },
+      { "title": "Accurate sales forecasting", "desc": "Pipeline data reflects reality closely enough to actually plan around." },
+      { "title": "Faster follow-up times", "desc": "Activity tracking surfaces who needs a response today, not whoever a rep happens to remember." }
+    ],
+    "faqs": [
+      { "q": "Can it import our existing contact and deal data?", "a": "Yes, data migration from spreadsheets or another CRM is part of the standard rollout process." },
+      { "q": "Does it integrate with our email and calendar?", "a": "Yes, email and calendar sync is a core integration so activity logs automatically instead of manual entry." },
+      { "q": "Can reporting be customized per sales team?", "a": "Yes, dashboards and reports are configured around what each team actually needs to see." }
+    ],
+    "testimonial": { "quote": "Deals stopped disappearing into someone's inbox. Everything lives in the pipeline now.", "author": "Client Name", "role": "Sales Director, Partner Company" }
+  },
+  {
+    "slug": "hrms",
+    "abbr": "HRMS",
+    "icon": "idcard",
+    "title": "Human Resource Management System",
+    "tagline": "Payroll, attendance and performance, off the spreadsheet.",
+    "cover_stat": { "value": "-67%", "label": "HR admin time" },
+    "overview": "An HRMS centralizes employee records, payroll, attendance and performance reviews in one system, replacing the patchwork of spreadsheets most growing companies end up running HR through.",
+    "features": [
+      "Employee record management",
+      "Payroll processing and tax compliance",
+      "Attendance and leave tracking",
+      "Performance review workflows",
+      "Onboarding and offboarding checklists",
+      "Self-service employee portal"
+    ],
+    "integrations": ["CRM", "Accounting Software", "Payroll Providers", "Time-Tracking Hardware"],
+    "process": [
+      { "title": "HR Process Audit", "desc": "We review current payroll, attendance and review processes before configuring the system." },
+      { "title": "System Configuration", "desc": "Pay structures, leave policies and approval workflows are configured to match your policies." },
+      { "title": "Data Migration", "desc": "Employee records and historical data are migrated with accuracy checks." },
+      { "title": "Rollout & Training", "desc": "Staff are trained on the self-service portal before full rollout." }
+    ],
+    "benefits": [
+      { "title": "Fewer payroll errors", "desc": "Automated calculations replace manual spreadsheet formulas that break when someone edits the wrong cell." },
+      { "title": "Faster onboarding", "desc": "New hire checklists and document collection run through a defined workflow instead of email chains." },
+      { "title": "Self-service reduces HR ticket volume", "desc": "Employees check their own leave balance and payslips instead of emailing HR." }
+    ],
+    "faqs": [
+      { "q": "Does it handle payroll tax compliance?", "a": "Yes, tax calculation and compliance rules are built in and kept current for your jurisdiction." },
+      { "q": "Can employees access it without going through HR?", "a": "Yes, the self-service portal lets employees view payslips, request leave and update personal details directly." },
+      { "q": "Can it integrate with biometric attendance hardware?", "a": "Yes, integration with common time-tracking and biometric hardware is supported." }
+    ],
+    "testimonial": { "quote": "HR stopped being a full-time spreadsheet maintenance job the week this went live.", "author": "Client Name", "role": "HR Manager, Partner Company" }
+  },
+  {
+    "slug": "forex-crm",
+    "abbr": "Forex CRM",
+    "icon": "coins",
+    "title": "Forex CRM Management",
+    "tagline": "Built for brokerages, not retrofitted from a generic CRM.",
+    "cover_stat": { "value": "15K+", "label": "Trader accounts managed" },
+    "overview": "A Forex CRM handles the specific workflows a brokerage actually needs — multi-tier IB commissions, KYC verification, and trading platform integration — that a general-purpose CRM was never built for.",
+    "features": [
+      "Multi-level IB (introducing broker) commission tracking",
+      "KYC and document verification workflows",
+      "Trading platform integration (MT4/MT5)",
+      "Deposit and withdrawal management",
+      "Client risk profiling",
+      "Multi-currency wallet support"
+    ],
+    "integrations": ["Trading Platforms (MT4/MT5)", "Payment Processors", "KYC Providers", "ESP"],
+    "process": [
+      { "title": "Broker Requirements Audit", "desc": "We review your IB structure, regulatory requirements and trading platform setup." },
+      { "title": "Platform Integration", "desc": "MT4/MT5 or your trading platform is integrated for account provisioning and trade data." },
+      { "title": "Compliance Workflow Setup", "desc": "KYC and risk profiling workflows are configured to your regulatory jurisdiction." },
+      { "title": "Launch & Support", "desc": "We support the first onboarding cycles closely to catch edge cases in commission or KYC flows." }
+    ],
+    "benefits": [
+      { "title": "Compliant client onboarding", "desc": "KYC workflows enforce required documentation before an account can trade." },
+      { "title": "Accurate IB commission payouts", "desc": "Multi-tier commission calculations run automatically instead of a manually maintained spreadsheet." },
+      { "title": "Unified trader support", "desc": "Support staff see account status, trade history and KYC status in one place." }
+    ],
+    "faqs": [
+      { "q": "Does it integrate with MT4 and MT5?", "a": "Yes, direct integration with both platforms handles account provisioning and trade data sync." },
+      { "q": "Can it handle multi-tier IB commission structures?", "a": "Yes, multi-level IB tracking with configurable commission rules per tier is a core feature." },
+      { "q": "How is KYC compliance handled across jurisdictions?", "a": "KYC workflows are configured to your specific regulatory requirements during the compliance setup phase." }
+    ],
+    "testimonial": { "quote": "IB commission disputes used to take days to resolve manually. Now it's a report, not an argument.", "author": "Client Name", "role": "Head of Operations, Partner Brokerage" }
+  },
+  {
+    "slug": "saas",
+    "abbr": "SAAS",
+    "icon": "cloud",
+    "title": "Software as a Service Management",
+    "tagline": "Subscriptions, billing and churn, tracked in one dashboard.",
+    "cover_stat": { "value": "-22%", "label": "Involuntary churn" },
+    "overview": "SaaS subscription management handles recurring billing, plan changes and failed payment recovery automatically, so churn from an expired card doesn't quietly cost you customers you never meant to lose.",
+    "features": [
+      "Subscription billing and invoicing",
+      "Usage-based pricing support",
+      "Dunning and failed payment recovery",
+      "Plan upgrade and downgrade handling",
+      "Customer self-service billing portal",
+      "Churn and MRR analytics"
+    ],
+    "integrations": ["CRM", "Payment Gateways", "CDP", "Accounting Software"],
+    "process": [
+      { "title": "Billing Model Audit", "desc": "We review your current pricing plans and billing pain points before configuring the system." },
+      { "title": "Plan & Pricing Configuration", "desc": "Subscription tiers, usage-based pricing and proration rules are configured to match your model." },
+      { "title": "Payment Gateway Integration", "desc": "Your payment processor is integrated for billing, retries and refunds." },
+      { "title": "Launch & Monitor", "desc": "We monitor churn and failed-payment recovery closely in the first billing cycles." }
+    ],
+    "benefits": [
+      { "title": "Recovered failed payments", "desc": "Automated dunning sequences recover a meaningful share of failed-card churn before it becomes lost revenue." },
+      { "title": "Clear MRR and churn visibility", "desc": "Recurring revenue and churn are tracked accurately instead of reconstructed manually each month." },
+      { "title": "Less manual billing support", "desc": "Customers manage their own plan changes and payment methods through self-service." }
+    ],
+    "faqs": [
+      { "q": "Can it handle usage-based or metered billing?", "a": "Yes, usage-based pricing alongside flat subscription tiers is supported natively." },
+      { "q": "How does failed payment recovery work?", "a": "Automated retry schedules and customer notifications recover a portion of failed payments before cancellation." },
+      { "q": "Can customers manage their own subscriptions?", "a": "Yes, the self-service portal lets customers upgrade, downgrade or update payment details without contacting support." }
+    ],
+    "testimonial": { "quote": "Involuntary churn from expired cards used to be invisible. Now it's a number we actively track and recover.", "author": "Client Name", "role": "VP of Finance, Partner SaaS Company" }
+  }
+]
