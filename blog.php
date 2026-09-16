@@ -70,8 +70,8 @@
     }
 
     .article-cat {
-        font-size: 1rem;
-        font-weight: 800;
+        font-size: 0.9rem;
+        font-weight: 600;
         color: #aa8038;
         letter-spacing: 0.4px;
         margin-bottom: 8px;
@@ -90,7 +90,7 @@
     }
 
     .article-row p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #6b7280;
         margin-bottom: 14px;
     }
@@ -208,7 +208,7 @@
     }
 
     .popular-post span {
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: #6b7280;
     }
 
@@ -389,6 +389,7 @@
 
         <!-- SIDEBAR -->
         <div>
+
             <div class="sidebar-block">
                 <h4>Categories</h4>
                 <ul class="cat-list">
@@ -443,6 +444,7 @@
                 <p>Talk to our team about a free infrastructure assessment.</p>
                 <button>Book A Free Call</button>
             </div>
+            
         </div>
 
     </div>

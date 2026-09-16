@@ -194,8 +194,7 @@
 
               </div>
             </div>
-          </li>
-
+          </li> 
           <!-- Technology -->
           <li class="nav-item dropdown mega-dropdown">
             <a class="nav-link dropdown-toggle" href="javascript:void();" data-bs-toggle="dropdown" aria-expanded="false">
@@ -206,13 +205,43 @@
                 <i class="bi bi-code-square"></i> Technology
               </div>
               <ul class="mega-list">
-                <li><a href="javascript:void();"><i class="bi bi-display"></i> Frontend Development <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-hdd-stack"></i> Backend Development <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-phone-vibrate"></i> Mobile Technologies <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-cloud-arrow-up"></i> Cloud &amp; DevOps <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-database"></i> Database Solutions <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-cpu"></i> AI &amp; Automation <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-link-45deg"></i> API &amp; Integration <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <?php
+                  // ---- Load technology categories from JSON (same data source technology.php reads) ----
+                  $navTechPath = __DIR__ . '/../data/technology.json'; // adjust the relative path to match where elements/header.php actually sits
+                  $navTechs = [];
+                  if (file_exists($navTechPath)) {
+                      $navJson = file_get_contents($navTechPath);
+                      $navDecoded = json_decode($navJson, true);
+                      if (is_array($navDecoded)) {
+                          $navTechs = $navDecoded;
+                      }
+                  }
+
+                  // Bootstrap icon per slug — keeps the exact icons you already had, just data-driven now
+                  $navTechIcons = [
+                      'frontend-development' => 'bi-display',
+                      'backend-development'  => 'bi-hdd-stack',
+                      'mobile-technologies'  => 'bi-phone-vibrate',
+                      'cloud-devops'         => 'bi-cloud-arrow-up',
+                      'database-solutions'   => 'bi-database',
+                      'ai-automation'        => 'bi-cpu',
+                      'api-integration'      => 'bi-link-45deg',
+                  ];
+
+                  foreach ($navTechs as $navTech):
+                      $navIconClass = isset($navTechIcons[$navTech['slug']]) ? $navTechIcons[$navTech['slug']] : 'bi-code-square';
+                ?>
+                  <li>
+                    <a href="technology-detail.php?slug=<?php echo urlencode($navTech['slug']); ?>">
+                      <i class="bi <?php echo htmlspecialchars($navIconClass); ?>"></i>
+                      <?php echo htmlspecialchars($navTech['title']); ?>
+                      <i class="bi bi-chevron-right ms-auto"></i>
+                    </a>
+                  </li>
+                <?php endforeach; ?>
+                <li class="mega-list-footer">
+                  <a href="technology.php">View All Technology <i class="bi bi-arrow-right"></i></a>
+                </li>
               </ul>
             </div>
           </li>
@@ -227,10 +256,10 @@
                 <i class="bi bi-images"></i> Portfolio
               </div>
               <ul class="mega-list">
-                <li><a href="javascript:void();"><i class="bi bi-globe"></i> Web Projects <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-phone"></i> Mobile Apps <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-code-slash"></i> Software Projects <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="javascript:void();"><i class="bi bi-file-earmark-text"></i> Case Studies <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="web-projects.php"><i class="bi bi-globe"></i> Web Projects <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="mobile-apps.php"><i class="bi bi-phone"></i> Mobile Apps <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="software-projects.php"><i class="bi bi-code-slash"></i> Software Projects <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="case-studies.php"><i class="bi bi-file-earmark-text"></i> Case Studies <i class="bi bi-chevron-right ms-auto"></i></a></li>
               </ul>
             </div>
           </li>

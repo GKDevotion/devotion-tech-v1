@@ -233,7 +233,7 @@
     }
 
     .section-title {
-      font-size: 2.55rem;
+      font-size: 2rem;
       font-weight: 700;
       color: #000;
       line-height: 1.2;
@@ -258,7 +258,7 @@
     }
 
     .desc-text {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #777;
       line-height: 1.8;
     }

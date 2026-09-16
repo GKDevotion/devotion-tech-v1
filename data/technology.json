@@ -1,0 +1,233 @@
+[
+  {
+    "slug": "frontend-development",
+    "icon": "monitor",
+    "title": "Frontend Development",
+    "tagline": "Interfaces built for speed, accessibility and pixel-perfect polish.",
+    "cover_stat": { "value": "200+", "label": "Interfaces shipped" },
+    "overview": "We build the layer your users actually touch — fast-loading, accessible interfaces that hold up across devices and don't regress every time a new feature ships. Component-driven architecture means your design system stays consistent as the product grows.",
+    "core_stack": [
+      { "name": "React", "level": 95 },
+      { "name": "Next.js", "level": 88 },
+      { "name": "TypeScript", "level": 90 },
+      { "name": "Tailwind CSS", "level": 92 },
+      { "name": "Vue.js", "level": 78 }
+    ],
+    "use_cases": [
+      { "title": "Marketing sites that load instantly", "desc": "Static generation and image optimization tuned so Core Web Vitals pass on real connections, not just lab tests." },
+      { "title": "SaaS dashboards at scale", "desc": "Component libraries and state management that stay maintainable as a dashboard grows past a dozen views." },
+      { "title": "Design systems your team can extend", "desc": "Token-based theming and documented components so new features stay visually consistent without a designer re-reviewing every screen." }
+    ],
+    "process": [
+      { "title": "Component Audit", "desc": "We review existing UI (or design files) to define a shared component vocabulary before building anything." },
+      { "title": "Build the System", "desc": "Core components and design tokens are built first, so every screen after this reuses the same building blocks." },
+      { "title": "Assemble Screens", "desc": "Full pages and flows are assembled from the component system, reviewed against real device performance." },
+      { "title": "Test & Harden", "desc": "Cross-browser, accessibility and performance testing before anything ships to production." }
+    ],
+    "project_types": ["Marketing sites", "SaaS dashboards", "Design systems", "Progressive web apps"],
+    "faqs": [
+      { "q": "Do you work with our existing design system or build a new one?", "a": "Both — we extend an existing system where one exists, or build one from scratch if your product doesn't have one yet." },
+      { "q": "How do you handle browser and device compatibility?", "a": "Every build is tested against a defined support matrix (browsers, OS versions, screen sizes) agreed with you before development starts." },
+      { "q": "Can your frontend team work alongside our in-house backend developers?", "a": "Yes, we regularly integrate with existing backend teams via API contracts agreed upfront." }
+    ],
+    "testimonial": { "quote": "Our dashboard went from feeling sluggish to loading instantly, and our internal team can now add new views without breaking the layout.", "author": "Client Name", "role": "Product Manager, Partner Company" }
+  },
+  {
+    "slug": "backend-development",
+    "icon": "server",
+    "title": "Backend Development",
+    "tagline": "The systems underneath that keep running when nobody's watching.",
+    "cover_stat": { "value": "180+", "label": "APIs & services built" },
+    "overview": "Reliable, well-documented backend systems — APIs, business logic and data processing — built to handle real production load, not just pass a demo. We favor boring, provable architecture over clever code that's hard to hand off.",
+    "core_stack": [
+      { "name": "Node.js", "level": 92 },
+      { "name": "Laravel", "level": 90 },
+      { "name": "Python (Django/FastAPI)", "level": 85 },
+      { "name": "Go", "level": 72 },
+      { "name": "GraphQL", "level": 80 }
+    ],
+    "use_cases": [
+      { "title": "REST and GraphQL APIs", "desc": "Documented, versioned APIs designed for the clients that will actually consume them — web, mobile or third parties." },
+      { "title": "Microservices done deliberately", "desc": "We only split services where it solves a real scaling or team problem, not by default, to avoid unnecessary operational overhead." },
+      { "title": "Payment and billing systems", "desc": "Idempotent, auditable payment flows built with reconciliation and failure handling in mind from day one." }
+    ],
+    "process": [
+      { "title": "Requirements & Data Modeling", "desc": "We map the domain and data model before choosing a framework or writing any endpoints." },
+      { "title": "API Contract First", "desc": "Endpoints are specified and agreed with frontend/mobile teams before backend implementation begins." },
+      { "title": "Build & Test", "desc": "Automated tests cover business logic, not just happy paths, before code reaches staging." },
+      { "title": "Load Test & Harden", "desc": "Realistic load testing and monitoring setup before anything handles production traffic." }
+    ],
+    "project_types": ["REST & GraphQL APIs", "Microservices", "Payment systems", "Internal tooling"],
+    "faqs": [
+      { "q": "Which backend language or framework do you recommend?", "a": "It depends on your team's existing stack and hiring plans — we'll recommend the option that's easiest for your team to maintain long term, not just what's fastest for us to build." },
+      { "q": "How do you handle API documentation?", "a": "Every API ships with OpenAPI/Swagger documentation kept in sync with the actual implementation." },
+      { "q": "Can you take over an existing backend codebase?", "a": "Yes, we start with a codebase and architecture audit before making changes to an existing system." }
+    ],
+    "testimonial": { "quote": "They inherited a backend nobody wanted to touch and had it stable and documented within a month.", "author": "Client Name", "role": "CTO, Partner Company" }
+  },
+  {
+    "slug": "mobile-technologies",
+    "icon": "device",
+    "title": "Mobile Technologies",
+    "tagline": "Apps that feel native, whether they're built native or not.",
+    "cover_stat": { "value": "40+", "label": "Apps launched" },
+    "overview": "iOS, Android and cross-platform mobile development for products where performance and offline reliability actually matter — not just apps that work fine on a fast connection in a demo.",
+    "core_stack": [
+      { "name": "Flutter", "level": 88 },
+      { "name": "React Native", "level": 85 },
+      { "name": "Swift", "level": 78 },
+      { "name": "Kotlin", "level": 76 },
+      { "name": "Firebase", "level": 90 }
+    ],
+    "use_cases": [
+      { "title": "Consumer apps built for retention", "desc": "Onboarding, push notifications and performance tuned around the metrics that actually predict retention." },
+      { "title": "Field service apps that work offline", "desc": "Offline-first data sync for teams working in warehouses, job sites or areas with unreliable connectivity." },
+      { "title": "On-demand marketplaces", "desc": "Real-time location, matching and payment flows built to handle two-sided marketplace traffic patterns." }
+    ],
+    "process": [
+      { "title": "Platform Strategy", "desc": "We assess whether native, Flutter or React Native fits your performance needs and budget before committing." },
+      { "title": "Prototype & Validate", "desc": "A clickable prototype tests the core flow with real users before full development starts." },
+      { "title": "Build on Real Devices", "desc": "Development and testing happen on physical devices throughout, not just simulators." },
+      { "title": "Store Launch & Iterate", "desc": "App store submission handled for you, with a plan for the first post-launch update cycle." }
+    ],
+    "project_types": ["Consumer apps", "Field service apps", "On-demand marketplaces", "Enterprise mobile tools"],
+    "faqs": [
+      { "q": "Should we go native or cross-platform?", "a": "For most products, Flutter or React Native gets you to market faster at lower cost. We recommend native only when performance or platform-specific APIs demand it." },
+      { "q": "How do you handle offline functionality?", "a": "Local data storage with conflict-resolution sync logic, so the app stays usable without a connection and reconciles cleanly once it's back." },
+      { "q": "Do you support both iOS and Android from one codebase?", "a": "Yes, with Flutter or React Native we typically maintain a single codebase for both platforms, with native modules where needed." }
+    ],
+    "testimonial": { "quote": "Our field technicians can now log jobs with zero signal and everything syncs perfectly once they're back in range.", "author": "Client Name", "role": "Operations Director, Partner Company" }
+  },
+  {
+    "slug": "cloud-devops",
+    "icon": "cloud",
+    "title": "Cloud & DevOps",
+    "tagline": "Infrastructure that scales quietly and recovers on its own.",
+    "cover_stat": { "value": "99.9%", "label": "Average uptime" },
+    "overview": "Cloud architecture, CI/CD pipelines and infrastructure automation designed so deployments are routine events, not incidents. We build for the traffic and team size you're growing into, not just what you need today.",
+    "core_stack": [
+      { "name": "AWS", "level": 93 },
+      { "name": "Azure", "level": 75 },
+      { "name": "Docker", "level": 95 },
+      { "name": "Kubernetes", "level": 82 },
+      { "name": "Terraform", "level": 87 }
+    ],
+    "use_cases": [
+      { "title": "Cloud migrations without downtime", "desc": "Phased migration plans with rollback points, so moving to the cloud doesn't mean a weekend of crossed fingers." },
+      { "title": "CI/CD pipelines that catch problems early", "desc": "Automated testing and deployment gates so bad code doesn't reach production because a human forgot a step." },
+      { "title": "Auto-scaling for unpredictable traffic", "desc": "Infrastructure that scales up for a traffic spike and back down afterward, without a 2 a.m. phone call." }
+    ],
+    "process": [
+      { "title": "Infrastructure Audit", "desc": "We review your current setup, costs and failure points before proposing any changes." },
+      { "title": "Architecture Design", "desc": "A target architecture is documented and reviewed with your team before migration begins." },
+      { "title": "Automate & Migrate", "desc": "Infrastructure-as-code and CI/CD pipelines are built alongside a phased, low-risk migration." },
+      { "title": "Monitor & Optimize", "desc": "Ongoing monitoring and cost optimization once the new infrastructure is live." }
+    ],
+    "project_types": ["Cloud migrations", "CI/CD pipelines", "Auto-scaling infrastructure", "Disaster recovery planning"],
+    "faqs": [
+      { "q": "Which cloud provider do you recommend?", "a": "Usually whichever your team already has experience with — AWS, Azure and GCP all fit most use cases. We'll flag it if a specific requirement points toward one." },
+      { "q": "How do you avoid downtime during a migration?", "a": "Migrations run in phases with defined rollback points, and traffic is cut over gradually rather than all at once." },
+      { "q": "Do you manage infrastructure after the migration is done?", "a": "Yes, most clients move onto a managed infrastructure plan with monitoring, patching and cost reviews." }
+    ],
+    "testimonial": { "quote": "We migrated to AWS with zero customer-facing downtime, which our last provider told us was impossible.", "author": "Client Name", "role": "VP of Engineering, Partner Company" }
+  },
+  {
+    "slug": "database-solutions",
+    "icon": "database",
+    "title": "Database Solutions",
+    "tagline": "Data architecture that stays fast as it grows, not just on day one.",
+    "cover_stat": { "value": "150+", "label": "Databases designed & tuned" },
+    "overview": "Schema design, query optimization and data migration for systems where data integrity and query speed actually matter at scale — from relational systems to the caching and search layers around them.",
+    "core_stack": [
+      { "name": "PostgreSQL", "level": 94 },
+      { "name": "MySQL", "level": 88 },
+      { "name": "MongoDB", "level": 80 },
+      { "name": "Redis", "level": 85 },
+      { "name": "Elasticsearch", "level": 76 }
+    ],
+    "use_cases": [
+      { "title": "Data warehousing for reporting", "desc": "Structured warehouses that keep reporting queries fast without slowing down your production database." },
+      { "title": "Real-time analytics pipelines", "desc": "Event streaming and caching layers so dashboards reflect activity within seconds, not overnight batch jobs." },
+      { "title": "Multi-tenant architecture", "desc": "Data isolation strategies that keep tenants secure without duplicating infrastructure per customer." }
+    ],
+    "process": [
+      { "title": "Data Audit", "desc": "We review your current schema, query patterns and pain points before recommending changes." },
+      { "title": "Schema Design", "desc": "A normalized (or deliberately denormalized) schema designed around your actual access patterns." },
+      { "title": "Migrate & Index", "desc": "Data migration with integrity checks, plus indexing strategy tuned to your slowest real queries." },
+      { "title": "Monitor & Tune", "desc": "Ongoing query performance monitoring and tuning as data volume grows." }
+    ],
+    "project_types": ["Data warehousing", "Real-time analytics", "Multi-tenant architectures", "Legacy database migration"],
+    "faqs": [
+      { "q": "Can you migrate data from a legacy database without downtime?", "a": "In most cases yes, using a phased dual-write or replication approach so the cutover is a non-event." },
+      { "q": "SQL or NoSQL — how do you decide?", "a": "It comes down to your data relationships and query patterns. We recommend based on your actual use case, not a default preference." },
+      { "q": "How do you improve slow queries on an existing database?", "a": "We start by profiling your actual slow queries in production, not guessing — then index, restructure or cache based on real evidence." }
+    ],
+    "testimonial": { "quote": "A query that used to take 8 seconds now returns in under 100 milliseconds. Our support team stopped getting complaints about the dashboard overnight.", "author": "Client Name", "role": "Head of Data, Partner Company" }
+  },
+  {
+    "slug": "ai-automation",
+    "icon": "spark",
+    "title": "AI & Automation",
+    "tagline": "Practical automation that removes real busywork, not a chatbot gimmick.",
+    "cover_stat": { "value": "35+", "label": "Automation workflows deployed" },
+    "overview": "We build automation and applied AI features that solve a specific, measurable problem — document processing, support triage, predictive alerts — rather than bolting AI onto a product because it's trending.",
+    "core_stack": [
+      { "name": "Python", "level": 93 },
+      { "name": "OpenAI API", "level": 88 },
+      { "name": "LangChain", "level": 80 },
+      { "name": "TensorFlow", "level": 70 },
+      { "name": "n8n / Zapier", "level": 85 }
+    ],
+    "use_cases": [
+      { "title": "Support ticket triage and drafting", "desc": "Automatic categorization and draft responses that a human reviews and sends, cutting first-response time significantly." },
+      { "title": "Predictive alerts from operational data", "desc": "Models trained on your historical data to flag anomalies before they become incidents, not after." },
+      { "title": "Document processing at scale", "desc": "Extracting structured data from invoices, contracts or forms that used to require manual entry." }
+    ],
+    "process": [
+      { "title": "Problem Definition", "desc": "We define the specific, measurable outcome an automation or model needs to improve before building anything." },
+      { "title": "Data Assessment", "desc": "We review what data actually exists and whether it's sufficient before promising a model will work." },
+      { "title": "Build & Validate", "desc": "Models and workflows are tested against real historical cases, with accuracy reported honestly." },
+      { "title": "Deploy with Human Oversight", "desc": "Automation ships with a human-in-the-loop review step until accuracy is proven in production." }
+    ],
+    "project_types": ["Chat & support automation", "Predictive analytics", "Workflow automation", "Document processing"],
+    "faqs": [
+      { "q": "Do you build custom AI models or use existing APIs?", "a": "Most projects use existing models (like OpenAI's) fine-tuned or prompted for your use case — custom model training is reserved for cases where it's genuinely justified by the data and budget." },
+      { "q": "How do you handle AI accuracy and mistakes?", "a": "We report accuracy honestly based on testing, and typically recommend a human-review step until a workflow has proven reliable in production." },
+      { "q": "Is our data used to train external models?", "a": "No — we configure integrations to prevent your data being used for third-party model training unless you explicitly want that." }
+    ],
+    "testimonial": { "quote": "Our support team's first-response time dropped by half, and it only suggests drafts — a person still hits send.", "author": "Client Name", "role": "Head of Customer Support, Partner Company" }
+  },
+  {
+    "slug": "api-integration",
+    "icon": "link",
+    "title": "API & Integration",
+    "tagline": "Connecting the systems you already have, without duct tape.",
+    "cover_stat": { "value": "220+", "label": "Integrations delivered" },
+    "overview": "We connect your existing tools, payment providers and partner systems through well-documented, monitored integrations — so data flows automatically instead of living in someone's manual export-and-upload routine.",
+    "core_stack": [
+      { "name": "REST", "level": 95 },
+      { "name": "GraphQL", "level": 82 },
+      { "name": "Webhooks", "level": 90 },
+      { "name": "OAuth 2.0", "level": 88 },
+      { "name": "OpenAPI / Postman", "level": 85 }
+    ],
+    "use_cases": [
+      { "title": "Third-party tool integrations", "desc": "Connecting your CRM, support desk and billing system so data updates in one place instead of three." },
+      { "title": "Payment gateway integration", "desc": "Stripe, PayPal or regional payment provider integrations built with reconciliation and failure handling in mind." },
+      { "title": "Legacy system bridging", "desc": "Middleware that lets a modern application talk to an older internal system without replacing it outright." }
+    ],
+    "process": [
+      { "title": "System Mapping", "desc": "We document what each system exposes and what data actually needs to flow between them." },
+      { "title": "Contract Design", "desc": "API contracts and authentication approach agreed upfront, including how failures are handled." },
+      { "title": "Build & Monitor", "desc": "Integrations are built with logging and alerting so failures are caught immediately, not discovered a week later." },
+      { "title": "Test Failure Paths", "desc": "We deliberately test what happens when an integration partner is slow or down, not just the happy path." }
+    ],
+    "project_types": ["Third-party integrations", "Payment gateway integration", "Legacy system bridging", "Partner API design"],
+    "faqs": [
+      { "q": "What happens if a third-party API goes down?", "a": "Integrations are built with retry logic, alerting and graceful degradation so a partner outage doesn't take down your whole system." },
+      { "q": "Can you design an API for our partners to integrate with?", "a": "Yes, we design and document partner-facing APIs, including versioning strategy and onboarding documentation." },
+      { "q": "Do you handle authentication and security for integrations?", "a": "Yes, OAuth 2.0 and API key management are handled as part of every integration, with credentials never hardcoded." }
+    ],
+    "testimonial": { "quote": "Data that used to be manually re-entered between our CRM and billing system now syncs automatically within seconds.", "author": "Client Name", "role": "Operations Manager, Partner Company" }
+  }
+]

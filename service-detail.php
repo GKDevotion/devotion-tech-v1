@@ -741,15 +741,10 @@ $otherServices = array_values(array_filter($services, function ($s) use ($servic
 
     .svc-sidebar {
         position: sticky;
-
         top: 30px;
-
         display: flex;
-
         flex-direction: column;
-
         gap: 18px;
-
         min-width: 0;
     }
 

@@ -87,14 +87,13 @@ include_once('elements/header.php');
     }
 
     .top-banner-background h1 {
-        color: #fff;
+        color: #000;
         font-weight: 700;
         font-size: clamp(2rem, 3.4vw, 2.6rem);
     }
 
     .top-banner-background p {
-        color: rgba(255, 255, 255, .75);
-        max-width: 640px;
+        color: #000;
         margin-left: auto;
         margin-right: auto;
     }
@@ -167,7 +166,7 @@ include_once('elements/header.php');
 
     .featured-body p.excerpt {
         color: #6c7280;
-        font-size: .98rem;
+        font-size: 1rem;
         line-height: 1.7;
         margin-bottom: 22px !important;
     }
@@ -282,7 +281,7 @@ include_once('elements/header.php');
     }
 
     .news-date {
-        font-size: .8rem;
+        font-size: 1rem;
         color: #6c7280;
         margin-bottom: 10px !important;
         display: block;
@@ -298,7 +297,7 @@ include_once('elements/header.php');
 
     .news-body p.excerpt {
         color: #6c7280;
-        font-size: .9rem;
+        font-size: 1rem;
         line-height: 1.6;
         margin-bottom: 16px !important;
     }

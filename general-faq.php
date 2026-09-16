@@ -78,7 +78,7 @@
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 800;
         margin-bottom: 16px;
         line-height: 1.2;
@@ -86,7 +86,7 @@
 
     .hero p {
         color: #6b7280;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     /* SEARCH */
@@ -324,7 +324,7 @@
 
     .still-have p {
         color: #b9bcd2;
-        font-size: 14.5px;
+        font-size: 1rem;
         position: relative;
     }
 
@@ -399,7 +399,7 @@
     </div>
 </section>
 
-<div class="container">
+<div class="container py-5">
     <!-- FULL FAQ LIBRARY BY CATEGORY --> 
 
     <div class="container section-head mt-5"> 
@@ -628,6 +628,5 @@
 </div>
 
 <?php
-include_once('elements/faqs.php');
 include_once('elements/footer.php');
 ?>
