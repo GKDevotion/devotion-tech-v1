@@ -1,7 +1,7 @@
 <!-- ============ HEADER ============ -->
 <header class="devotion-header sticky-top">
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid px-3 px-lg-5">
+    <div class="container">
 
       <!-- Logo -->
       <!-- <a class="navbar-brand d-flex align-items-center gap-2" href="javascript:void();">
@@ -344,13 +344,14 @@
 
   .navbar-nav .nav-link {
     color: var(--ink);
-    font-size: 1rem;
+    font-size: 0.85rem;
+    padding: 0px;
     font-weight: 500;
     padding: 1rem .82rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    gap: .4rem;
+    gap: .2rem;
     white-space: nowrap;
     transition: color .2s ease, background .2s ease;
   }
@@ -416,24 +417,16 @@
       display: block;
     }
 
-    .mega-panel-sm {
-      width: 290px !important;
-      min-width: 290px !important;
-    }
-
-    .mega-panel-grid {
-      width: 315px !important;
-      min-width: 315px !important;
-    }
+ 
   }
 
   .mega-panel-sm {
-    min-width: 290px
+    min-width: 270px
   }
 
   .mega-panel-grid {
-    width: 315px;
-    min-width: 315px
+    width: 270px;
+    min-width: 270px
   }
 
   .mega-panel-header {
@@ -578,14 +571,14 @@
   }
 
   .mega-list li a {
-    min-height: 50px;
+    min-height: 40px;
     display: flex;
     align-items: center;
     gap: .62rem;
     padding: .55rem .9rem;
     color: var(--ink);
     text-decoration: none;
-    font-size: .82rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: background .15s ease, color .15s ease, padding-left .15s ease;
   }
@@ -895,10 +888,10 @@
       const rect = toggle.getBoundingClientRect();
 
       const width = menu.classList.contains('mega-panel-grid') ?
-        315 :
-        290;
+        252 :
+        270;
 
-      const gap = 8;
+      const gap = 5;
       const viewportPadding = 12;
 
       /* Dropdown appears below the navbar item */
@@ -982,7 +975,7 @@
 
       const rect = group.getBoundingClientRect();
       const gap = 8;
-      const width = Math.min(360, window.innerWidth - 24);
+      const width = Math.min(270, window.innerWidth - 24);
       const viewportPadding = 12;
 
       flyout.style.width = width + 'px';

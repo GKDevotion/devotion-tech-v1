@@ -1183,48 +1183,34 @@ $apps = array_values(array_filter($portfolio, function ($p) {
 
 
 /* ================= PHONE ================= */
-
 .phone-frame {
     position: relative;
-
     width: 130px;
     height: 260px;
-
     padding: 10px;
-
     background: #080f28;
-
     border: 1px solid rgba(255, 255, 255, 0.06);
-
     border-radius: 29px;
-
     box-shadow:
         0 20px 30px rgba(7, 19, 49, 0.22),
         0 8px 15px rgba(7, 19, 49, 0.12);
-
     transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
 }
 
-
 .app-card:hover .phone-frame {
     transform: translateY(-5px);
-
     box-shadow:
         0 25px 40px rgba(7, 19, 49, 0.28),
         0 10px 20px rgba(7, 19, 49, 0.14);
 }
 
-
 /* Phone screen */
-
 .phone-screen {
     position: relative;
-
     width: 100%;
     height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1235,108 +1221,71 @@ $apps = array_values(array_filter($portfolio, function ($p) {
             #101e44 0%,
             #172d60 100%
         );
-
     border-radius: 21px;
-
     overflow: hidden;
 }
 
-
 /* Phone speaker */
-
 .phone-speaker {
     position: absolute;
-
     top: 16px;
     left: 50%;
-
     width: 43px;
     height: 5px;
-
     transform: translateX(-50%);
-
     background: #555f77;
-
     border-radius: 20px;
-
     z-index: 10;
 }
 
 
 /* Phone icon */
-
 .phone-icon {
     width: 42px;
     height: 42px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: var(--devotion-gold);
-
     border: 2px solid var(--devotion-gold);
-
     border-radius: 7px;
 }
-
 .phone-icon svg {
     width: 22px;
     height: 22px;
 }
 
-
 /* ================= CLIENT ================= */
-
 .app-client {
     display: inline-block;
-
     margin-top: 2px;
     margin-bottom: 8px;
-
     color: var(--devotion-gold);
-
     font-family: "Poppins", sans-serif;
-
     font-size: 12px;
     font-weight: 600;
 
     letter-spacing: 0.15px;
 }
 
-
 /* ================= TITLE ================= */
-
 .app-title {
-    margin: 0 auto 8px;
-
-    max-width: 330px;
-
+    margin: 0 auto 8px; 
     color: var(--app-text);
-
     font-family: "Poppins", sans-serif;
-
     font-size: 18px;
     line-height: 1.4;
     font-weight: 700;
-
     letter-spacing: -0.25px;
 }
 
 
 /* ================= DESCRIPTION ================= */
-
 .app-summary {
-    max-width: 340px;
-
     min-height: 58px;
-
     margin: 0 auto 18px;
-
     color: var(--app-muted);
-
     font-family: "Poppins", sans-serif;
-
     font-size: 13px;
     line-height: 1.75;
     font-weight: 400;
@@ -1544,7 +1493,6 @@ $apps = array_values(array_filter($portfolio, function ($p) {
     }
 }
 
-
 @media (max-width: 991.98px) {
 
     .app-showcase-section {
@@ -1563,7 +1511,6 @@ $apps = array_values(array_filter($portfolio, function ($p) {
         order: -1;
     }
 }
-
 
 @media (max-width: 767.98px) {
 
@@ -1602,7 +1549,6 @@ $apps = array_values(array_filter($portfolio, function ($p) {
         min-height: auto;
     }
 }
-
 
 @media (max-width: 480px) {
 
