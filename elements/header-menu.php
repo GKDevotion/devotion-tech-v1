@@ -888,7 +888,7 @@
       const rect = toggle.getBoundingClientRect();
 
       const width = menu.classList.contains('mega-panel-grid') ?
-        252 :
+        270 :
         270;
 
       const gap = 5;
