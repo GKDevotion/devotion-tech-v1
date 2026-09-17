@@ -119,7 +119,7 @@ $otherSystems = array_values(array_filter($systems, function ($s) use ($system) 
             flex-wrap: wrap;
             align-items: center;
             gap: 8px;
-            font-size: .84rem;
+            font-size: 1rem;
             color: #6c7280;
         }
 
@@ -155,10 +155,10 @@ $otherSystems = array_values(array_filter($systems, function ($s) use ($system) 
             inset: 0;
 
             background-image:
-                linear-gradient(rgba(255, 255, 255, 0.035) 1px,
+                linear-gradient(#00000011 1px,
                     transparent 1px),
                 linear-gradient(90deg,
-                    rgba(255, 255, 255, 0.035) 1px,
+                    #00000011 1px,
                     transparent 1px);
 
             background-size: 56px 56px;

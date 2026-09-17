@@ -128,7 +128,7 @@ $otherTools = array_values(array_filter($tools, function ($t) use ($tool) {
             flex-wrap: wrap;
             align-items: center;
             gap: 8px;
-            font-size: .84rem;
+            font-size: 1rem;
             color: #6c7280;
         }
 
@@ -151,51 +151,58 @@ $otherTools = array_values(array_filter($tools, function ($t) use ($tool) {
 
         .sys-hero {
             position: relative;
-
             overflow: hidden;
-
-            min-height: 250px;
-
-            display: flex;
-            align-items: center;
-
-            background: url(../d-tech/assets/images/banner-img.png);
-
-            border-top: 1px solid rgba(179, 143, 81, 0.25);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            background-image: url(../d-tech/assets/images/banner-img.png);
+            background-repeat: no-repeat;
+            color: #000;
         }
 
+        /* Subtle architectural grid */
+        .sys-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient( #00000011 1px,
+                    transparent 1px),
+                linear-gradient(90deg,
+                    #00000011 1px,
+                    transparent 1px);
 
-        /* =========================================================
-   CONTAINER
-========================================================= */
+            background-size: 56px 56px;
+            pointer-events: none;
+        }
+
+        /* Gold top accent */
+        .sys-hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #B38F51;
+        }
 
         .sys-hero .container {
             position: relative;
-            z-index: 2;
+            z-index: 1;
         }
 
-
-        /* =========================================================
-   INNER LAYOUT
-========================================================= */
-
+        /* Main Layout */
         .sys-hero-inner {
-            min-height: 250px;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
-
-            gap: 60px;
-
-            padding: 42px 0;
+            gap: 50px;
+            min-height: 215px;
+            padding: 40px 0;
         }
 
 
         /* =========================================================
-   MAIN CONTENT
-========================================================= */
+        MAIN CONTENT
+        ========================================================= */
 
         .sys-hero-main {
             display: flex;
