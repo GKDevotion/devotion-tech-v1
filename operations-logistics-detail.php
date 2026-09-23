@@ -2732,7 +2732,7 @@ $otherSystems = array_values(array_filter($systems, function ($s) use ($system) 
 
         .cta-section {
             padding-top: 100px;
-            padding-bottom: 30px;
+            padding-bottom: 100px;
         }
 
         .premium-cta {

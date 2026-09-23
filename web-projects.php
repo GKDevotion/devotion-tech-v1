@@ -107,7 +107,7 @@ $projects = array_values(array_filter($portfolio, function ($p) {
         display: flex;
         align-items: center;
         padding: 100px 0 60px;
-        background: #fff;
+        background: url('<?php echo $siteBase; ?>/assets/images/banner-img.png');
         color: #000;
     }
 

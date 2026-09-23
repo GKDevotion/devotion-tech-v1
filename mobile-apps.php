@@ -103,7 +103,7 @@ $apps = array_values(array_filter($portfolio, function ($p) {
         position: relative;
         overflow: hidden;
         isolation: isolate;
-        background: #fff;
+        background: url('<?php echo $siteBase; ?>/assets/images/banner-img.png');
         color: #000;
         padding: 105px 0 110px;
     }

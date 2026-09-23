@@ -106,7 +106,7 @@ function fin_icon($icons, $key)
     .fin-hero {
         position: relative;
         overflow: hidden;
-        background: url(../d-tech/assets/images/banner-img.png);
+        background: url('<?php echo $siteBase; ?>/assets/images/banner-img.png');
         color: #000;
         padding: 94px 20px 76px;
         border-top: 1px solid rgba(179, 143, 81, 0.35);

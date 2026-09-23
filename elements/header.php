@@ -1,3 +1,13 @@
+<?php
+// Compute an absolute base path for every link/asset in this header so they
+// keep working no matter how "deep" the current clean URL looks
+// (e.g. /services/custom-software-development vs. /services.php).
+// This is derived from the actual PHP script's real location, which PHP
+// always knows correctly even when mod_rewrite serves a prettier URL.
+if (!isset($siteBase)) {
+    $siteBase = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +23,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo $siteBase; ?>/assets/css/style.css">
  
 </head>
 <body>  

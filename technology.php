@@ -115,7 +115,7 @@ function tech_icon($icons, $key)
 
     .tech-hero {
         position: relative;
-        background: #fff;
+        background: url('<?php echo $siteBase; ?>/assets/images/banner-img.png');
         color: #000;
         min-height: 470px;
         padding: 0px;

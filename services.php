@@ -220,7 +220,7 @@
     .bento-card.featured {
         grid-column: span 4;
         grid-row: span 2;
-        background: url(../d-tech/assets/images/web-development.png);
+        background: url('<?php echo $siteBase; ?>/assets/images/web-development.png'); 
         color: #fff;
         border-color: transparent;
     }
@@ -483,7 +483,7 @@
 </style>
 
 <!-- TOP BANNER -->
-<section class="top-banner-background" style="background-image: url('assets/images/banner-img.png');">
+<section class="top-banner-background" style="background-image: url('<?php echo $siteBase; ?>/assets/images/banner-img.png');">
     <div>
         <h1 class="mb-0 text-center">Our Services</h1>
         <p class="text-center mt-2">Web, app, design, marketing and support services delivered by senior-led teams — pick a service to see how we approach it.</p>

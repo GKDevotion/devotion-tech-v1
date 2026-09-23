@@ -1,3 +1,13 @@
+<?php
+// Compute an absolute base path for every link/asset in this header so they
+// keep working no matter how "deep" the current clean URL looks
+// (e.g. /services/custom-software-development vs. /services.php).
+// This is derived from the actual PHP script's real location, which PHP
+// always knows correctly even when mod_rewrite serves a prettier URL.
+if (!isset($siteBase)) {
+    $siteBase = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/');
+}
+?>
 
 <style>
  
@@ -234,7 +244,7 @@
         <div class="col-12 col-md-6 col-lg-3">
           <!-- Logo -->
           <div class="d-flex align-items-center gap-2 mb-0"> 
-              <img src="assets/images/logo.png" alt="">  
+              <img src="<?php echo $siteBase; ?>/assets/images/logo.png" alt="">  
           </div>
 
           <p class="footer-tagline">

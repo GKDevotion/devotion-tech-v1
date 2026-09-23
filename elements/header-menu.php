@@ -1,3 +1,13 @@
+<?php
+// Compute an absolute base path for every link/asset in this header so they
+// keep working no matter how "deep" the current clean URL looks
+// (e.g. /services/custom-software-development vs. /services.php).
+// This is derived from the actual PHP script's real location, which PHP
+// always knows correctly even when mod_rewrite serves a prettier URL.
+if (!isset($siteBase)) {
+    $siteBase = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/');
+}
+?>
 <!-- ============ HEADER ============ -->
 <header class="devotion-header sticky-top">
   <nav class="navbar navbar-expand-lg">
@@ -7,8 +17,8 @@
       <!-- <a class="navbar-brand d-flex align-items-center gap-2" href="javascript:void();">
         <img src="assets/Devotion Technology.png" alt="Devotion Logo" class="logo-img" width="300" height="auto">
       </a> -->
-      <a class="navbar-brand" href="index.php">
-        <img src="assets/images/logo.png" alt="Devotion Tech">
+      <a class="navbar-brand" href="<?php echo $siteBase; ?>/index">
+        <img src="<?php echo $siteBase; ?>/assets/images/logo.png" alt="Devotion Tech">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#devotionNav" aria-controls="devotionNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +29,7 @@
         <ul class="navbar-nav align-items-lg-center gap-lg-1">
 
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Home</a>
+            <a class="nav-link" href="<?php echo $siteBase; ?>/index">Home</a>
           </li>
 
           <!-- About Us -->
@@ -32,11 +42,11 @@
                 <i class="bi bi-people-fill"></i> About Us
               </div>
               <ul class="mega-list">
-                <li><a href="company-overview.php"><i class="bi bi-building"></i> Company Overview <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/company-overview"><i class="bi bi-building"></i> Company Overview <i class="bi bi-chevron-right ms-auto"></i></a></li>
                 <li><a href="javascript:void();"><i class="bi bi-bullseye"></i> Our Mission &amp; Vision <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="our-team.php"><i class="bi bi-person-video3"></i> Our Team <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="why-choose-us.php"><i class="bi bi-star-fill"></i> Why Choose Us <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="testimonial.php"><i class="bi bi-people"></i> Our Clients <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/our-team"><i class="bi bi-person-video3"></i> Our Team <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/why-choose-us"><i class="bi bi-star-fill"></i> Why Choose Us <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/testimonial"><i class="bi bi-people"></i> Our Clients <i class="bi bi-chevron-right ms-auto"></i></a></li>
               </ul>
             </div>
           </li>
@@ -80,7 +90,7 @@
                       <?php foreach ($navServices as $navService): ?>
                           <?php $navIcon = $navIconMap[$navService['icon']] ?? 'bi-gear'; ?>
                           <li>
-                              <a href="service-detail.php?slug=<?php echo urlencode($navService['slug']); ?>">
+                              <a href="<?php echo $siteBase; ?>/services/<?php echo urlencode($navService['slug']); ?>">
                                   <i class="bi <?php echo $navIcon; ?>"></i>
                                   <?php echo htmlspecialchars($navService['title']); ?>
                                   <i class="bi bi-chevron-right ms-auto"></i>
@@ -88,7 +98,7 @@
                           </li>
                       <?php endforeach; ?>
                       <li class="mega-list-footer">
-                          <a href="services.php">View All Services <i class="bi bi-arrow-right ms-1"></i></a>
+                          <a href="<?php echo $siteBase; ?>/services">View All Services <i class="bi bi-arrow-right ms-1"></i></a>
                       </li>
                   </ul>
               </div>
@@ -120,12 +130,12 @@
                       <i class="bi bi-truck"></i> Operations &amp; Logistics
                     </div>
                     <ul class="mega-list">
-                      <li><a href="operations-logistics-detail.php?slug=wms"><i class="bi bi-box-seam"></i><span><b>WMS</b><small>Warehouse Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="operations-logistics-detail.php?slug=ims"><i class="bi bi-clipboard-data"></i><span><b>IMS</b><small>Inventory Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="operations-logistics-detail.php?slug=oms"><i class="bi bi-receipt"></i><span><b>OMS</b><small>Order Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="operations-logistics-detail.php?slug=scm"><i class="bi bi-diagram-3"></i><span><b>SCM</b><small>Supply Chain Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="operations-logistics-detail.php?slug=tms"><i class="bi bi-truck-flatbed"></i><span><b>TMS</b><small>Transportation Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="operations-logistics.php"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Operations &amp; Logistics Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/operations-logistics/wms"><i class="bi bi-box-seam"></i><span><b>WMS</b><small>Warehouse Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/operations-logistics/ims"><i class="bi bi-clipboard-data"></i><span><b>IMS</b><small>Inventory Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/operations-logistics/oms"><i class="bi bi-receipt"></i><span><b>OMS</b><small>Order Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/operations-logistics/scm"><i class="bi bi-diagram-3"></i><span><b>SCM</b><small>Supply Chain Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/operations-logistics/tms"><i class="bi bi-truck-flatbed"></i><span><b>TMS</b><small>Transportation Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/operations-logistics"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Operations &amp; Logistics Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -142,15 +152,15 @@
                       <i class="bi bi-megaphone"></i> Sales &amp; Marketing
                     </div>
                     <ul class="mega-list">
-                      <li><a href="sales-marketing-detail.php?slug=pos"><i class="bi bi-shop"></i><span><b>POS</b><small>Point of Sale Systems</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="sales-marketing-detail.php?slug=pim"><i class="bi bi-tag"></i><span><b>PIM</b><small>Product Information Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="sales-marketing-detail.php?slug=cms"><i class="bi bi-layout-text-window"></i><span><b>CMS</b><small>Content Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="sales-marketing-detail.php?slug=cdp"><i class="bi bi-person-lines-fill"></i><span><b>CDP</b><small>Customer Data Platform</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="sales-marketing-detail.php?slug=esp"><i class="bi bi-envelope-paper"></i><span><b>ESP</b><small>Email Service Provider Automation</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="sales-marketing-detail.php?slug=crm"><i class="bi bi-person-badge"></i><span><b>CRM</b><small>Customer Relation Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="sales-marketing-detail.php?slug=hrms"><i class="bi bi-person-workspace"></i><span><b>HRMS</b><small>Human Resource Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="sales-marketing-detail.php?slug=forex-crm"><i class="bi bi-currency-exchange"></i><span><b>Forex CRM</b><small>Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="sales-marketing-detail.php?slug=saas"><i class="bi bi-cloud-check"></i><span><b>SAAS</b><small>Software as a Service Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/pos"><i class="bi bi-shop"></i><span><b>POS</b><small>Point of Sale Systems</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/pim"><i class="bi bi-tag"></i><span><b>PIM</b><small>Product Information Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/cms"><i class="bi bi-layout-text-window"></i><span><b>CMS</b><small>Content Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/cdp"><i class="bi bi-person-lines-fill"></i><span><b>CDP</b><small>Customer Data Platform</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/esp"><i class="bi bi-envelope-paper"></i><span><b>ESP</b><small>Email Service Provider Automation</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/crm"><i class="bi bi-person-badge"></i><span><b>CRM</b><small>Customer Relation Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/hrms"><i class="bi bi-person-workspace"></i><span><b>HRMS</b><small>Human Resource Management System</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/forex-crm"><i class="bi bi-currency-exchange"></i><span><b>Forex CRM</b><small>Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/sales-marketing/saas"><i class="bi bi-cloud-check"></i><span><b>SAAS</b><small>Software as a Service Management</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -167,11 +177,11 @@
                       <i class="bi bi-graph-up-arrow"></i> Finance &amp; Analytics
                     </div>
                     <ul class="mega-list">
-                      <li><a href="finance-analytics-detail.php?slug=erp"><i class="bi bi-bank"></i><span><b>ERP</b><small>Enterprise Resource Planning</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="finance-analytics-detail.php?slug=bi"><i class="bi bi-bar-chart-line"></i><span><b>BI</b><small>Business Intelligence &amp; Analytics</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="finance-analytics-detail.php?slug=billing"><i class="bi bi-receipt-cutoff"></i><span><b>Billing</b><small>Subscription &amp; Invoicing Engines</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="finance-analytics-detail.php?slug=paygate"><i class="bi bi-credit-card"></i><span><b>PayGate</b><small>Payment Gateway Integrations</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="finance-analytics.php"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Finance &amp; Analytics Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/finance-analytics/erp"><i class="bi bi-bank"></i><span><b>ERP</b><small>Enterprise Resource Planning</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/finance-analytics/bi"><i class="bi bi-bar-chart-line"></i><span><b>BI</b><small>Business Intelligence &amp; Analytics</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/finance-analytics/billing"><i class="bi bi-receipt-cutoff"></i><span><b>Billing</b><small>Subscription &amp; Invoicing Engines</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/finance-analytics/paygate"><i class="bi bi-credit-card"></i><span><b>PayGate</b><small>Payment Gateway Integrations</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/finance-analytics"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Finance &amp; Analytics Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -188,9 +198,9 @@
                       <i class="bi bi-headset"></i> Customer Support
                     </div>
                     <ul class="mega-list">
-                      <li><a href="customer-support-detail.php?slug=helpdesk"><i class="bi bi-life-preserver"></i><span><b>Helpdesk</b><small>Ticketing &amp; Support Systems</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="customer-support-detail.php?slug=livechat"><i class="bi bi-chat-dots"></i><span><b>LiveChat</b><small>AI Bots &amp; Live Chat Tools</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
-                      <li><a href="customer-support.php"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Customer Support Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/customer-support/helpdesk"><i class="bi bi-life-preserver"></i><span><b>Helpdesk</b><small>Ticketing &amp; Support Systems</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/customer-support/livechat"><i class="bi bi-chat-dots"></i><span><b>LiveChat</b><small>AI Bots &amp; Live Chat Tools</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
+                      <li><a href="<?php echo $siteBase; ?>/customer-support"><i class="bi bi-grid-3x3-gap"></i><span><b>View All</b><small>Customer Support Overview</small></span><i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -236,7 +246,7 @@
                       $navIconClass = isset($navTechIcons[$navTech['slug']]) ? $navTechIcons[$navTech['slug']] : 'bi-code-square';
                 ?>
                   <li>
-                    <a href="technology-detail.php?slug=<?php echo urlencode($navTech['slug']); ?>">
+                    <a href="<?php echo $siteBase; ?>/technology/<?php echo urlencode($navTech['slug']); ?>">
                       <i class="bi <?php echo htmlspecialchars($navIconClass); ?>"></i>
                       <?php echo htmlspecialchars($navTech['title']); ?>
                       <i class="bi bi-chevron-right ms-auto"></i>
@@ -244,7 +254,7 @@
                   </li>
                 <?php endforeach; ?>
                 <li class="mega-list-footer">
-                  <a href="technology.php">View All Technology <i class="bi bi-arrow-right"></i></a>
+                  <a href="<?php echo $siteBase; ?>/technology">View All Technology <i class="bi bi-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -260,10 +270,10 @@
                 <i class="bi bi-images"></i> Portfolio
               </div>
               <ul class="mega-list">
-                <li><a href="web-projects.php"><i class="bi bi-globe"></i> Web Projects <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="mobile-apps.php"><i class="bi bi-phone"></i> Mobile Apps <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="software-projects.php"><i class="bi bi-code-slash"></i> Software Projects <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="case-studies.php"><i class="bi bi-file-earmark-text"></i> Case Studies <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/web-projects"><i class="bi bi-globe"></i> Web Projects <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/mobile-apps"><i class="bi bi-phone"></i> Mobile Apps <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/software-projects"><i class="bi bi-code-slash"></i> Software Projects <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/case-studies"><i class="bi bi-file-earmark-text"></i> Case Studies <i class="bi bi-chevron-right ms-auto"></i></a></li>
               </ul>
             </div>
           </li>
@@ -278,16 +288,16 @@
                 <i class="bi bi-book-fill"></i> Resources
               </div>
               <ul class="mega-list">
-                <li><a href="blog.php"><i class="bi bi-pencil-square"></i> Blog <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="news-and-update.php"><i class="bi bi-newspaper"></i> News &amp; Updates <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="general-faq.php"><i class="bi bi-question-circle"></i> FAQs <i class="bi bi-chevron-right ms-auto"></i></a></li>
-                <li><a href="knowledge-base.php"><i class="bi bi-database-fill"></i> Knowledge Base <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/blog"><i class="bi bi-pencil-square"></i> Blog <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/news-and-update"><i class="bi bi-newspaper"></i> News &amp; Updates <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/general-faq"><i class="bi bi-question-circle"></i> FAQs <i class="bi bi-chevron-right ms-auto"></i></a></li>
+                <li><a href="<?php echo $siteBase; ?>/knowledge-base"><i class="bi bi-database-fill"></i> Knowledge Base <i class="bi bi-chevron-right ms-auto"></i></a></li>
               </ul>
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="careear.php">Careers</a>
+            <a class="nav-link" href="<?php echo $siteBase; ?>/careear">Careers</a>
           </li>
 
         </ul>
@@ -298,27 +308,42 @@
 
 <style>
   :root {
-    --gold: #b38f51;
-    --gold-dark: #8f6f38;
-    --gold-light: #d9bf8f;
-    --gold-pale: #f6efe1;
-    --ink: #2b2620;
-    --muted: #7c7368;
+    /* Refined, slightly cooler + deeper palette for a more corporate feel */
+    --gold: #a9812e;
+    --gold-dark: #7d5f22;
+    --gold-light: #d6b968;
+    --gold-pale: #faf5e9;
+    --ink: #1f2430;
+    --muted: #6b7280;
     --panel-bg: #fff;
-    --panel-border: #e9ddc6;
+    --panel-border: #e7e2d6;
+    --line: #eceef1;
     --white: #ffffff;
     --dark: #111111;
+    --radius-lg: 12px;
+    --radius-md: 10px;
+    --shadow-sm: 0 2px 10px rgba(31, 36, 48, .06);
+    --shadow-lg: 0 20px 48px -12px rgba(31, 36, 48, .22), 0 4px 14px rgba(31, 36, 48, .06);
   }
 
   .devotion-header {
     background: #fff;
-    border-bottom: 1px solid var(--panel-border);
-    box-shadow: 0 4px 18px rgba(179, 143, 81, .12);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
     z-index: 1000;
   }
 
+  .navbar {
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+  }
+
+  .navbar-brand img {
+    height: 42px;
+    width: auto;
+  }
 
   .brand-placeholder {
     width: 180px;
@@ -346,28 +371,38 @@
     font-weight: 700
   }
 
+  /* ===== Top-level nav links ===== */
   .navbar-nav .nav-link {
+    position: relative;
     color: var(--ink);
-    font-size: 0.85rem;
-    padding: 0px;
+    font-size: .875rem;
     font-weight: 500;
-    padding: 1rem .82rem;
-    border-radius: 10px;
+    letter-spacing: .1px;
+    padding: .7rem .85rem;
+    border-radius: var(--radius-md);
     display: flex;
     align-items: center;
-    gap: .2rem;
+    gap: .38rem;
     white-space: nowrap;
-    transition: color .2s ease, background .2s ease;
+    transition: color .18s ease, background-color .18s ease;
   }
 
   .nav-icon {
     color: var(--gold);
-    font-size: .94rem
+    font-size: .92rem;
+    transition: color .18s ease;
   }
 
   .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link:focus {
-    color: var(--gold-dark)
+  .navbar-nav .nav-link:focus,
+  .navbar-nav .nav-link[aria-expanded="true"] {
+    color: var(--gold-dark);
+    background: var(--gold-pale);
+  }
+
+  .navbar-nav .nav-link:hover .nav-icon,
+  .navbar-nav .nav-link[aria-expanded="true"] .nav-icon {
+    color: var(--gold-dark);
   }
 
   .navbar-nav .nav-link,
@@ -380,17 +415,19 @@
   .dropdown-toggle::after {
     border: 0;
     content: "";
-    width: .4em;
-    height: .4em;
-    margin-left: .25rem;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
+    width: .38em;
+    height: .38em;
+    margin-left: .3rem;
+    border-right: 1.6px solid currentColor;
+    border-bottom: 1.6px solid currentColor;
     transform: rotate(45deg);
-    opacity: .75;
+    opacity: .6;
+    transition: transform .2s ease;
   }
 
-  .mega-dropdown.show>.dropdown-toggle::after {
-    transform: rotate(225deg)
+  .mega-dropdown.show > .dropdown-toggle::after {
+    transform: rotate(225deg);
+    opacity: .85;
   }
 
   /* ===============================
@@ -402,7 +439,7 @@
       position: relative;
     }
 
-    .mega-dropdown>.mega-panel {
+    .mega-dropdown > .mega-panel {
       position: fixed !important;
       margin: 0 !important;
       top: auto;
@@ -411,39 +448,50 @@
       transform: none !important;
 
       border: 1px solid var(--panel-border);
-      border-radius: 14px;
+      border-radius: var(--radius-lg);
       background: var(--panel-bg);
-      box-shadow: 0 18px 40px rgba(60, 45, 15, .15);
+      box-shadow: var(--shadow-lg);
       overflow: visible;
+      animation: megaFadeIn .16s ease both;
     }
 
-    .mega-dropdown>.mega-panel.show {
+    .mega-dropdown > .mega-panel.show {
       display: block;
     }
+  }
 
- 
+  @keyframes megaFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
 
   .mega-panel-sm {
-    min-width: 270px
+    min-width: 280px
   }
 
   .mega-panel-grid {
-    width: 270px;
-    min-width: 270px
+    width: 280px;
+    min-width: 280px
   }
 
+  /* ===== Panel header — subtle gradient instead of flat fill ===== */
   .mega-panel-header {
-    background: var(--gold);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
     color: #fff;
     font-weight: 600;
-    font-size: .92rem;
-    padding: .82rem 1rem;
-    min-height: 54px;
+    font-size: .88rem;
+    letter-spacing: .2px;
+    padding: .85rem 1.05rem;
+    min-height: 52px;
     display: flex;
     align-items: center;
-    gap: .5rem;
-    border-radius: 13px 13px 0 0;
+    gap: .55rem;
+    border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;
+  }
+
+  .mega-panel-header i {
+    font-size: .95rem;
+    opacity: .95;
   }
 
   .mega-panel-body {
@@ -451,23 +499,23 @@
     overflow-y: auto;
     overflow-x: visible;
     scrollbar-width: thin;
-    scrollbar-color: #b8a27b transparent;
+    scrollbar-color: #cdbe98 transparent;
     position: relative;
-    border-radius: 0 0 13px 13px;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   }
 
   .mega-panel-body::-webkit-scrollbar {
-    width: 7px
+    width: 6px
   }
 
   .mega-panel-body::-webkit-scrollbar-thumb {
-    background: #b8a27b;
+    background: #cdbe98;
     border-radius: 10px;
   }
 
   .mega-group {
     position: relative;
-    border-bottom: 1px solid var(--panel-border);
+    border-bottom: 1px solid var(--line);
   }
 
   .mega-group:last-child {
@@ -478,12 +526,11 @@
     width: 100%;
     border: 0;
     background: #fff;
-    /* color: var(--gold-dark); */
+    color: var(--ink);
     font-family: inherit;
-    font-size: .79rem;
-    font-size: 0.85rem;
+    font-size: .84rem;
     font-weight: 500;
-    padding: .62rem .9rem;
+    padding: .68rem .95rem;
     min-height: 46px;
     display: flex;
     align-items: center;
@@ -491,30 +538,37 @@
     gap: .5rem;
     text-align: left;
     cursor: pointer;
-    transition: background .16s ease, color .16s ease;
+    border-left: 3px solid transparent;
+    transition: background-color .16s ease, color .16s ease, border-color .16s ease;
+  }
+
+  .mega-group-title i:first-child {
+    color: var(--gold);
   }
 
   .mega-group-title span {
     display: flex;
     align-items: center;
-    gap: .45rem;
+    gap: .5rem;
   }
 
   .group-arrow {
-    font-size: .72rem;
+    font-size: .68rem;
+    color: var(--gold-light);
     transition: transform .18s ease;
   }
 
-  .mega-group:hover>.mega-group-title,
-  .mega-group.active>.mega-group-title {
-    /* background:#efe3cd; */
+  .mega-group:hover > .mega-group-title,
+  .mega-group.active > .mega-group-title {
+    background: var(--gold-pale);
     color: var(--gold-dark);
+    border-left-color: var(--gold);
   }
 
-  .mega-group:hover>.mega-group-title .group-arrow,
-  .mega-group.active>.mega-group-title .group-arrow {
+  .mega-group:hover > .mega-group-title .group-arrow,
+  .mega-group.active > .mega-group-title .group-arrow {
     transform: translateX(2px);
-
+    color: var(--gold-dark);
   }
 
   .mega-flyout {
@@ -526,28 +580,28 @@
     overflow-x: hidden;
     background: #fff;
     border: 1px solid var(--panel-border);
-    border-radius: 13px;
-    box-shadow: 0 18px 45px rgba(60, 45, 15, .18);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateX(5px);
-    transition: opacity .13s ease, transform .13s ease, visibility .13s ease;
+    transform: translateX(6px);
+    transition: opacity .14s ease, transform .14s ease, visibility .14s ease;
     z-index: 2000;
     scrollbar-width: thin;
-    scrollbar-color: #b8a27b transparent;
+    scrollbar-color: #cdbe98 transparent;
   }
 
   .mega-flyout::-webkit-scrollbar {
-    width: 7px
+    width: 6px
   }
 
   .mega-flyout::-webkit-scrollbar-thumb {
-    background: #b8a27b;
+    background: #cdbe98;
     border-radius: 10px
   }
 
-  .mega-group.active>.mega-flyout {
+  .mega-group.active > .mega-flyout {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -558,11 +612,12 @@
     position: sticky;
     top: 0;
     z-index: 2;
-    background: var(--gold);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
     color: #fff;
-    font-size: .88rem;
+    font-size: .85rem;
     font-weight: 600;
-    padding: .75rem .95rem;
+    letter-spacing: .2px;
+    padding: .78rem 1rem;
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -571,55 +626,71 @@
   .mega-list {
     list-style: none;
     margin: 0;
-    padding: .35rem 0;
+    padding: .3rem 0;
   }
 
   .mega-list li a {
-    min-height: 40px;
+    min-height: 42px;
     display: flex;
     align-items: center;
-    gap: .62rem;
-    padding: .55rem .9rem;
+    gap: .65rem;
+    padding: .55rem .95rem;
     color: var(--ink);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: .88rem;
     font-weight: 500;
-    transition: background .15s ease, color .15s ease, padding-left .15s ease;
+    border-left: 3px solid transparent;
+    transition: background-color .15s ease, color .15s ease, border-color .15s ease, padding-left .15s ease;
   }
 
-  .mega-list li a>i:first-child {
+  .mega-list li a > i:first-child {
     color: var(--gold);
-    font-size: .95rem;
+    font-size: .92rem;
     flex: 0 0 20px;
+    text-align: center;
+    transition: color .15s ease;
   }
 
   .mega-list li a:hover {
-    /* background: var(--gold-pale); */
+    background: var(--gold-pale);
     color: var(--gold-dark);
+    border-left-color: var(--gold);
     padding-left: 1.1rem;
+  }
+
+  .mega-list li a:hover > i:first-child {
+    color: var(--gold-dark);
   }
 
   .mega-list li a .ms-auto {
     color: var(--gold-light);
-    font-size: .7rem;
+    font-size: .68rem;
   }
 
   .mega-list li a span {
     min-width: 0;
     display: flex;
     flex-direction: column;
-    line-height: 1.35;
+    line-height: 1.3;
   }
 
   .mega-list li a b {
-    font-weight: 600
+    font-weight: 600;
+    font-size: .88rem;
   }
 
   .mega-list li a small {
     color: var(--muted);
-    font-size: .73rem;
+    font-size: .72rem;
     font-weight: 400;
     margin-top: 1px;
+  }
+
+  .mega-list-footer a {
+    font-weight: 600 !important;
+    color: var(--gold-dark) !important;
+    border-top: 1px solid var(--line);
+    justify-content: space-between;
   }
 
   .demo-body {
@@ -649,7 +720,7 @@
     }
 
     .devotion-header .navbar {
-      padding: .65rem 0;
+      padding: .6rem 0;
     }
 
     .devotion-header .container-fluid {
@@ -658,23 +729,24 @@
 
     /* Logo */
     .navbar-brand img {
-      width: 200px;
-      max-width: 65vw;
+      width: 190px;
       height: auto;
+      max-width: 62vw;
       display: block;
     }
 
     /* Hamburger */
     .navbar-toggler {
-      width: 58px;
-      height: 48px;
+      width: 52px;
+      height: 44px;
       padding: 0;
-      border: 2px solid #555 !important;
-      border-radius: 10px;
+      border: 1.5px solid var(--panel-border) !important;
+      border-radius: var(--radius-md);
       background: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: var(--shadow-sm);
     }
 
     .navbar-toggler:focus {
@@ -683,16 +755,17 @@
     }
 
     .navbar-toggler-icon {
-      width: 27px;
-      height: 27px;
+      width: 24px;
+      height: 24px;
     }
 
     /* COLLAPSED MENU */
     .navbar-collapse {
       width: 100%;
-      margin-top: .7rem;
-      padding: .35rem 0 .75rem;
+      margin-top: .65rem;
+      padding: .3rem 0 .7rem;
       background: #fff;
+      border-top: 1px solid var(--line);
       overflow: visible !important;
     }
 
@@ -706,7 +779,7 @@
       display: flex;
       flex-direction: column;
       align-items: stretch !important;
-      gap: 0 !important;
+      gap: 2px !important;
       margin: 0 !important;
       padding: 0 !important;
     }
@@ -719,13 +792,13 @@
     /* Main links */
     .navbar-nav .nav-link {
       width: 100%;
-      min-height: 48px;
-      padding: .75rem .9rem !important;
-      border-radius: 8px;
+      min-height: 46px;
+      padding: .7rem .85rem !important;
+      border-radius: var(--radius-md);
       display: flex;
       align-items: center;
-      gap: .4rem;
-      font-size: 1rem;
+      gap: .45rem;
+      font-size: .92rem;
     }
 
     .navbar-nav .nav-link:hover,
@@ -741,62 +814,48 @@
       position: static !important;
     }
 
-    .mega-dropdown>.dropdown-menu,
-    .mega-dropdown>.mega-panel,
-    .mega-dropdown>.mega-panel-sm,
-    .mega-dropdown>.mega-panel-grid {
+    .mega-dropdown > .dropdown-menu,
+    .mega-dropdown > .mega-panel,
+    .mega-dropdown > .mega-panel-sm,
+    .mega-dropdown > .mega-panel-grid {
       position: static !important;
-
-      /* IMPORTANT: clear desktop inline positioning */
       top: auto !important;
       left: auto !important;
       right: auto !important;
       bottom: auto !important;
-
       transform: none !important;
-
       width: 100% !important;
       min-width: 100% !important;
       max-width: 100% !important;
-
-      margin: .2rem 0 .45rem !important;
-
+      margin: .2rem 0 .5rem !important;
       border: 1px solid var(--panel-border) !important;
-      border-radius: 10px !important;
-
+      border-radius: var(--radius-md) !important;
       background: #fff !important;
-
       box-shadow: none !important;
-
       float: none !important;
+      animation: none !important;
     }
 
-    /* Bootstrap hidden state */
-    .mega-dropdown>.dropdown-menu:not(.show) {
+    .mega-dropdown > .dropdown-menu:not(.show) {
       display: none !important;
     }
 
-    /* Bootstrap opened state */
-    .mega-dropdown>.dropdown-menu.show {
+    .mega-dropdown > .dropdown-menu.show {
       display: block !important;
     }
 
-    /* Panel heading */
     .mega-panel-header {
-      min-height: 48px;
-      padding: .75rem .9rem;
-      border-radius: 9px 9px 0 0;
+      min-height: 46px;
+      padding: .7rem .85rem;
+      border-radius: calc(var(--radius-md) - 1px) calc(var(--radius-md) - 1px) 0 0;
     }
 
-
-    /* E-commerce body */
     .mega-panel-body {
       max-height: none !important;
       overflow: visible !important;
-      border-radius: 0 0 9px 9px;
+      border-radius: 0 0 calc(var(--radius-md) - 1px) calc(var(--radius-md) - 1px);
     }
 
-    /* Groups */
     .mega-group {
       position: relative !important;
       width: 100%;
@@ -804,8 +863,8 @@
 
     .mega-group-title {
       width: 100%;
-      min-height: 46px;
-      padding: .7rem .85rem;
+      min-height: 44px;
+      padding: .65rem .8rem;
     }
 
     /* =========================================
@@ -814,33 +873,25 @@
 
     .mega-flyout {
       position: static !important;
-
       top: auto !important;
       left: auto !important;
       right: auto !important;
-
       width: 100% !important;
       max-width: 100% !important;
       max-height: none !important;
-
       margin: 0 !important;
-
       border: 0 !important;
-      border-top: 1px solid var(--panel-border) !important;
+      border-top: 1px solid var(--line) !important;
       border-radius: 0 !important;
-
       box-shadow: none !important;
-
       transform: none !important;
-
       opacity: 1 !important;
       visibility: visible !important;
       pointer-events: auto !important;
-
       display: none;
     }
 
-    .mega-group.active>.mega-flyout {
+    .mega-group.active > .mega-flyout {
       display: block !important;
     }
 
@@ -848,7 +899,6 @@
       position: static;
     }
 
-    /* Prevent horizontal overflow */
     .mega-list,
     .mega-list li,
     .mega-list li a {
@@ -856,10 +906,10 @@
     }
 
     .mega-list li a {
-      min-height: 46px;
-      padding: .6rem .85rem;
+      min-height: 44px;
+      padding: .58rem .8rem;
+      font-size: .86rem;
     }
-
   }
 </style>
 
@@ -892,10 +942,10 @@
       const rect = toggle.getBoundingClientRect();
 
       const width = menu.classList.contains('mega-panel-grid') ?
-        270 :
-        270;
+        280 :
+        280;
 
-      const gap = 5;
+      const gap = 6;
       const viewportPadding = 12;
 
       /* Dropdown appears below the navbar item */
@@ -979,7 +1029,7 @@
 
       const rect = group.getBoundingClientRect();
       const gap = 8;
-      const width = Math.min(270, window.innerWidth - 24);
+      const width = Math.min(280, window.innerWidth - 24);
       const viewportPadding = 12;
 
       flyout.style.width = width + 'px';

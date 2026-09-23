@@ -116,8 +116,7 @@ function ops_icon($icons, $key)
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(../d-tech/assets/images/banner-img.png);
-
+        background: url('<?php echo $siteBase; ?>/assets/images/banner-img.png');
         border-top: 1px solid rgba(179, 143, 81, 0.25);
         border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }

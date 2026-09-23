@@ -50,11 +50,11 @@
     /* HERO */
     .cs-hero {
         position: relative; isolation: isolate; overflow: hidden;
-        background: linear-gradient(160deg, var(--navy) 10%, #0d1a3d 60%, var(--navy-soft) 100%);
+        background: url('<?php echo $siteBase; ?>/assets/images/banner-img.png');
         padding: 84px 0 70px; text-align: center;
     }
-    .cs-hero h1 { color: #fff; font-size: clamp(2rem, 3.4vw, 2.6rem); font-weight: 700; margin: 14px auto; max-width: 780px; line-height: 1.25; }
-    .cs-hero p { color: rgba(255,255,255,.7); max-width: 640px; margin: 0 auto; font-size: 1rem; line-height: 1.7; }
+    .cs-hero h1 { color: #000; font-size: clamp(2rem, 3.4vw, 2.6rem); font-weight: 700; margin: 14px auto; max-width: 780px; line-height: 1.25; }
+    .cs-hero p { color: #000; margin: 0 auto; font-size: 1rem; line-height: 1.7; }
 
     /* CHANNEL SPLIT PANELS */
     .channel-split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }

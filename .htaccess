@@ -1,14 +1,71 @@
-# Enable CORS for WAMP (Apache)
-# Place this file inside the folder you're serving requests from
-# e.g. C:\wamp64\www\core\d-tech\.htaccess
+# =====================================================================
+#  Devotion Technology - Clean URL rewrite rules
+#  Place this file in the site root (same folder as index.php, i.e.
+#  wherever "127.0.0.1/core/d-tech/" points to).
+# =====================================================================
 
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-    Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
-    Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# If your site lives in a subfolder, this MUST match it exactly.
+# Example shown for your local XAMPP path: 127.0.0.1/core/d-tech/
+RewriteBase /core/d-tech/
+
+# ---------------------------------------------------------------
+# STEP 1 — Externally redirect any URL that still shows ?slug=...
+#          to its clean, question-mark-free equivalent. This is
+#          what actually changes what the visitor sees in the
+#          address bar.
+# ---------------------------------------------------------------
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /service-detail\.php\?slug=([^\s&]+) [NC]
+RewriteRule ^ services/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /operations-logistics-detail\.php\?slug=([^\s&]+) [NC]
+RewriteRule ^ operations-logistics/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /sales-marketing-detail\.php\?slug=([^\s&]+) [NC]
+RewriteRule ^ sales-marketing/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /finance-analytics-detail\.php\?slug=([^\s&]+) [NC]
+RewriteRule ^ finance-analytics/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /customer-support-detail\.php\?slug=([^\s&]+) [NC]
+RewriteRule ^ customer-support/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /technology-detail\.php\?slug=([^\s&]+) [NC]
+RewriteRule ^ technology/%1? [R=301,L]
+
+# ---------------------------------------------------------------
+# STEP 2 — Also strip a bare ".php" from any request that still
+#          shows it (e.g. /about.php -> /about), for every page
+#          on the site, not just the slug-based ones above.
+# ---------------------------------------------------------------
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^?\s]+)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# ---------------------------------------------------------------
+# STEP 3 — Internally map the clean paths back to the real PHP
+#          file + slug. This happens silently on the server; the
+#          browser's address bar never changes at this stage.
+# ---------------------------------------------------------------
+RewriteRule ^services/([^/]+)/?$ service-detail.php?slug=$1 [L,QSA]
+RewriteRule ^operations-logistics/([^/]+)/?$ operations-logistics-detail.php?slug=$1 [L,QSA]
+RewriteRule ^sales-marketing/([^/]+)/?$ sales-marketing-detail.php?slug=$1 [L,QSA]
+RewriteRule ^finance-analytics/([^/]+)/?$ finance-analytics-detail.php?slug=$1 [L,QSA]
+RewriteRule ^customer-support/([^/]+)/?$ customer-support-detail.php?slug=$1 [L,QSA]
+RewriteRule ^technology/([^/]+)/?$ technology-detail.php?slug=$1 [L,QSA]
+
+# ---------------------------------------------------------------
+# STEP 4 — Generic ".php" hider for every other page on the site
+#          (index, about, careers, blog, etc.) so links can be
+#          written without the extension.
+# ---------------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.php -f
+RewriteRule ^([^.]+)$ $1.php [L]
+
 </IfModule>
 
-# Handle preflight OPTIONS requests so browsers don't block the real request
-RewriteEngine On
-RewriteCond %{REQUEST_METHOD} OPTIONS
-RewriteRule ^(.*)$ $1 [R=200,L]
+# Optional: point a custom 404 page here once you have one.
+# ErrorDocument 404 /404.php

@@ -50,11 +50,11 @@
     /* HERO */
     .sw-hero {
         position: relative; isolation: isolate; overflow: hidden;
-        background: linear-gradient(160deg, var(--navy) 10%, #0d1a3d 60%, var(--navy-soft) 100%);
+        background: url('<?php echo $siteBase; ?>/assets/images/banner-img.png');
         padding: 84px 0 70px; text-align: center;
     }
-    .sw-hero h1 { color: #fff; font-size: clamp(2rem, 3.4vw, 2.6rem); font-weight: 700; margin: 14px auto; max-width: 740px; line-height: 1.25; }
-    .sw-hero p { color: rgba(255,255,255,.7); max-width: 620px; margin: 0 auto; font-size: 1rem; line-height: 1.7; }
+    .sw-hero h1 { color: #000; font-size: clamp(2rem, 3.4vw, 2.6rem); font-weight: 700; margin: 14px auto; max-width: 740px; line-height: 1.25; }
+    .sw-hero p { color: #000; margin: 0 auto; font-size: 1rem; line-height: 1.7; }
 
     /* SYSTEMS LEDGER */
     .ledger { display: flex; flex-direction: column; gap: 24px; }
