@@ -309,8 +309,8 @@ if (!isset($siteBase)) {
 <style>
   :root {
     /* Refined, slightly cooler + deeper palette for a more corporate feel */
-    --gold: #a9812e;
-    --gold-dark: #7d5f22;
+    --gold: #b38f51;
+    --gold-dark: #b38f51;
     --gold-light: #d6b968;
     --gold-pale: #faf5e9;
     --ink: #1f2430;
@@ -1139,5 +1139,6 @@ if (!isset($siteBase)) {
         positionFlyout(group);
       });
     }, true);
+    
   });
 </script>

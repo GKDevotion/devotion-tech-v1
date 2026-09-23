@@ -53,7 +53,7 @@ RewriteRule ^operations-logistics/([^/]+)/?$ operations-logistics-detail.php?slu
 RewriteRule ^sales-marketing/([^/]+)/?$ sales-marketing-detail.php?slug=$1 [L,QSA]
 RewriteRule ^finance-analytics/([^/]+)/?$ finance-analytics-detail.php?slug=$1 [L,QSA]
 RewriteRule ^customer-support/([^/]+)/?$ customer-support-detail.php?slug=$1 [L,QSA]
-RewriteRule ^technology/([^/]+)/?$ technology-detail.php?slug=$1 [L,QSA]
+RewriteRule ^technology/([^/]+)/?$ technology-detail.php?slug=$1 [L,QSA] 
 
 # ---------------------------------------------------------------
 # STEP 4 — Generic ".php" hider for every other page on the site

@@ -19,33 +19,19 @@
     $systems = array_values(array_filter($portfolio, function ($p) { return $p['category'] === 'software'; }));
 ?>
 
-<!-- If Bootstrap 5 is not already loaded from elements/header.php, uncomment the line below -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 <style>
-    :root {
-        --gold: #b38f51; --gold-dark: #8f7040; --navy: #070d24; --navy-soft: #152a58;
-        --border: #e8e3d6; --muted: #6c7280; --cream: #f7f4ee;
-    }
-    body { font-family: 'Poppins', sans-serif; color: #1a1f30; }
-    p { margin: 0; }
+
     a { text-decoration: none; color: inherit; }
     ul { margin: 0; padding: 0; list-style: none; }
 
-    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 1rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
-    .eyebrow::before { content: "◆"; font-size: .6rem; }
-    .badge-pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 999px; padding: 8px 16px; font-size: .85rem; font-weight: 600; color: var(--gold-dark); background: #fff; }
-    .badge-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); flex: none; }
-
     section { padding: 90px 0; }
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 10px; font-size: .92rem; font-weight: 600; transition: all .2s ease; white-space: nowrap; }
-    .btn-gold { background: var(--gold); color: #fff; }
-    .btn-gold:hover { background: var(--gold-dark); }
+    .btn-gold { background: #b38f51; color: #fff; }
+    .btn-gold:hover { background: #b38f51; }
     .btn-outline-light { border: 1.5px solid rgba(255,255,255,.4); color: #fff; }
-    .btn-outline-light:hover { background: #fff; color: var(--navy); }
-    .btn-outline-dark { border: 1.5px solid var(--border); color: var(--navy); }
-    .btn-outline-dark:hover { border-color: var(--gold); color: var(--gold-dark); }
+    .btn-outline-light:hover { background: #fff; color: #070d24; }
+    .btn-outline-dark { border: 1.5px solid #e8e3d6; color: #070d24; }
+    .btn-outline-dark:hover { border-color: #b38f51; color: #fff; }
 
     /* HERO */
     .sw-hero {
@@ -57,35 +43,40 @@
     .sw-hero p { color: #000; margin: 0 auto; font-size: 1rem; line-height: 1.7; }
 
     /* SYSTEMS LEDGER */
-    .ledger { display: flex; flex-direction: column; gap: 24px; }
+    .ledger { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 24px;
+        margin-top: 30px; 
+    }
 
     .ledger-row {
         display: grid; grid-template-columns: 220px 1fr 260px; gap: 30px; align-items: center;
-        background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 34px;
+        background: #fff; border: 1px solid #e8e3d6; border-radius: 20px; padding: 34px;
         transition: border-color .25s ease, box-shadow .25s ease;
     }
-    .ledger-row:hover { border-color: var(--gold); box-shadow: 0 24px 55px -30px rgba(10,19,48,.25); }
+    .ledger-row:hover { border-color: #b38f51; box-shadow: 0 24px 55px -30px rgba(10,19,48,.25); }
 
-    .ledger-id { border-right: 1px solid var(--border); padding-right: 24px; }
-    .ledger-id .lid-num { font-size: 2.2rem; font-weight: 800; color: var(--border); line-height: 1; display: block; margin-bottom: 8px; }
-    .ledger-id .lid-client { font-size: .8rem; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; letter-spacing: .04em; display: block; margin-bottom: 4px; }
-    .ledger-id .lid-meta { font-size: .78rem; color: var(--muted); }
+    .ledger-id { border-right: 1px solid #e8e3d6; padding-right: 24px; }
+    .ledger-id .lid-num { font-size: 2.2rem; font-weight: 800; color: #e8e3d6; line-height: 1; display: block; margin-bottom: 8px; }
+    .ledger-id .lid-client { font-size: 1rem; font-weight: 700; color: #b38f51; text-transform: uppercase; letter-spacing: .04em; display: block; margin-bottom: 4px; }
+    .ledger-id .lid-meta { font-size: .78rem; color: #6c7280; }
 
-    .ledger-body h3 { font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .ledger-body h3 { font-size: 1.25rem; font-weight: 700; color: #070d24; margin-bottom: 10px; }
     .ledger-body .lb-row { display: flex; gap: 10px; margin-bottom: 8px; font-size: .88rem; line-height: 1.6; }
     .ledger-body .lb-row:last-of-type { margin-bottom: 16px; }
-    .ledger-body .lb-label { flex: none; font-weight: 700; color: var(--navy); width: 90px; }
-    .ledger-body .lb-value { color: var(--muted); }
+    .ledger-body .lb-label { flex: none; font-weight: 700; color: #070d24; width: 90px; }
+    .ledger-body .lb-value { color: #6c7280; }
     .ledger-body .lb-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .ledger-body .lb-tags span { background: var(--cream); border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; font-size: .74rem; font-weight: 500; color: var(--navy); }
+    .ledger-body .lb-tags span { background: #f7f4ee; border: 1px solid #e8e3d6; border-radius: 999px; padding: 4px 12px; font-size: .74rem; font-weight: 500; color: #070d24; }
 
-    .ledger-result { border-left: 1px solid var(--border); padding-left: 24px; display: flex; flex-direction: column; gap: 14px; }
-    .ledger-result .item strong { display: block; font-size: 1.3rem; font-weight: 800; color: var(--gold-dark); }
-    .ledger-result .item span { font-size: .74rem; color: var(--muted); }
+    .ledger-result { border-left: 1px solid #e8e3d6; padding-left: 24px; display: flex; flex-direction: column; gap: 14px; }
+    .ledger-result .item strong { display: block; font-size: 1.3rem; font-weight: 800; color: #b38f51; }
+    .ledger-result .item span { font-size: .74rem; color: #6c7280; }
 
     /* CTA */
     .careers {
-        background: linear-gradient(135deg, var(--navy), var(--navy-soft)); border-radius: 26px;
+        background: linear-gradient(135deg, #070d24, #152a58); border-radius: 26px;
         padding: 52px 48px; display: flex; align-items: center; justify-content: space-between;
         gap: 32px; flex-wrap: wrap; position: relative; overflow: hidden; margin-top: 30px;
     }
@@ -105,7 +96,7 @@
 <!-- HERO -->
 <section class="sw-hero">
     <div class="container">
-        <span class="eyebrow" style="color:var(--gold);">Software Projects</span>
+        <span class="eyebrow" style="color:#b38f51;">Software Projects</span>
         <h1>Custom systems that replaced spreadsheets, not just added to them</h1>
         <p>Every entry below started as a real operational bottleneck — a broken inventory count, a claims queue with no priority. Here's the system we built to fix it, and what changed once it shipped.</p>
     </div>
@@ -148,7 +139,7 @@
         <!-- CTA -->
         <div class="careers">
             <div class="careers-copy">
-                <span class="eyebrow" style="color:var(--gold);">Running On Spreadsheets?</span>
+                <span class="eyebrow" style="color:#b38f51;">Running On Spreadsheets?</span>
                 <h2>Tell us what's held together with duct tape — we'll tell you what to build instead</h2>
                 <p>Book a discovery call and we'll give you an honest read on what's actually worth replacing first.</p>
             </div>
