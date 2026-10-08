@@ -294,7 +294,7 @@ if (!isset($siteBase)) {
             </div>
             <div>
               <div class="contact-label">Email Address</div>
-              <div class="contact-value"><a href="mailto:devotiontech@gmail.com" class="text-dark text-decoration-none">devotiontech@gmail.Com</a></div>
+              <div class="contact-value"><a href="mailto:hello@devotiontech.io" class="text-dark text-decoration-none">hello@devotiontech.io</a></div>
             </div>
           </div>
         </div>

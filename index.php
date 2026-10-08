@@ -1,11 +1,5 @@
  
 <?php
-    $seo = [
-      'title' => 'Devotion Technologies | Innovative IT Solutions & Digital Services',
-      'description' => 'Devotion Technologies delivers innovative IT solutions, web development, software development, digital services, and technology solutions to help businesses grow and succeed.',
-      'keywords' => 'Devotion Technologies, IT solutions, web development company, software development, Laravel development, digital solutions, technology services, business solutions',
-      'author' => 'Devotion Technologies'
-    ];
   include_once('elements/header.php');
   include_once('elements/video.php');
 ?>
