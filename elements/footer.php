@@ -248,7 +248,7 @@ if (!isset($siteBase)) {
           </div>
 
           <p class="footer-tagline">
-            Codeio IT Solutions specializes in delivering cutting-edge managed IT services.
+            Devotion Technology delivers innovative digital solutions that empower businesses to grow, transform, and succeed in a rapidly evolving digital world.
           </p>
 
           <hr class="footer-divider"/>
@@ -284,7 +284,7 @@ if (!isset($siteBase)) {
             </div>
             <div>
               <div class="contact-label">Phone Number</div>
-              <div class="contact-value"><a href="tel:+971999007985" class="text-dark text-decoration-none">+971 99900 9909</a></div>
+              <div class="contact-value"><a href="tel:+971522877801" class="text-dark text-decoration-none">+971 52287 7801</a></div>
             </div>
           </div>
 

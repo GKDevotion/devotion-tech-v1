@@ -1021,7 +1021,7 @@
         <div class="form-row">
           <div class="form-field">
             <label for="phone">Phone Number <span class="req">*</span></label>
-            <input type="tel" id="phone" placeholder="+971 00 000 0000" required>
+            <input type="tel" id="phone" placeholder="Enter Your Number" required>
           </div>
           <div class="form-field">
             <label for="position">Position of Interest</label>

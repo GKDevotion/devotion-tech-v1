@@ -163,7 +163,7 @@
                                 </div>
                                 <div>
                                     <div class="info-title">Phone</div>
-                                    <p class="info-text">+971-5840-8547</p>
+                                    <p class="info-text">+971 52287 7801</p>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                                 </div>
                                 <div>
                                     <div class="info-title">Mail</div>
-                                    <p class="info-text">devotiontech@mail.com</p>
+                                    <p class="info-text">hello@devotiontech.io</p>
                                 </div>
                             </div>
                         </div>
